@@ -1,0 +1,1558 @@
+codigos de html e css juntos
+
+O ChatGPT disse:
+Claro — abaixo está uma index.html completa, com HTML e CSS no mesmo arquivo, já criando uma página inicial funcional para o site de organização de estudos em tema escuro.
+
+Ela inclui sidebar, dashboard, cards de progresso, matérias, tarefas, calendário e um visual responsivo para celular.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyHub - Organização de Estudos</title>
+
+    <style>
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #090b10;
+            --sidebar: #0d1017;
+            --card: #121620;
+            --card-hover: #171c28;
+
+            --border: #222938;
+
+            --text: #f4f5f7;
+            --muted: #8b93a7;
+
+            --purple: #8b5cf6;
+            --purple-light: #a78bfa;
+
+            --blue: #38bdf8;
+            --green: #34d399;
+            --orange: #fb923c;
+            --red: #fb7185;
+
+            --radius: 16px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        button,
+        input {
+            font: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           LAYOUT
+        ========================= */
+
+        .app {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* =========================
+           SIDEBAR
+        ========================= */
+
+        .sidebar {
+            width: 250px;
+            background: var(--sidebar);
+            border-right: 1px solid var(--border);
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 25px 16px;
+
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            padding: 0 10px;
+            margin-bottom: 40px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(
+                135deg,
+                var(--purple),
+                #6366f1
+            );
+
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .logo h1 {
+            font-size: 19px;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--purple-light);
+        }
+
+        .menu-title {
+            color: #555e72;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            padding: 0 12px;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .nav a {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            padding: 12px;
+
+            border-radius: 10px;
+
+            color: var(--muted);
+
+            transition: 0.2s;
+        }
+
+        .nav a:hover {
+            background: var(--card);
+            color: white;
+        }
+
+        .nav a.active {
+            background: rgba(139, 92, 246, 0.14);
+            color: var(--purple-light);
+        }
+
+        .nav-icon {
+            width: 22px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .sidebar-bottom {
+            margin-top: auto;
+        }
+
+        .study-goal {
+            background: linear-gradient(
+                145deg,
+                #151326,
+                #11131c
+            );
+
+            border: 1px solid #28233d;
+            border-radius: 14px;
+
+            padding: 16px;
+            margin-bottom: 18px;
+        }
+
+        .study-goal h3 {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .study-goal p {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .goal-bar {
+            height: 6px;
+            background: #272b37;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .goal-progress {
+            width: 68%;
+            height: 100%;
+            background: var(--purple);
+            border-radius: 20px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 10px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: linear-gradient(
+                135deg,
+                #7c3aed,
+                #2563eb
+            );
+
+            font-weight: bold;
+        }
+
+        .profile strong {
+            font-size: 13px;
+        }
+
+        .profile small {
+            display: block;
+            color: var(--muted);
+            margin-top: 3px;
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        .main {
+            width: calc(100% - 250px);
+            margin-left: 250px;
+
+            padding: 30px 35px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 30px;
+        }
+
+        .welcome h2 {
+            font-size: 27px;
+            margin-bottom: 6px;
+        }
+
+        .welcome p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .top-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon-button {
+            width: 42px;
+            height: 42px;
+
+            border-radius: 12px;
+            border: 1px solid var(--border);
+
+            background: var(--card);
+            color: var(--text);
+
+            cursor: pointer;
+        }
+
+        .icon-button:hover {
+            background: var(--card-hover);
+        }
+
+        /* =========================
+           STAT CARDS
+        ========================= */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+
+            margin-bottom: 25px;
+        }
+
+        .stat-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+
+            padding: 20px;
+
+            transition: 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            background: var(--card-hover);
+        }
+
+        .stat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 16px;
+        }
+
+        .stat-icon {
+            width: 38px;
+            height: 38px;
+
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 18px;
+        }
+
+        .purple {
+            background: rgba(139, 92, 246, 0.13);
+            color: var(--purple-light);
+        }
+
+        .blue {
+            background: rgba(56, 189, 248, 0.12);
+            color: var(--blue);
+        }
+
+        .green {
+            background: rgba(52, 211, 153, 0.12);
+            color: var(--green);
+        }
+
+        .orange {
+            background: rgba(251, 146, 60, 0.12);
+            color: var(--orange);
+        }
+
+        .stat-card small {
+            color: var(--muted);
+        }
+
+        .stat-card h3 {
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        .stat-card .change {
+            color: var(--green);
+            font-size: 11px;
+            float: right;
+            margin-top: -22px;
+        }
+
+        /* =========================
+           GRID
+        ========================= */
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+
+            border-radius: var(--radius);
+            padding: 22px;
+        }
+
+        .card-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 20px;
+        }
+
+        .card-title h3 {
+            font-size: 16px;
+        }
+
+        .card-title a {
+            color: var(--purple-light);
+            font-size: 12px;
+        }
+
+        /* =========================
+           PROGRESS
+        ========================= */
+
+        .subject {
+            margin-bottom: 20px;
+        }
+
+        .subject:last-child {
+            margin-bottom: 0;
+        }
+
+        .subject-info {
+            display: flex;
+            justify-content: space-between;
+
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .subject-info span:last-child {
+            color: var(--muted);
+        }
+
+        .progress {
+            height: 7px;
+
+            background: #262b36;
+            border-radius: 20px;
+
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 20px;
+        }
+
+        .math {
+            width: 78%;
+            background: var(--purple);
+        }
+
+        .physics {
+            width: 58%;
+            background: var(--blue);
+        }
+
+        .history {
+            width: 84%;
+            background: var(--green);
+        }
+
+        .chemistry {
+            width: 44%;
+            background: var(--orange);
+        }
+
+        /* =========================
+           TASKS
+        ========================= */
+
+        .task {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            padding: 13px 0;
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .task:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .check {
+            width: 20px;
+            height: 20px;
+
+            border: 2px solid #4a5263;
+            border-radius: 6px;
+
+            flex-shrink: 0;
+        }
+
+        .check.done {
+            border-color: var(--green);
+            background: var(--green);
+
+            position: relative;
+        }
+
+        .check.done::after {
+            content: "✓";
+
+            position: absolute;
+            color: #07130e;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            left: 3px;
+            top: -1px;
+        }
+
+        .task-info {
+            flex: 1;
+        }
+
+        .task-info strong {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .task-info small {
+            color: var(--muted);
+        }
+
+        .priority {
+            font-size: 10px;
+            padding: 5px 8px;
+            border-radius: 20px;
+        }
+
+        .high {
+            background: rgba(251, 113, 133, 0.12);
+            color: var(--red);
+        }
+
+        .medium {
+            background: rgba(251, 146, 60, 0.12);
+            color: var(--orange);
+        }
+
+        /* =========================
+           CALENDAR
+        ========================= */
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+
+        .day-name {
+            text-align: center;
+            color: var(--muted);
+            font-size: 10px;
+            padding-bottom: 8px;
+        }
+
+        .day {
+            min-height: 34px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 8px;
+
+            font-size: 12px;
+            color: #b8bfce;
+        }
+
+        .day:hover {
+            background: var(--card-hover);
+        }
+
+        .day.today {
+            background: var(--purple);
+            color: white;
+            font-weight: bold;
+        }
+
+        .day.has-task {
+            position: relative;
+        }
+
+        .day.has-task::after {
+            content: "";
+
+            position: absolute;
+            bottom: 4px;
+
+            width: 4px;
+            height: 4px;
+
+            border-radius: 50%;
+            background: var(--blue);
+        }
+
+        /* =========================
+           FOCUS CARD
+        ========================= */
+
+        .focus-card {
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(139, 92, 246, 0.16),
+                    transparent 40%
+                ),
+                var(--card);
+        }
+
+        .focus-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .timer {
+            width: 115px;
+            height: 115px;
+
+            border-radius: 50%;
+
+            border: 7px solid #272136;
+            border-top-color: var(--purple);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        .focus-info h4 {
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+        .focus-info p {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.5;
+
+            max-width: 230px;
+        }
+
+        .start-button {
+            margin-top: 15px;
+
+            padding: 9px 14px;
+
+            border: none;
+            border-radius: 9px;
+
+            background: var(--purple);
+            color: white;
+
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+
+            transition: 0.2s;
+        }
+
+        .start-button:hover {
+            background: #7c3aed;
+        }
+
+        /* =========================
+           MOBILE HEADER
+        ========================= */
+
+        .mobile-header {
+            display: none;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 1100px) {
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 800px) {
+            .sidebar {
+                display: none;
+            }
+
+            .main {
+                width: 100%;
+                margin-left: 0;
+                padding: 20px;
+                padding-top: 85px;
+            }
+
+            .mobile-header {
+                display: flex;
+
+                position: fixed;
+                z-index: 10;
+
+                top: 0;
+                left: 0;
+                right: 0;
+
+                height: 65px;
+
+                background: rgba(9, 11, 16, 0.92);
+                backdrop-filter: blur(10px);
+
+                border-bottom: 1px solid var(--border);
+
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 0 20px;
+            }
+
+            .mobile-logo {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .mobile-logo span {
+                color: var(--purple-light);
+            }
+
+            .topbar {
+                align-items: flex-start;
+            }
+
+            .welcome h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .stats {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .stat-card {
+                padding: 15px;
+            }
+
+            .stat-card h3 {
+                font-size: 20px;
+            }
+
+            .stat-card .change {
+                display: none;
+            }
+
+            .main {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            .top-actions {
+                display: none;
+            }
+
+            .card {
+                padding: 17px;
+            }
+
+            .focus-content {
+                gap: 15px;
+            }
+
+            .timer {
+                width: 90px;
+                height: 90px;
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER MOBILE -->
+    <header class="mobile-header">
+        <div class="mobile-logo">
+            Study<span>Hub</span>
+        </div>
+
+        <button class="icon-button">
+            ☰
+        </button>
+    </header>
+
+
+    <div class="app">
+
+        <!-- =========================
+             SIDEBAR
+        ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">S</div>
+
+                <h1>
+                    Study<span>Hub</span>
+                </h1>
+            </div>
+
+
+            <div class="menu-title">
+                Menu
+            </div>
+
+            <nav class="nav">
+
+                <a href="#" class="active">
+                    <span class="nav-icon">⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">▣</span>
+                    Minhas matérias
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">◫</span>
+                    Agenda
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">◇</span>
+                    Materiais
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">◉</span>
+                    Sessão de foco
+                </a>
+
+                <a href="#">
+                    <span class="nav-icon">↗</span>
+                    Meu progresso
+                </a>
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+                <div class="study-goal">
+
+                    <h3>
+                        🎯 Meta semanal
+                    </h3>
+
+                    <p>
+                        Você estudou 13h30 de 20h planejadas.
+                    </p>
+
+                    <div class="goal-bar">
+                        <div class="goal-progress"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        A
+                    </div>
+
+                    <div>
+                        <strong>
+                            Ana estudante
+                        </strong>
+
+                        <small>
+                            Ensino médio
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             MAIN
+        ========================== -->
+
+        <main class="main">
+
+            <!-- TOPBAR -->
+
+            <div class="topbar">
+
+                <div class="welcome">
+
+                    <h2>
+                        Boa tarde, Ana! 👋
+                    </h2>
+
+                    <p>
+                        Organize seu dia e continue avançando nos estudos.
+                    </p>
+
+                </div>
+
+
+                <div class="top-actions">
+
+                    <button class="icon-button">
+                        🔔
+                    </button>
+
+                    <button class="icon-button">
+                        ⚙
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ESTATÍSTICAS -->
+
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+
+                        <div class="stat-icon purple">
+                            ◉
+                        </div>
+
+                    </div>
+
+                    <small>
+                        Progresso geral
+                    </small>
+
+                    <h3>
+                        72%
+                    </h3>
+
+                    <span class="change">
+                        +8% este mês
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+
+                        <div class="stat-icon blue">
+                            ◷
+                        </div>
+
+                    </div>
+
+                    <small>
+                        Horas estudadas
+                    </small>
+
+                    <h3>
+                        13h 30m
+                    </h3>
+
+                    <span class="change">
+                        +2h esta semana
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                    </div>
+
+                    <small>
+                        Tarefas concluídas
+                    </small>
+
+                    <h3>
+                        24
+                    </h3>
+
+                    <span class="change">
+                        +6 esta semana
+                    </span>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-header">
+
+                        <div class="stat-icon orange">
+                            ★
+                        </div>
+
+                    </div>
+
+                    <small>
+                        Sequência atual
+                    </small>
+
+                    <h3>
+                        7 dias
+                    </h3>
+
+                    <span class="change">
+                        🔥 Em alta
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTEÚDO -->
+
+            <section class="content-grid">
+
+
+                <!-- COLUNA ESQUERDA -->
+
+                <div class="column">
+
+
+                    <!-- PROGRESSO DAS MATÉRIAS -->
+
+                    <div class="card">
+
+                        <div class="card-title">
+
+                            <h3>
+                                Progresso das matérias
+                            </h3>
+
+                            <a href="#">
+                                Ver todas
+                            </a>
+
+                        </div>
+
+
+                        <div class="subject">
+
+                            <div class="subject-info">
+
+                                <span>
+                                    Matemática
+                                </span>
+
+                                <span>
+                                    78%
+                                </span>
+
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar math"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="subject">
+
+                            <div class="subject-info">
+
+                                <span>
+                                    Física
+                                </span>
+
+                                <span>
+                                    58%
+                                </span>
+
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar physics"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="subject">
+
+                            <div class="subject-info">
+
+                                <span>
+                                    História
+                                </span>
+
+                                <span>
+                                    84%
+                                </span>
+
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar history"></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="subject">
+
+                            <div class="subject-info">
+
+                                <span>
+                                    Química
+                                </span>
+
+                                <span>
+                                    44%
+                                </span>
+
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar chemistry"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TAREFAS -->
+
+                    <div class="card">
+
+                        <div class="card-title">
+
+                            <h3>
+                                Tarefas de hoje
+                            </h3>
+
+                            <a href="#">
+                                + Nova tarefa
+                            </a>
+
+                        </div>
+
+
+                        <div class="task">
+
+                            <div class="check done"></div>
+
+                            <div class="task-info">
+
+                                <strong>
+                                    Revisar funções matemáticas
+                                </strong>
+
+                                <small>
+                                    Matemática • 30 min
+                                </small>
+
+                            </div>
+
+                            <span class="priority medium">
+                                Média
+                            </span>
+
+                        </div>
+
+
+                        <div class="task">
+
+                            <div class="check"></div>
+
+                            <div class="task-info">
+
+                                <strong>
+                                    Resolver exercícios de cinemática
+                                </strong>
+
+                                <small>
+                                    Física • 45 min
+                                </small>
+
+                            </div>
+
+                            <span class="priority high">
+                                Alta
+                            </span>
+
+                        </div>
+
+
+                        <div class="task">
+
+                            <div class="check"></div>
+
+                            <div class="task-info">
+
+                                <strong>
+                                    Ler capítulo 5
+                                </strong>
+
+                                <small>
+                                    História • 25 min
+                                </small>
+
+                            </div>
+
+                            <span class="priority medium">
+                                Média
+                            </span>
+
+                        </div>
+
+
+                        <div class="task">
+
+                            <div class="check"></div>
+
+                            <div class="task-info">
+
+                                <strong>
+                                    Revisar ligações químicas
+                                </strong>
+
+                                <small>
+                                    Química • 35 min
+                                </small>
+
+                            </div>
+
+                            <span class="priority high">
+                                Alta
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COLUNA DIREITA -->
+
+                <div class="column">
+
+
+                    <!-- FOCO -->
+
+                    <div class="card focus-card">
+
+                        <div class="card-title">
+
+                            <h3>
+                                Sessão de foco
+                            </h3>
+
+                            <span style="color:#8b93a7;font-size:12px;">
+                                Pomodoro
+                            </span>
+
+                        </div>
+
+
+                        <div class="focus-content">
+
+                            <div class="focus-info">
+
+                                <h4>
+                                    Hora de estudar
+                                </h4>
+
+                                <p>
+                                    Concentre-se em uma tarefa por vez
+                                    e aproveite melhor seu tempo.
+                                </p>
+
+                                <button class="start-button"
+                                        onclick="startTimer()">
+
+                                    ▶ Iniciar sessão
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="timer" id="timer">
+                                25:00
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CALENDÁRIO -->
+
+                    <div class="card">
+
+                        <div class="card-title">
+
+                            <h3>
+                                Setembro 2026
+                            </h3>
+
+                            <a href="#">
+                                Ver agenda
+                            </a>
+
+                        </div>
+
+
+                        <div class="calendar">
+
+                            <div class="day-name">D</div>
+                            <div class="day-name">S</div>
+                            <div class="day-name">T</div>
+                            <div class="day-name">Q</div>
+                            <div class="day-name">Q</div>
+                            <div class="day-name">S</div>
+                            <div class="day-name">S</div>
+
+
+                            <div class="day"></div>
+                            <div class="day"></div>
+                            <div class="day">1</div>
+                            <div class="day">2</div>
+                            <div class="day has-task">3</div>
+                            <div class="day">4</div>
+                            <div class="day">5</div>
+
+                            <div class="day">6</div>
+                            <div class="day">7</div>
+                            <div class="day">8</div>
+                            <div class="day has-task">9</div>
+                            <div class="day">10</div>
+                            <div class="day">11</div>
+                            <div class="day">12</div>
+
+                            <div class="day">13</div>
+                            <div class="day">14</div>
+                            <div class="day">15</div>
+                            <div class="day has-task">16</div>
+                            <div class="day">17</div>
+                            <div class="day">18</div>
+                            <div class="day">19</div>
+
+                            <div class="day">20</div>
+                            <div class="day">21</div>
+                            <div class="day">22</div>
+                            <div class="day">23</div>
+                            <div class="day today">24</div>
+                            <div class="day has-task">25</div>
+                            <div class="day">26</div>
+
+                            <div class="day">27</div>
+                            <div class="day">28</div>
+                            <div class="day">29</div>
+                            <div class="day">30</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRÓXIMA PROVA -->
+
+                    <div class="card">
+
+                        <div class="card-title">
+
+                            <h3>
+                                📚 Próxima avaliação
+                            </h3>
+
+                        </div>
+
+                        <div style="
+                            display:flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            gap:15px;
+                        ">
+
+                            <div>
+
+                                <strong style="
+                                    display:block;
+                                    margin-bottom:5px;
+                                    font-size:14px;
+                                ">
+                                    Prova de Matemática
+                                </strong>
+
+                                <span style="
+                                    color:#8b93a7;
+                                    font-size:12px;
+                                ">
+                                    Funções e geometria
+                                </span>
+
+                            </div>
+
+
+                            <div style="
+                                background:rgba(139,92,246,.12);
+                                color:#a78bfa;
+                                padding:9px 12px;
+                                border-radius:10px;
+                                font-size:12px;
+                                white-space:nowrap;
+                            ">
+                                5 dias
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        let timerInterval;
+        let seconds = 25 * 60;
+        let running = false;
+
+        function updateTimer() {
+
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+
+            document.getElementById("timer").textContent =
+                `${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`;
+
+        }
+
+
+        function startTimer() {
+
+            if (running) {
+                return;
+            }
+
+            running = true;
+
+            timerInterval = setInterval(() => {
+
+                if (seconds > 0) {
+
+                    seconds--;
+
+                    updateTimer();
+
+                } else {
+
+                    clearInterval(timerInterval);
+
+                    running = false;
+
+                    alert("Sessão concluída! 🎉");
+
+                }
+
+            }, 1000);
+
+        }
+
+
+        // Permite marcar tarefas como concluídas
+
+        document.querySelectorAll(".check").forEach(check => {
+
+            check.addEventListener("click", () => {
+
+                check.classList.toggle("done");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
