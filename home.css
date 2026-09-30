@@ -1,0 +1,21 @@
+
+nav ul {
+  display: flex;          
+  list-style: none;       
+  gap: 20px;              
+  margin: 0;
+  padding: 0;
+  background-color: rgb(186, 142, 228)
+}
+
+body {
+    background-color:rgb(16, 0, 43)
+}
+
+p {
+    color:aliceblue
+}
+
+h1 {
+    color:aliceblue
+}
