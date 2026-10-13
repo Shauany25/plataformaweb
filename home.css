@@ -1,31 +1,21 @@
-nav {
+.menu{
     position: fixed;
-    top: 0;
-    flex-direction: column;
-    height: 100vh;
+    height: 100px;
     display: flex;
-    list-style: none;
-    gap: 20px;
-    width: 0vw;
+    width: 500vmin;
     background-color: rgb(90, 24, 154);
-}
-nav:hover {
-    transition: 0.5s;
-    width: 20vw
-
+ 
 }
 
-body {
-    background-color: rgb(16, 0, 43)
-}
 
 p {
-    color: aliceblue
+   margin: 200px;
+    text-align: center;
 }
 
 h1 {
     text-align: center;
-    color: aliceblue
+
 }
 
 a {
@@ -33,5 +23,5 @@ a {
     padding: 35px 150px;
     justify-content: center;
     text-decoration: none;
-    color: aliceblue
+    color: aliceblue;
 }
