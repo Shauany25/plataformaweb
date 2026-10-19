@@ -1,450 +1,662 @@
 
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  :root {
-    --roxo: #592695;
-    --roxo-escuro: #4b1f83;
-    --lilas: #a875e6;
-    --fundo: #f6f3fc;
-    --texto: #17131d;
-    --texto-secundario: #654f78;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--texto);
-    background: white;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  button {
-    font-family: inherit;
-    cursor: pointer;
-  }
-  
-  /* CABEÇALHO */
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --roxo: #592695;
+  --roxo-escuro: #4b1f83;
+  --lilas: #a875e6;
+  --fundo-lilas: #f6f3fc;
+  --texto: #17131d;
+  --texto-secundario: #654f78;
+  --borda: #e5dcf4;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background-color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+
+/* =========================
+ CABEÇALHO
+========================= */
+
+.cabecalho {
+  width: 100%;
+  min-height: 78px;
+  padding: 10px 7%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  background-color: #ffffff;
+}
+
+
+/* LOGOTIPO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-imagem {
+  display: block;
+  width: 165px;
+  height: 65px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+
+/* MENU DE NAVEGAÇÃO */
+
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+#menu a {
+  color: #292033;
+  font-size: 13px;
+
+  padding: 10px 3px;
+  border-bottom: 2px solid transparent;
+
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+#menu a:hover,
+#menu a.ativo {
+  color: var(--roxo);
+  border-bottom-color: var(--lilas);
+}
+
+
+/* BOTÕES DO CABEÇALHO */
+
+.botoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 12px 25px;
+  border-radius: 11px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-claro {
+  color: var(--roxo);
+  background-color: #ffffff;
+  border: 1px solid #8052b4;
+}
+
+.btn-roxo {
+  color: #ffffff;
+  background-color: var(--roxo);
+  border: 1px solid var(--roxo);
+}
+
+.btn-claro:hover {
+  background-color: var(--fundo-lilas);
+}
+
+.btn-roxo:hover {
+  background-color: var(--roxo-escuro);
+}
+
+
+/* BOTÃO DO MENU PARA CELULAR */
+
+.menu-toggle {
+  display: none;
+
+  border: none;
+  background: transparent;
+  color: var(--roxo);
+
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+/* =========================
+ APRESENTAÇÃO PRINCIPAL
+========================= */
+
+.inicio {
+  display: grid;
+  grid-template-columns: 0.94fr 1.06fr;
+  align-items: start;
+  gap: 40px;
+
+  padding: 4px 0 0 7%;
+  min-height: 425px;
+}
+
+
+/* TEXTOS */
+
+.apresentacao {
+  max-width: 490px;
+  padding-top: 49px;
+}
+
+.subtitulo {
+  margin-bottom: 17px;
+
+  color: var(--lilas);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.subtitulo span {
+  padding: 0 7px;
+  color: var(--roxo);
+}
+
+h1 {
+  margin-bottom: 13px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.24;
+  letter-spacing: -0.5px;
+}
+
+h1 span {
+  color: #8b4bd0;
+}
+
+.descricao {
+  max-width: 455px;
+  margin-bottom: 25px;
+
+  color: var(--texto-secundario);
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+
+/* BOTÃO COMEÇAR */
+
+.comecar {
+  min-width: 168px;
+  border-radius: 25px;
+}
+
+.comecar span {
+  font-size: 19px;
+}
+
+
+/* IMAGEM PRINCIPAL */
+
+.imagem {
+  width: 100%;
+  height: 312px;
+  overflow: hidden;
+
+  border-radius: 11px 0 0 11px;
+}
+
+.imagem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================
+ CARTÕES DE RECURSOS
+========================= */
+
+.recursos {
+  margin: 44px 5.8% 38px;
+  padding: 20px 25px;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+
+  background: linear-gradient(
+      110deg,
+      #f7f5fc,
+      #f4f0fb
+  );
+
+  border-radius: 11px;
+}
+
+.cartao {
+  padding: 0 25px;
+  min-width: 0;
+}
+
+.cartao + .cartao {
+  border-left: 1px solid var(--borda);
+}
+
+
+/* ÍCONES DOS CARTÕES */
+
+.icone {
+  width: 51px;
+  height: 51px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+  border-radius: 50%;
+
+  background-color: #eee7fa;
+  color: var(--roxo);
+  font-size: 32px;
+}
+
+
+/* TEXTOS DOS CARTÕES */
+
+.cartao h2 {
+  margin-bottom: 8px;
+
+  color: #65309e;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cartao p {
+  max-width: 230px;
+
+  color: #677092;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+ JANELA DE LOGIN E CADASTRO
+========================= */
+
+dialog {
+  width: min(90%, 400px);
+  max-height: 90vh;
+  overflow-y: auto;
+
+  margin: auto;
+  padding: 30px;
+
+  border: 1px solid #eee5f7;
+  border-radius: 18px;
+
+  background-color: #ffffff;
+  box-shadow: 0 15px 60px #24133330;
+}
+
+dialog::backdrop {
+  background-color: #21132e88;
+}
+
+
+/* LOGO DA JANELA */
+
+.modal-logo {
+  display: block;
+  width: 140px;
+  height: 80px;
+
+  margin: 0 auto 15px;
+
+  object-fit: contain;
+}
+
+
+/* TÍTULOS DA JANELA */
+
+dialog h2 {
+  margin-bottom: 10px;
+
+  color: var(--roxo);
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+
+dialog p {
+  margin-bottom: 15px;
+
+  color: var(--texto-secundario);
+  font-size: 13px;
+}
+
+
+/* BOTÃO FECHAR */
+
+.fechar {
+  float: right;
+
+  border: none;
+  background: transparent;
+  color: var(--roxo);
+
+  font-size: 27px;
+  cursor: pointer;
+}
+
+
+/* CAMPOS DO FORMULÁRIO */
+
+form label {
+  display: block;
+  margin: 12px 0 6px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ddd1ed;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+form input:focus {
+  border-color: var(--lilas);
+  box-shadow: 0 0 0 3px #a875e622;
+}
+
+form button {
+  width: 100%;
+  margin-top: 18px;
+}
+
+#mensagem {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+ RODAPÉ
+========================= */
+
+footer {
+  padding: 20px;
+
+  color: #8a7a9a;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* =========================
+ TABLETS
+========================= */
+
+@media (max-width: 1050px) {
+
   .cabecalho {
-    min-height: 78px;
-    padding: 10px 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-    background: white;
+      padding: 10px 3%;
+      gap: 15px;
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--roxo);
-    font-family: Georgia, serif;
-    font-size: 19px;
-    font-weight: bold;
-    line-height: 0.9;
+
+  .logo-imagem {
+      width: 125px;
+      height: 58px;
   }
-  
-  .montanha {
-    font-size: 43px;
-  }
-  
+
   #menu {
-    display: flex;
-    align-items: center;
-    gap: 32px;
+      gap: 15px;
   }
-  
+
   #menu a {
-    padding: 10px 3px;
-    font-size: 13px;
-    border-bottom: 2px solid transparent;
+      font-size: 12px;
   }
-  
-  #menu a:hover,
-  #menu a.ativo {
-    color: var(--roxo);
-    border-bottom-color: var(--lilas);
-  }
-  
-  .botoes {
-    display: flex;
-    gap: 12px;
-  }
-  
-  .btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 25px;
-    border-radius: 12px;
-    font-size: 13px;
-    font-weight: bold;
-    transition: 0.2s;
-  }
-  
-  .btn:hover {
-    transform: translateY(-2px);
-  }
-  
-  .btn-claro {
-    color: var(--roxo);
-    background: white;
-    border: 1px solid var(--lilas);
-  }
-  
-  .btn-roxo {
-    color: white;
-    background: var(--roxo);
-    border: 1px solid var(--roxo);
-  }
-  
-  .btn-roxo:hover {
-    background: var(--roxo-escuro);
-  }
-  
-  .menu-toggle {
-    display: none;
-    border: none;
-    background: transparent;
-    color: var(--roxo);
-    font-size: 25px;
-  }
-  
-  /* APRESENTAÇÃO INICIAL */
-  
+
   .inicio {
-    display: grid;
-    grid-template-columns: 1fr 1.15fr;
-    gap: 40px;
-    align-items: start;
-    padding: 4px 0 0 7%;
-    min-height: 425px;
-  }
-  
-  .apresentacao {
-    padding-top: 49px;
-    max-width: 490px;
-  }
-  
-  .subtitulo {
-    margin-bottom: 17px;
-    color: var(--lilas);
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .subtitulo span {
-    padding: 0 7px;
-    color: var(--roxo);
-  }
-  
-  h1 {
-    margin-bottom: 13px;
-    font-family: Georgia, serif;
-    font-size: clamp(30px, 3vw, 40px);
-    line-height: 1.24;
-  }
-  
-  h1 span {
-    color: #8b4bd0;
-  }
-  
-  .descricao {
-    margin-bottom: 25px;
-    color: var(--texto-secundario);
-    font-size: 14px;
-    line-height: 1.45;
-    text-align: justify;
-  }
-  
-  .comecar {
-    min-width: 168px;
-    border-radius: 25px;
-  }
-  
-  .comecar span {
-    font-size: 19px;
-  }
-  
-  .imagem {
-    width: 100%;
-    height: 312px;
-    overflow: hidden;
-    border-radius: 11px 0 0 11px;
-  }
-  
-  .imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  
-  /* CARTÕES DE RECURSOS */
-  
-  .recursos {
-    margin: 44px 5.8% 38px;
-    padding: 20px 25px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    background: linear-gradient(110deg, #f7f5fc, #f4f0fb);
-    border-radius: 11px;
-  }
-  
-  .cartao {
-    padding: 0 25px;
-  }
-  
-  .cartao + .cartao {
-    border-left: 1px solid #e5dcf4;
-  }
-  
-  .icone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 51px;
-    height: 51px;
-    margin-bottom: 8px;
-    border-radius: 50%;
-    background: #eee7fa;
-    color: var(--roxo);
-    font-size: 32px;
-  }
-  
-  .cartao h2 {
-    margin-bottom: 8px;
-    color: #65309e;
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  
-  .cartao p {
-    max-width: 230px;
-    color: #677092;
-    font-size: 12px;
-    line-height: 1.6;
-  }
-  
-  /* JANELA DE ENTRAR E CADASTRAR */
-  
-  dialog {
-    width: min(90%, 400px);
-    margin: auto;
-    padding: 30px;
-    border: 1px solid #eee5f7;
-    border-radius: 18px;
-    box-shadow: 0 15px 60px #24133330;
-  }
-  
-  dialog::backdrop {
-    background: #21132e88;
-  }
-  
-  dialog h2 {
-    margin: 15px 0 8px;
-    color: var(--roxo);
-  }
-  
-  dialog p {
-    margin-bottom: 15px;
-    color: var(--texto-secundario);
-    font-size: 13px;
-  }
-  
-  .fechar {
-    float: right;
-    border: none;
-    background: transparent;
-    font-size: 27px;
-    color: var(--roxo);
-  }
-  
-  form label {
-    display: block;
-    margin: 12px 0 6px;
-    font-size: 13px;
-    font-weight: bold;
-  }
-  
-  form input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd1ed;
-    border-radius: 8px;
-    outline: none;
-  }
-  
-  form input:focus {
-    border-color: var(--lilas);
-  }
-  
-  form button {
-    width: 100%;
-    margin-top: 18px;
-  }
-  
-  #mensagem {
-    margin-top: 12px;
-  }
-  
-  /* RODAPÉ */
-  
-  footer {
-    padding: 20px;
-    text-align: center;
-    color: #8a7a9a;
-    font-size: 12px;
-  }
-  
-  /* TABLETS E CELULARES */
-  
-  @media (max-width: 1050px) {
-    .cabecalho {
-      padding: 12px 3%;
-      gap: 15px;
-    }
-  
-    #menu {
-      gap: 15px;
-    }
-  
-    .inicio {
       padding-left: 4%;
       gap: 25px;
-    }
-  
-    .cartao {
-      padding: 0 15px;
-    }
   }
-  
-  @media (max-width: 760px) {
-    .cabecalho {
+
+  .botoes {
+      gap: 6px;
+  }
+
+  .btn {
+      padding: 10px 14px;
+  }
+
+  .cartao {
+      padding: 0 15px;
+  }
+}
+
+
+/* =========================
+ CELULARES
+========================= */
+
+@media (max-width: 760px) {
+
+  /* Cabeçalho */
+
+  .cabecalho {
       min-height: 72px;
+      padding: 10px 20px;
       flex-wrap: wrap;
-    }
-  
-    .menu-toggle {
+  }
+
+  .logo-imagem {
+      width: 120px;
+      height: 50px;
+  }
+
+  .menu-toggle {
       display: block;
       margin-left: auto;
-    }
-  
-    #menu {
+  }
+
+  /* Menu recolhido */
+
+  #menu {
       display: none;
+
       order: 4;
       width: 100%;
+
       flex-direction: column;
       align-items: stretch;
       gap: 5px;
-    }
-  
-    #menu.aberto {
+  }
+
+  #menu.aberto {
       display: flex;
-    }
-  
-    #menu a {
+  }
+
+  #menu a {
       padding: 12px;
-    }
-  
-    .botoes {
+      font-size: 14px;
+  }
+
+  .botoes {
       gap: 6px;
-    }
-  
-    .botoes .btn {
+  }
+
+  .botoes .btn {
       padding: 9px 12px;
       font-size: 11px;
-    }
-  
-    .inicio {
+  }
+
+  /* Apresentação */
+
+  .inicio {
       display: flex;
       flex-direction: column-reverse;
-      padding: 0;
       gap: 0;
-    }
-  
-    .imagem {
+      padding: 0;
+      min-height: auto;
+  }
+
+  .imagem {
+      width: 100%;
       height: 260px;
       border-radius: 0 0 12px 12px;
-    }
-  
-    .apresentacao {
+  }
+
+  .apresentacao {
+      width: 100%;
+      max-width: 600px;
       padding: 30px 24px 20px;
-    }
-  
-    h1 {
+  }
+
+  .subtitulo {
+      font-size: 12px;
+  }
+
+  h1 {
       font-size: 34px;
-    }
-  
-    .descricao {
+  }
+
+  .descricao {
+      font-size: 13px;
       text-align: left;
-    }
-  
-    .recursos {
+  }
+
+  /* Cartões */
+
+  .recursos {
       margin: 20px 16px 30px;
       padding: 22px 10px;
-      grid-template-columns: repeat(2, 1fr);
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 25px 0;
-    }
-  
-    .cartao {
-      padding: 0 12px;
-    }
-  
-    .cartao:nth-child(3) {
-      border-left: none;
-    }
   }
-  
-  @media (max-width: 420px) {
-    .cabecalho {
+
+  .cartao {
+      padding: 0 12px;
+  }
+
+  .cartao:nth-child(3) {
+      border-left: none;
+  }
+
+  .cartao h2 {
+      font-size: 13px;
+  }
+
+  .cartao p {
+      font-size: 11px;
+  }
+}
+
+
+/* =========================
+ CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 420px) {
+
+  .cabecalho {
       padding: 10px 12px;
       gap: 8px;
-    }
-  
-    .logo {
-      font-size: 15px;
-    }
-  
-    .montanha {
-      font-size: 32px;
-    }
-  
-    .botoes .btn {
+  }
+
+  .logo-imagem {
+      width: 100px;
+      height: 45px;
+  }
+
+  .botoes {
+      gap: 5px;
+  }
+
+  .botoes .btn {
       padding: 8px;
-    }
-  
-    .recursos {
+      font-size: 10px;
+  }
+
+  .imagem {
+      height: 220px;
+  }
+
+  .apresentacao {
+      padding: 25px 18px;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  .recursos {
       margin-left: 10px;
       margin-right: 10px;
-    }
-  
-    .cartao {
-      padding: 0 8px;
-    }
-  
-    .cartao h2 {
-      font-size: 12px;
-    }
-  
-    .cartao p {
-      font-size: 11px;
-    }
   }
-  
+
+  .cartao {
+      padding: 0 8px;
+  }
+
+  .cartao h2 {
+      font-size: 12px;
+  }
+
+  .cartao p {
+      font-size: 11px;
+  }
+}

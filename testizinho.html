@@ -1,127 +1,228 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trilha de Estudos</title>
-  <link rel="stylesheet" href="testizinho.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Organize sua rotina de estudos e prepare-se para o ENEM com a Trilha de Estudos.">
+
+    <title>Trilha de Estudos</title>
+
+    <link rel="stylesheet" href="testizinho.css">
 </head>
+
 <body>
 
-  <header class="cabecalho">
-    <a href="#inicio" class="logo">
-      <span class="montanha">⚑</span>
-      <span>Trilha<br>de<br>estudos</span>
-    </a>
+    <!-- CABEÇALHO E MENU -->
+    <header class="cabecalho">
 
-    <button class="menu-toggle" id="menu-toggle"
-      aria-label="Abrir menu">☰</button>
-
-    <nav id="menu">
-      <a class="ativo" href="#inicio">Início</a>
-      <a href="#enem">Enem</a>
-      <a href="#exercicios">Exercícios</a>
-      <a href="#tecnicas">Técnicas de estudo</a>
-    </nav>
-
-    <div class="botoes">
-      <button class="btn btn-claro" data-modal="entrar">Entrar</button>
-      <button class="btn btn-roxo" data-modal="cadastrar">Cadastrar</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="inicio" id="inicio">
-      <div class="apresentacao">
-        <p class="subtitulo">
-          PLANEJE <span>•</span> ESTUDE <span>•</span> CONQUISTE
-        </p>
-
-        <h1>Seu futuro começa<br>
-          com um <span>bom plano.</span>
-        </h1>
-
-        <p class="descricao">
-          Criada por discentes para alunos, a plataforma Trilha de
-          Estudos auxilia na organização da rotina acadêmica e na
-          preparação para o ENEM, oferecendo dicas de estudo,
-          materiais de apoio e recursos para facilitar a aprendizagem.
-        </p>
-
-        <a href="#recursos" class="btn btn-roxo comecar">
-          Comece agora <span>→</span>
+        <a href="#inicio" class="logo">
+            <img src="logo.jpg"
+                alt="Logotipo Trilha de Estudos"
+                class="logo-imagem">
         </a>
-      </div>
 
-      <div class="imagem">
-        <img src="hero-trilha-estudos.png"
-          alt="Mesa organizada para estudar com livros e notebook">
-      </div>
-    </section>
+        <button class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-    <section class="recursos" id="recursos">
-      <article class="cartao" id="planejamento">
-        <div class="icone">▦</div>
-        <h2>Organização</h2>
-        <p>
-          Crie um plano de estudos, acompanhe seu progresso e
-          mantenha o foco no que realmente importa.
+        <nav id="menu" aria-label="Menu principal">
+            <a href="#inicio" class="ativo">Início</a>
+            <a href="#enem">Enem</a>
+            <a href="#exercicios">Exercícios</a>
+            <a href="#tecnicas">Técnicas de estudo</a>
+        </nav>
+
+        <div class="botoes">
+            <button class="btn btn-claro"
+                data-modal="entrar">
+                Entrar
+            </button>
+
+            <button class="btn btn-roxo"
+                data-modal="cadastrar">
+                Cadastrar
+            </button>
+        </div>
+
+    </header>
+
+
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+    <main>
+
+        <section class="inicio" id="inicio">
+
+            <div class="apresentacao">
+
+                <p class="subtitulo">
+                    PLANEJE
+                    <span>•</span>
+                    ESTUDE
+                    <span>•</span>
+                    CONQUISTE
+                </p>
+
+                <h1>
+                    Seu futuro começa<br>
+                    com um <span>bom plano.</span>
+                </h1>
+
+                <p class="descricao">
+                    Criada por discentes para alunos, a plataforma
+                    Trilha de Estudos auxilia na organização da
+                    rotina acadêmica e na preparação para o ENEM,
+                    oferecendo dicas de estudo, materiais de apoio
+                    e recursos para facilitar a aprendizagem.
+                </p>
+
+                <a href="#recursos" class="btn btn-roxo comecar">
+                    Comece agora
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="imagem">
+                <img src="inicio.jpg"
+                    alt="Mesa de estudos com livros, notebook e materiais da Trilha de Estudos">
+            </div>
+
+        </section>
+
+
+        <!-- RECURSOS DA PLATAFORMA -->
+        <section class="recursos" id="recursos">
+
+            <article class="cartao" id="planejamento">
+
+                <div class="icone">▦</div>
+
+                <h2>Organização</h2>
+
+                <p>
+                    Crie um plano de estudos, acompanhe seu progresso
+                    e mantenha o foco no que realmente importa.
+                </p>
+
+            </article>
+
+
+            <article class="cartao" id="tecnicas">
+
+                <div class="icone">♧</div>
+
+                <h2>Métodos de estudo</h2>
+
+                <p>
+                    Explore técnicas como o Método Pomodoro,
+                    mapas mentais, resumos e muito mais.
+                </p>
+
+            </article>
+
+
+            <article class="cartao" id="enem">
+
+                <div class="icone">▤</div>
+
+                <h2>Conteúdo para o ENEM</h2>
+
+                <p>
+                    Acesse materiais, simulados e questões no estilo
+                    do ENEM para se preparar com confiança.
+                </p>
+
+            </article>
+
+
+            <article class="cartao" id="exercicios">
+
+                <div class="icone">▥</div>
+
+                <h2>Mais do que uma prova</h2>
+
+                <p>
+                    Desenvolva hábitos, ganhe autonomia e construa
+                    o futuro que você deseja.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <!-- JANELA DE ENTRAR E CADASTRAR -->
+    <dialog id="modal">
+
+        <button type="button"
+            id="fechar"
+            class="fechar"
+            aria-label="Fechar janela">
+            ×
+        </button>
+
+        <img src="logo.jpg"
+            alt="Trilha de Estudos"
+            class="modal-logo">
+
+        <h2 id="titulo-modal">Bem-vindo à Trilha!</h2>
+
+        <p id="texto-modal">
+            Entre para continuar sua jornada de estudos.
         </p>
-      </article>
 
-      <article class="cartao" id="tecnicas">
-        <div class="icone">♧</div>
-        <h2>Métodos de estudo</h2>
+        <form id="formulario">
+
+            <label for="email">E-mail</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="seu@email.com"
+                required>
+
+            <label for="senha">Senha</label>
+
+            <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+                minlength="6"
+                required>
+
+            <button class="btn btn-roxo"
+                type="submit">
+                Continuar
+            </button>
+
+            <p id="mensagem" aria-live="polite"></p>
+
+        </form>
+
+    </dialog>
+
+
+    <!-- RODAPÉ -->
+    <footer>
         <p>
-          Explore técnicas como o Método Pomodoro, mapas mentais,
-          resumos e muito mais.
+            © <span id="ano"></span>
+            Trilha de Estudos. Sua jornada começa aqui.
         </p>
-      </article>
+    </footer>
 
-      <article class="cartao" id="enem">
-        <div class="icone">▤</div>
-        <h2>Conteúdo para o ENEM</h2>
-        <p>
-          Acesse materiais, simulados e questões no estilo do ENEM
-          para se preparar com confiança.
-        </p>
-      </article>
 
-      <article class="cartao" id="exercicios">
-        <div class="icone">▥</div>
-        <h2>Mais do que uma prova</h2>
-        <p>
-          Desenvolva hábitos, ganhe autonomia e construa o futuro
-          que você deseja.
-        </p>
-      </article>
-    </section>
-  </main>
+    <!-- JAVASCRIPT -->
+    <script src="testizinho.js"></script>
 
-  <dialog id="modal">
-    <button id="fechar" class="fechar" aria-label="Fechar">×</button>
-    <h2 id="titulo-modal">Bem-vindo à Trilha!</h2>
-    <p id="texto-modal">Entre para continuar sua jornada de estudos.</p>
-
-    <form id="formulario">
-      <label for="email">E-mail</label>
-      <input type="email" id="email" placeholder="seu@email.com" required>
-
-      <label for="senha">Senha</label>
-      <input type="password" id="senha"
-        placeholder="Digite sua senha" minlength="6" required>
-
-      <button class="btn btn-roxo" type="submit">Continuar</button>
-      <p id="mensagem" aria-live="polite"></p>
-    </form>
-  </dialog>
-
-  <footer>
-    <p>© <span id="ano"></span> Trilha de Estudos. Sua jornada começa aqui.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
