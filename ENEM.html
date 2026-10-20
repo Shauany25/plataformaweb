@@ -49,6 +49,101 @@
 
     </header>
 
+      <main id="topo">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PLANEJE • ESTUDE • CONQUISTE</p>
+        <h1>Sua próxima conquista começa <span>aqui.</span></h1>
+        <p class="hero-description">Prepare-se para o ENEM com conteúdos organizados, dicas de estudo e informações sobre as oportunidades que podem ajudar você a chegar à universidade.</p>
+        <a class="btn btn-primary hero-button" href="#materias">Explorar matérias <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de materiais de estudo">
+        <div class="sunlight"></div>
+        <div class="sticky-note">FOCO<br>DISCIPLINA<br>RESULTADOS</div>
+        <div class="plant" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+        <div class="book-stack">
+          <div>ENEM</div><div>ESTUDOS</div><div>DISCIPLINA</div><div>SONHOS</div>
+        </div>
+        <div class="notebook"><span>Grandes conquistas<br>começam com bons hábitos.</span><div class="lines"></div></div>
+        <div class="pencil"></div>
+        <div class="cup">✎ ✎</div>
+      </div>
+    </section>
+
+    <section class="intro-section section-wrap">
+      <div class="section-heading">
+        <p class="eyebrow">ENTENDA A PROVA</p>
+        <h2>O que é o ENEM?</h2>
+      </div>
+      <p class="intro-text">O Exame Nacional do Ensino Médio avalia conhecimentos desenvolvidos ao longo dessa etapa escolar e pode ser usado para concorrer a vagas no ensino superior. Com planejamento e prática, você pode estudar com mais confiança e conhecer diferentes caminhos para continuar seus estudos.</p>
+      <div class="info-strip">
+        <div class="info-icon">✦</div>
+        <div><h3>Estude com estratégia</h3><p>Organize seus estudos por matéria, revise os conteúdos e pratique com questões de provas anteriores.</p></div>
+      </div>
+    </section>
+
+    <section class="programs-section section-wrap" id="programas">
+      <div class="section-heading">
+        <p class="eyebrow">SEU FUTURO EM MOVIMENTO</p>
+        <h2>Oportunidades depois do ENEM</h2>
+        <p>Conheça alguns programas e caminhos para chegar ao ensino superior.</p>
+      </div>
+      <div class="program-grid">
+        <article class="program-card">
+          <div class="program-icon">🏛</div><h3>SISU</h3>
+          <p>Use a nota do ENEM para concorrer a vagas em instituições públicas participantes, de acordo com as regras da seleção.</p>
+          <a href="https://sisu.mec.gov.br/" target="_blank" rel="noopener noreferrer">Conhecer o SISU ↗</a>
+        </article>
+        <article class="program-card">
+          <div class="program-icon">🎓</div><h3>ProUni</h3>
+          <p>Programa que oferece bolsas integrais ou parciais em instituições privadas para candidatos que atendam aos critérios.</p>
+          <a href="https://acessounico.mec.gov.br/prouni" target="_blank" rel="noopener noreferrer">Conhecer o ProUni ↗</a>
+        </article>
+        <article class="program-card">
+          <div class="program-icon">📚</div><h3>FIES</h3>
+          <p>Possibilita o financiamento de cursos superiores não gratuitos em instituições participantes, conforme as regras vigentes.</p>
+          <a href="https://acessounico.mec.gov.br/fies" target="_blank" rel="noopener noreferrer">Conhecer o FIES ↗</a>
+        </article>
+        <article class="program-card">
+          <div class="program-icon">👩‍🏫</div><h3>Pé-de-Meia Licenciaturas</h3>
+          <p>Incentivo voltado a estudantes elegíveis que ingressam em cursos presenciais de formação de professores.</p>
+          <a href="https://www.gov.br/capes/pt-br" target="_blank" rel="noopener noreferrer">Consultar informações ↗</a>
+        </article>
+      </div>
+      <p class="small-note">Os critérios, prazos e programas disponíveis podem mudar. Consulte sempre os editais e os sites oficiais.</p>
+    </section>
+
+    <section class="subjects-section section-wrap" id="materias">
+      <div class="section-heading">
+        <p class="eyebrow">SEU GUIA DE REVISÃO</p>
+        <h2>Explore as matérias</h2>
+        <p>Selecione uma matéria para ver temas importantes para revisar e começar a praticar.</p>
+      </div>
+      <div class="subject-grid" id="subjectGrid" aria-live="polite"></div>
+      <div class="subject-details" id="subjectDetails" hidden>
+        <div class="details-top">
+          <div><p class="eyebrow">ROTEIRO DE ESTUDO</p><h3 id="detailTitle">Matéria</h3></div>
+          <button class="close-details" id="closeDetails" aria-label="Fechar conteúdos">×</button>
+        </div>
+        <p class="details-intro">Use esta lista como ponto de partida. A incidência varia entre as provas; pratique também com questões anteriores.</p>
+        <ul id="topicList"></ul>
+        <a class="btn btn-primary" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="_blank" rel="noopener noreferrer">Ver informações oficiais do ENEM ↗</a>
+      </div>
+    </section>
+
+    <section class="extra-tip section-wrap">
+      <div class="bulb" aria-hidden="true">☼</div>
+      <div class="tip-copy"><h3>Dica extra!</h3><p>Não precisa estudar tudo de uma vez. Escolha uma matéria, defina uma meta pequena e mantenha uma rotina possível para você.</p></div>
+      <p class="handwritten">Pequenos hábitos<br>geram grandes<br>resultados!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#topo"><span class="brand-mark" aria-hidden="true">⚑</span><span>Trilha<br>de estudos</span></a>
+    <p>Seu caminho para estudar com mais organização.</p>
+    <a href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="_blank" rel="noopener noreferrer">Fonte oficial do ENEM ↗</a>
+  </footer>
+
     <!-- JANELA DE ENTRAR E CADASTRAR -->
     <dialog id="modal">
         <button type="button"
@@ -99,6 +194,6 @@
         </p>
     </footer>
 
-    <script src="testizinho.js"></script>
+    <script src="ENEM.js"></script>
 </body>
 </html>
