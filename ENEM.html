@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description"
+        content="Organize sua rotina de estudos e prepare-se para o ENEM com a Trilha de Estudos.">
+
+    <title>Trilha de Estudos</title>
+
     <link rel="stylesheet" href="ENEM.css">
 </head>
 <body>
+   <!-- CABEÇALHO E MENU -->
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            <img src="logo.jpg"
+                alt="Logotipo Trilha de Estudos"
+                class="logo-imagem">
+        </a>
+
+        <button class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="ENEM.html" class="ativo" aria-current="page">Enem</a>
+            <a href="exercicio.html">Exercícios</a>
+            <a href="tecnicas.html">Técnicas de estudo</a>
+        </nav>
+
+        <div class="botoes">
+            <button class="btn btn-claro"
+                data-modal="entrar">
+                Entrar
+            </button>
+
+            <button class="btn btn-roxo"
+                data-modal="cadastrar">
+                Cadastrar
+            </button>
+        </div>
+
+    </header>
 </body>
