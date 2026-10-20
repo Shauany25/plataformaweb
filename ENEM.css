@@ -1,3 +1,8 @@
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -64,8 +69,8 @@ input {
 
 .logo-imagem {
   display: block;
-  width: 165px;
-  height: 65px;
+  width: 180px;
+  height: 70px;
   object-fit: contain;
   object-position: left center;
 }
@@ -158,4 +163,500 @@ input {
 
   font-size: 25px;
   cursor: pointer;
+}
+
+
+/* =========================
+ APRESENTAÇÃO PRINCIPAL
+========================= */
+
+.inicio {
+  display: grid;
+  grid-template-columns: 0.94fr 1.06fr;
+  align-items: start;
+  gap: 40px;
+
+  padding: 4px 0 0 7%;
+  min-height: 425px;
+}
+
+
+/* TEXTOS */
+
+.apresentacao {
+  max-width: 490px;
+  padding-top: 49px;
+}
+
+.subtitulo {
+  margin-bottom: 17px;
+
+  color: var(--lilas);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+}
+
+.subtitulo span {
+  padding: 0 7px;
+  color: var(--roxo);
+}
+
+h1 {
+  margin-bottom: 13px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 40px);
+  line-height: 1.24;
+  letter-spacing: -0.5px;
+}
+
+h1 span {
+  color: #8b4bd0;
+}
+
+.descricao {
+  max-width: 455px;
+  margin-bottom: 25px;
+
+  color: var(--texto-secundario);
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: justify;
+}
+
+
+/* BOTÃO COMEÇAR */
+
+.comecar {
+  min-width: 168px;
+  border-radius: 25px;
+}
+
+.comecar span {
+  font-size: 19px;
+}
+
+
+/* IMAGEM PRINCIPAL */
+
+.imagem {
+  width: 100%;
+  height: 312px;
+  overflow: hidden;
+
+  border-radius: 11px 0 0 11px;
+}
+
+.imagem img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =========================
+ CARTÕES DE RECURSOS
+========================= */
+
+.recursos {
+  margin: 44px 5.8% 38px;
+  padding: 20px 25px;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+
+  background: linear-gradient(
+      110deg,
+      #f7f5fc,
+      #f4f0fb
+  );
+
+  border-radius: 11px;
+}
+
+.cartao {
+  padding: 0 25px;
+  min-width: 0;
+}
+
+.cartao + .cartao {
+  border-left: 1px solid var(--borda);
+}
+
+
+/* ÍCONES DOS CARTÕES */
+
+.icone {
+  width: 51px;
+  height: 51px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 8px;
+  border-radius: 50%;
+
+  background-color: #eee7fa;
+  color: var(--roxo);
+  font-size: 32px;
+}
+
+
+/* TEXTOS DOS CARTÕES */
+
+.cartao h2 {
+  margin-bottom: 8px;
+
+  color: #65309e;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cartao p {
+  max-width: 230px;
+
+  color: #677092;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+ JANELA DE LOGIN E CADASTRO
+========================= */
+
+dialog {
+  width: min(90%, 400px);
+  max-height: 90vh;
+  overflow-y: auto;
+
+  margin: auto;
+  padding: 30px;
+
+  border: 1px solid #eee5f7;
+  border-radius: 18px;
+
+  background-color: #ffffff;
+  box-shadow: 0 15px 60px #24133330;
+}
+
+dialog::backdrop {
+  background-color: #21132e88;
+}
+
+
+/* LOGO DA JANELA */
+
+.modal-logo {
+  display: block;
+  width: 140px;
+  height: 80px;
+
+  margin: 0 auto 15px;
+
+  object-fit: contain;
+}
+
+
+/* TÍTULOS DA JANELA */
+
+dialog h2 {
+  margin-bottom: 10px;
+
+  color: var(--roxo);
+  font-family: Georgia, serif;
+  font-size: 23px;
+}
+
+dialog p {
+  margin-bottom: 15px;
+
+  color: var(--texto-secundario);
+  font-size: 13px;
+}
+
+
+/* BOTÃO FECHAR */
+
+.fechar {
+  float: right;
+
+  border: none;
+  background: transparent;
+  color: var(--roxo);
+
+  font-size: 27px;
+  cursor: pointer;
+}
+
+
+/* CAMPOS DO FORMULÁRIO */
+
+form label {
+  display: block;
+  margin: 12px 0 6px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ddd1ed;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+form input:focus {
+  border-color: var(--lilas);
+  box-shadow: 0 0 0 3px #a875e622;
+}
+
+form button {
+  width: 100%;
+  margin-top: 18px;
+}
+
+#mensagem {
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+ RODAPÉ
+========================= */
+
+footer {
+  padding: 20px;
+
+  color: #8a7a9a;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* =========================
+ TABLETS
+========================= */
+
+@media (max-width: 1050px) {
+
+  .cabecalho {
+      padding: 10px 3%;
+      gap: 15px;
+  }
+
+  .logo-imagem {
+      width: 140px;
+      height: 60px;
+  }
+
+  #menu {
+      gap: 15px;
+  }
+
+  #menu a {
+      font-size: 12px;
+  }
+
+  .inicio {
+      padding-left: 4%;
+      gap: 25px;
+  }
+
+  .botoes {
+      gap: 6px;
+  }
+
+  .btn {
+      padding: 10px 14px;
+  }
+
+  .cartao {
+      padding: 0 15px;
+  }
+}
+
+
+/* =========================
+ CELULARES
+========================= */
+
+@media (max-width: 760px) {
+
+  /* Cabeçalho */
+
+  .cabecalho {
+      min-height: 72px;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+  }
+
+  .logo-imagem {
+      width: 130px;
+      height: 54px;
+  }
+
+  .menu-toggle {
+      display: block;
+      margin-left: auto;
+  }
+
+  /* Menu recolhido */
+
+  #menu {
+      display: none;
+
+      order: 4;
+      width: 100%;
+
+      flex-direction: column;
+      align-items: stretch;
+      gap: 5px;
+  }
+
+  #menu.aberto {
+      display: flex;
+  }
+
+  #menu a {
+      padding: 12px;
+      font-size: 14px;
+  }
+
+  .botoes {
+      gap: 6px;
+  }
+
+  .botoes .btn {
+      padding: 9px 12px;
+      font-size: 11px;
+  }
+
+  /* Apresentação */
+
+  .inicio {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 0;
+      padding: 0;
+      min-height: auto;
+  }
+
+  .imagem {
+      width: 100%;
+      height: 260px;
+      border-radius: 0 0 12px 12px;
+  }
+
+  .apresentacao {
+      width: 100%;
+      max-width: 600px;
+      padding: 30px 24px 20px;
+  }
+
+  .subtitulo {
+      font-size: 12px;
+  }
+
+  h1 {
+      font-size: 34px;
+  }
+
+  .descricao {
+      font-size: 13px;
+      text-align: left;
+  }
+
+  /* Cartões */
+
+  .recursos {
+      margin: 20px 16px 30px;
+      padding: 22px 10px;
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 25px 0;
+  }
+
+  .cartao {
+      padding: 0 12px;
+  }
+
+  .cartao:nth-child(3) {
+      border-left: none;
+  }
+
+  .cartao h2 {
+      font-size: 13px;
+  }
+
+  .cartao p {
+      font-size: 11px;
+  }
+}
+
+
+/* =========================
+ CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 420px) {
+
+  .cabecalho {
+      padding: 10px 12px;
+      gap: 8px;
+  }
+
+  .logo-imagem {
+      width: 110px;
+      height: 48px;
+  }
+
+  .botoes {
+      gap: 5px;
+  }
+
+  .botoes .btn {
+      padding: 8px;
+      font-size: 10px;
+  }
+
+  .imagem {
+      height: 220px;
+  }
+
+  .apresentacao {
+      padding: 25px 18px;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  .recursos {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .cartao {
+      padding: 0 8px;
+  }
+
+  .cartao h2 {
+      font-size: 12px;
+  }
+
+  .cartao p {
+      font-size: 11px;
+  }
 }

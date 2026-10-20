@@ -6,55 +6,45 @@
 const menuToggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
 
-// Abrir e fechar o menu no celular
-menuToggle.addEventListener("click", () => {
+if (menuToggle && menu) {
+    // Abrir e fechar o menu no celular
+    menuToggle.addEventListener("click", () => {
 
-    const aberto = menu.classList.toggle("aberto");
+        const aberto = menu.classList.toggle("aberto");
 
-    menuToggle.textContent = aberto ? "✕" : "☰";
-
-    menuToggle.setAttribute(
-        "aria-expanded",
-        aberto ? "true" : "false"
-    );
-
-    menuToggle.setAttribute(
-        "aria-label",
-        aberto ? "Fechar menu" : "Abrir menu"
-    );
-});
-
-
-// Destacar a opção selecionada
-const links = document.querySelectorAll("#menu a");
-
-links.forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        links.forEach(item => {
-            item.classList.remove("ativo");
-        });
-
-        link.classList.add("ativo");
-
-        // Fechar o menu após selecionar uma opção
-        menu.classList.remove("aberto");
-
-        menuToggle.textContent = "☰";
+        menuToggle.textContent = aberto ? "✕" : "☰";
 
         menuToggle.setAttribute(
             "aria-expanded",
-            "false"
+            aberto ? "true" : "false"
         );
 
         menuToggle.setAttribute(
             "aria-label",
-            "Abrir menu"
+            aberto ? "Fechar menu" : "Abrir menu"
         );
     });
 
-});
+    // Destacar a opção selecionada e fechar o menu no celular
+    const links = document.querySelectorAll("#menu a");
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            links.forEach(item => {
+                item.classList.remove("ativo");
+                item.removeAttribute("aria-current");
+            });
+
+            link.classList.add("ativo");
+            link.setAttribute("aria-current", "page");
+
+            menu.classList.remove("aberto");
+            menuToggle.textContent = "☰";
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Abrir menu");
+        });
+    });
+}
 
 
 /* =========================
@@ -71,82 +61,57 @@ const formulario = document.getElementById("formulario");
 
 const mensagem = document.getElementById("mensagem");
 
+if (modal && tituloModal && textoModal && formulario && mensagem) {
+    // Abrir a janela correspondente ao botão
+    document.querySelectorAll("[data-modal]").forEach(botao => {
+        botao.addEventListener("click", () => {
+            const cadastrar = botao.dataset.modal === "cadastrar";
 
-// Abrir a janela correspondente ao botão
-document.querySelectorAll("[data-modal]").forEach(botao => {
+            if (cadastrar) {
+                tituloModal.textContent = "Crie sua conta";
+                textoModal.textContent =
+                    "Comece a organizar sua rotina de estudos.";
+            } else {
+                tituloModal.textContent = "Bem-vindo de volta!";
+                textoModal.textContent =
+                    "Entre para continuar sua jornada de estudos.";
+            }
 
-    botao.addEventListener("click", () => {
-
-        const cadastrar =
-            botao.dataset.modal === "cadastrar";
-
-        if (cadastrar) {
-
-            tituloModal.textContent = "Crie sua conta";
-
-            textoModal.textContent =
-                "Comece a organizar sua rotina de estudos.";
-
-        } else {
-
-            tituloModal.textContent =
-                "Bem-vindo de volta!";
-
-            textoModal.textContent =
-                "Entre para continuar sua jornada de estudos.";
-
-        }
-
-        formulario.reset();
-
-        mensagem.textContent = "";
-
-        // Abrir a janela
-        modal.showModal();
-
+            formulario.reset();
+            mensagem.textContent = "";
+            modal.showModal();
+        });
     });
 
-});
+    const fechar = document.getElementById("fechar");
 
-
-// Fechar pelo botão X
-document.getElementById("fechar")
-    .addEventListener("click", () => {
-
-        modal.close();
-
-    });
-
-
-// Fechar ao clicar fora da janela
-modal.addEventListener("click", evento => {
-
-    if (evento.target === modal) {
-
-        modal.close();
-
+    if (fechar) {
+        fechar.addEventListener("click", () => {
+            modal.close();
+        });
     }
 
-});
+    // Fechar ao clicar fora da janela
+    modal.addEventListener("click", evento => {
+        if (evento.target === modal) {
+            modal.close();
+        }
+    });
 
-
-/* =========================
-   FORMULÁRIO DEMONSTRATIVO
-========================= */
-
-formulario.addEventListener("submit", evento => {
-
-    evento.preventDefault();
-
-    mensagem.textContent =
-        "Demonstração: para entrar ou cadastrar uma conta real, é necessário conectar um sistema de autenticação.";
-
-});
+    // Formulário demonstrativo
+    formulario.addEventListener("submit", evento => {
+        evento.preventDefault();
+        mensagem.textContent =
+            "Demonstração: para entrar ou cadastrar uma conta real, é necessário conectar um sistema de autenticação.";
+    });
+}
 
 
 /* =========================
    ANO AUTOMÁTICO NO RODAPÉ
 ========================= */
 
-document.getElementById("ano").textContent =
-    new Date().getFullYear();
+const ano = document.getElementById("ano");
+if (ano) {
+    ano.textContent = new Date().getFullYear();
+}

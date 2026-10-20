@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercícios | Trilha de Estudos</title>
     <link rel="stylesheet" href="exercicio.css">
 </head>
 <body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">
+            <img src="logo.jpg"
+                alt="Logotipo Trilha de Estudos"
+                class="logo-imagem">
+        </a>
+
+        <button class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="ENEM.html">Enem</a>
+            <a href="exercicio.html" class="ativo" aria-current="page">Exercícios</a>
+            <a href="tecnicas.html">Técnicas de estudo</a>
+        </nav>
+
+        <div class="botoes">
+            <button class="btn btn-claro" data-modal="entrar">
+                Entrar
+            </button>
+            <button class="btn btn-roxo" data-modal="cadastrar">
+                Cadastrar
+            </button>
+        </div>
+    </header>
+
+    <dialog id="modal">
+        <button type="button"
+            id="fechar"
+            class="fechar"
+            aria-label="Fechar janela">
+            ×
+        </button>
+
+        <img src="logo.jpg"
+            alt="Trilha de Estudos"
+            class="modal-logo">
+
+        <h2 id="titulo-modal">Bem-vindo à Trilha!</h2>
+        <p id="texto-modal">Entre para continuar sua jornada de estudos.</p>
+
+        <form id="formulario">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha" minlength="6" required>
+
+            <button class="btn btn-roxo" type="submit">Continuar</button>
+            <p id="mensagem" aria-live="polite"></p>
+        </form>
+    </dialog>
+
+    <footer>
+        <p>© <span id="ano"></span> Trilha de Estudos. Sua jornada começa aqui.</p>
+    </footer>
+
+    <script src="testizinho.js"></script>
 </body>
+</html>
