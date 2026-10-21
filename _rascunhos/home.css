@@ -1,0 +1,27 @@
+.menu{
+    position: fixed;
+    height: 100px;
+    display: flex;
+    width: 500vmin;
+    background-color: rgb(90, 24, 154);
+ 
+}
+
+
+p {
+   margin: 200px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+a {
+    font-family: Arial;
+    padding: 35px 150px;
+    justify-content: center;
+    text-decoration: none;
+    color: aliceblue;
+}

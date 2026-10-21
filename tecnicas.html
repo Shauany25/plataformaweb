@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Técnicas de estudo | Trilha de Estudos</title>
-    <link rel="stylesheet" href="tecnicas.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tecnicas.css">
 </head>
 <body>
+  <div class="page-decoration decoration-top"></div>
+  <div class="page-decoration decoration-left"></div>
     <header class="cabecalho">
         <a href="index.html" class="logo">
-            <img src="logo.jpg"
+            <img src="assets/images/logo.jpg"
                 alt="Logotipo Trilha de Estudos"
                 class="logo-imagem">
         </a>
@@ -23,7 +26,7 @@
 
         <nav id="menu" aria-label="Menu principal">
             <a href="index.html">Início</a>
-            <a href="ENEM.html">Enem</a>
+            <a href="ENEM.html">ENEM</a>
             <a href="exercicio.html">Exercícios</a>
             <a href="tecnicas.html" class="ativo" aria-current="page">Técnicas de estudo</a>
         </nav>
@@ -38,37 +41,76 @@
         </div>
     </header>
 
-    <dialog id="modal">
-        <button type="button"
-            id="fechar"
-            class="fechar"
-            aria-label="Fechar janela">
-            ×
-        </button>
+  <main class="pagina-tecnicas">
+    <section class="hero-tecnicas" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">APRENDA <span>•</span> ORGANIZE <span>•</span> EVOLUA</p>
+        <h1>Técnicas de estudo<br><span>que realmente funcionam</span></h1>
+          <p class="hero-description">Aqui você encontra métodos, dicas e estratégias que vão te ajudar a aproveitar melhor o seu tempo, memorizar com mais facilidade e alcançar seus objetivos.</p>
+        <a class="primary-btn" href="#tecnicas">Explore as técnicas <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="book book-back"></div><div class="book book-front"><span>✦</span></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div><div class="spark spark-three">✦</div>
+      </div>
+    </section>
 
-        <img src="logo.jpg"
-            alt="Trilha de Estudos"
-            class="modal-logo">
+    <section class="techniques-section" id="tecnicas">
+      <p class="eyebrow">PRINCIPAIS TÉCNICAS</p>
+      <h2>Métodos que fazem a diferença</h2>
+      <p class="section-intro">Conheça algumas das técnicas mais usadas e eficientes para turbinar os seus estudos.</p>
+      <div class="cards-grid">
+        <article class="tech-card">
+          <div class="illustration pomodoro-art" aria-hidden="true">
+            <span class="timer-icon">◷</span><span class="timer-label">25:00</span><i class="ray ray-a"></i><i class="ray ray-b"></i><i class="ray ray-c"></i>
+          </div>
+          <h3>Técnica Pomodoro</h3>
+          <p>Divida seu tempo em blocos de 25 minutos, com pausas curtas. Mais foco, menos cansaço.</p>
+          <button class="learn-more" data-technique="pomodoro">Saiba mais <span>➜</span></button>
+        </article>
+        <article class="tech-card">
+          <div class="illustration mindmap-art" aria-hidden="true">
+            <span class="node node-center"></span><span class="node node-top"></span><span class="node node-left"></span><span class="node node-right"></span><span class="node node-bottom"></span><i class="connector con-a"></i><i class="connector con-b"></i><i class="connector con-c"></i><i class="connector con-d"></i><i class="ray ray-d"></i><i class="ray ray-e"></i>
+          </div>
+          <h3>Mapa Mental</h3>
+          <p>Conecte ideias, visualize o conteúdo e facilite a memorização.</p>
+          <button class="learn-more" data-technique="mapa">Saiba mais <span>➜</span></button>
+        </article>
+        <article class="tech-card">
+          <div class="illustration plan-art" aria-hidden="true">
+            <div class="clipboard"><div class="clip"></div><span>✓</span><span>✓</span><span>✓</span><i></i><i></i><i></i></div><div class="pencil"></div><i class="ray ray-f"></i><i class="ray ray-g"></i>
+          </div>
+          <h3>Planejamento de Estudos</h3>
+          <p>Organize sua rotina, defina metas realistas e acompanhe seu progresso.</p>
+          <button class="learn-more" data-technique="planejamento">Saiba mais <span>➜</span></button>
+        </article>
+      </div>
+    </section>
 
-        <h2 id="titulo-modal">Bem-vindo à Trilha!</h2>
-        <p id="texto-modal">Entre para continuar sua jornada de estudos.</p>
+    <aside class="tip-banner">
+      <div class="tip-icon" aria-hidden="true">♧</div>
+      <div class="tip-divider"></div>
+      <div class="tip-copy"><h3>Dica extra!</h3><p>Não existe uma única técnica que funcione para todo mundo.<br>O segredo é testar, adaptar e descobrir o que funciona melhor para você!</p></div>
+      <p class="handwritten">Seu esforço<br>hoje constrói<br>o seu amanhã! <span>〰</span></p>
+    </aside>
+  </main>
 
-        <form id="formulario">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="seu@email.com" required>
-
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Digite sua senha" minlength="6" required>
-
-            <button class="btn btn-roxo" type="submit">Continuar</button>
-            <p id="mensagem" aria-live="polite"></p>
-        </form>
-    </dialog>
-
-    <footer>
-        <p>© <span id="ano"></span> Trilha de Estudos. Sua jornada começa aqui.</p>
-    </footer>
-
-    <script src="tecnicas.js"></script>
+  <dialog id="modal" aria-labelledby="titulo-modal">
+    <button type="button" id="fechar" class="fechar" aria-label="Fechar janela">×</button>
+    <img src="assets/images/logo.jpg" alt="Trilha de Estudos" class="modal-logo">
+    <h2 id="titulo-modal">Bem-vindo à Trilha!</h2>
+    <p id="texto-modal">Entre para continuar sua jornada de estudos.</p>
+    <form id="formulario">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" placeholder="seu@email.com" required>
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Digite sua senha" minlength="6" required>
+      <button class="btn btn-roxo" type="submit">Continuar</button>
+      <p id="mensagem" aria-live="polite"></p>
+    </form>
+  </dialog>
+  <footer><p>© <span id="ano"></span> Trilha de Estudos. Aprenda no seu ritmo.</p></footer>
+  <script src="assets/js/script.js" defer></script>
 </body>
 </html>

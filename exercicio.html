@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios | Trilha de Estudos</title>
-    <link rel="stylesheet" href="exercicio.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="cabecalho">
         <a href="index.html" class="logo">
-            <img src="logo.jpg"
+            <img src="assets/images/logo.jpg"
                 alt="Logotipo Trilha de Estudos"
                 class="logo-imagem">
         </a>
@@ -23,7 +23,7 @@
 
         <nav id="menu" aria-label="Menu principal">
             <a href="index.html">Início</a>
-            <a href="ENEM.html">Enem</a>
+            <a href="ENEM.html">ENEM</a>
             <a href="exercicio.html" class="ativo" aria-current="page">Exercícios</a>
             <a href="tecnicas.html">Técnicas de estudo</a>
         </nav>
@@ -38,6 +38,35 @@
         </div>
     </header>
 
+    <main class="conteudo-pagina">
+        <p class="subtitulo">PRATIQUE COM INTENÇÃO</p>
+        <h1>Exercícios para transformar estudo em prática.</h1>
+        <p class="descricao">
+            Use questões para identificar o que já aprendeu e o que merece
+            uma nova revisão. Comece por uma área, resolva com calma e anote
+            as dúvidas que aparecerem.
+        </p>
+
+        <section class="grade-conteudo" aria-label="Sugestões para organizar os exercícios">
+            <article class="bloco-conteudo">
+                <h2>Escolha uma área</h2>
+                <p>Separe as questões por Linguagens, Matemática, Ciências da Natureza ou Ciências Humanas para estudar com foco.</p>
+            </article>
+            <article class="bloco-conteudo">
+                <h2>Resolva antes de consultar</h2>
+                <p>Registre seu raciocínio e tente concluir cada questão antes de conferir qualquer material de apoio.</p>
+            </article>
+            <article class="bloco-conteudo">
+                <h2>Revise os erros</h2>
+                <p>Entender por que uma alternativa não funciona ajuda a corrigir lacunas e evita repetir o mesmo erro.</p>
+            </article>
+            <article class="bloco-conteudo">
+                <h2>Acompanhe seu progresso</h2>
+                <p>Anote a matéria, o assunto e as dúvidas que surgiram para planejar uma revisão objetiva.</p>
+            </article>
+        </section>
+    </main>
+
     <dialog id="modal">
         <button type="button"
             id="fechar"
@@ -46,7 +75,7 @@
             ×
         </button>
 
-        <img src="logo.jpg"
+        <img src="assets/images/logo.jpg"
             alt="Trilha de Estudos"
             class="modal-logo">
 
@@ -69,6 +98,6 @@
         <p>© <span id="ano"></span> Trilha de Estudos. Sua jornada começa aqui.</p>
     </footer>
 
-    <script src="exercicio.js"></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 </html>
