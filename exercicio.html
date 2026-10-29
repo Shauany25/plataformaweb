@@ -38,36 +38,150 @@
         </div>
     </header>
 
-    <main class="conteudo-pagina">
-        <p class="subtitulo">PRATIQUE COM INTENÇÃO</p>
-        <h1>Exercícios para transformar estudo em prática.</h1>
-        <p class="descricao">
-            Use questões para identificar o que já aprendeu e o que merece
-            uma nova revisão. Comece por uma área, resolva com calma e anote
-            as dúvidas que aparecerem.
-        </p>
+    <main class="pagina">
 
-        <section class="grade-conteudo" aria-label="Sugestões para organizar os exercícios">
-            <article class="bloco-conteudo">
-                <h2>Escolha uma área</h2>
-                <p>Separe as questões por Linguagens, Matemática, Ciências da Natureza ou Ciências Humanas para estudar com foco.</p>
-            </article>
-            <article class="bloco-conteudo">
-                <h2>Resolva antes de consultar</h2>
-                <p>Registre seu raciocínio e tente concluir cada questão antes de conferir qualquer material de apoio.</p>
-            </article>
-            <article class="bloco-conteudo">
-                <h2>Revise os erros</h2>
-                <p>Entender por que uma alternativa não funciona ajuda a corrigir lacunas e evita repetir o mesmo erro.</p>
-            </article>
-            <article class="bloco-conteudo">
-                <h2>Acompanhe seu progresso</h2>
-                <p>Anote a matéria, o assunto e as dúvidas que surgiram para planejar uma revisão objetiva.</p>
-            </article>
+        <!-- Área principal das questões -->
+        <section class="questoes">
+
+            <div class="titulo">
+                <span class="voltar">‹</span>
+                <h1>Questões</h1>
+            </div>
+
+            <div class="informacoes">
+                <div class="categoria">
+                    <span class="icone-livro">▤</span>
+                    Linguagens e Códigos
+                </div>
+
+                <div class="progresso">
+                    <p id="numeroQuestao">Questão 3 de 10</p>
+                    <div class="barra">
+                        <div class="barra-preenchida" id="barraProgresso"></div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="enunciado">
+                <p>
+                    (ENEM) A charge apresentada a seguir faz uma crítica
+                    a um comportamento comum na sociedade contemporânea.
+                    Qual é o principal ponto de crítica da charge?
+                </p>
+
+                <img
+                    src="charge.png"
+                    alt="Charge sobre a conexão com as redes sociais e a solidão"
+                    class="imagem-questao"
+                >
+            </div>
+
+            <form id="formQuestao">
+
+                <label class="alternativa">
+                    <input type="radio" name="resposta" value="A">
+                    <span class="letra">A</span>
+                    <span class="texto">
+                        O uso excessivo da tecnologia para fins de estudo.
+                    </span>
+                </label>
+
+                <label class="alternativa">
+                    <input type="radio" name="resposta" value="B">
+                    <span class="letra">B</span>
+                    <span class="texto">
+                        A facilidade de comunicação entre as pessoas.
+                    </span>
+                </label>
+
+                <label class="alternativa selecionada">
+                    <input type="radio" name="resposta" value="C" checked>
+                    <span class="letra">C</span>
+                    <span class="texto">
+                        O isolamento social causado pelas redes sociais.
+                    </span>
+                </label>
+
+                <label class="alternativa">
+                    <input type="radio" name="resposta" value="D">
+                    <span class="letra">D</span>
+                    <span class="texto">
+                        A falta de acesso à internet em áreas rurais.
+                    </span>
+                </label>
+
+                <label class="alternativa">
+                    <input type="radio" name="resposta" value="E">
+                    <span class="letra">E</span>
+                    <span class="texto">
+                        O aumento do consumo de informação na internet.
+                    </span>
+                </label>
+
+                <div class="acoes">
+                    <button type="button" id="btnResponder">
+                        Confirmar resposta
+                    </button>
+                    <button type="button" id="btnProxima">
+                        Próxima questão →
+                    </button>
+                </div>
+
+                <p id="resultado" aria-live="polite"></p>
+
+            </form>
+
         </section>
+
+        <!-- Painel lateral direito -->
+        <aside class="painel">
+
+            <div class="cartao tempo">
+                <div class="cabecalho-cartao">
+                    <span class="icone-relogio">◷</span>
+                    <span>Tempo restante</span>
+                </div>
+
+                <div id="cronometro">25:00</div>
+            </div>
+
+            <div class="cartao conteudos">
+                <h2>▤ &nbsp; Conteúdos de Português</h2>
+
+                <ul>
+                    <li><button class="topico-conteudo" type="button" data-topico="interpretacao" aria-pressed="false"><span>Interpretação de textos</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="figuras" aria-pressed="false"><span>Figuras de linguagem</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="tipos" aria-pressed="false"><span>Tipos de texto</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="classes" aria-pressed="false"><span>Classes de palavras</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="pontuacao" aria-pressed="false"><span>Pontuação</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="acentuacao" aria-pressed="false"><span>Acentuação gráfica</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="ortografia" aria-pressed="false"><span>Ortografia</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="concordancia" aria-pressed="false"><span>Concordância nominal e verbal</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="regencia" aria-pressed="false"><span>Regência verbal e nominal</span><b aria-hidden="true">›</b></button></li>
+                    <li><button class="topico-conteudo" type="button" data-topico="literatura" aria-pressed="false"><span>Literatura (movimentos e autores)</span><b aria-hidden="true">›</b></button></li>
+                </ul>
+                <div id="detalheTopico" class="detalhe-topico" aria-live="polite">
+                    Selecione um assunto para ver um resumo.
+                </div>
+            </div>
+
+            <div class="cartao motivacao">
+                <div class="icone-lampada">♧</div>
+                <h2>Você consegue!</h2>
+                <p>
+                    Cada conteúdo é um passo<br>
+                    mais perto do seu objetivo.
+                </p>
+                <div class="traco"></div>
+            </div>
+
+        </aside>
+
     </main>
 
-    <dialog id="modal">
+    <dialog id="modal" aria-labelledby="titulo-modal">
         <button type="button"
             id="fechar"
             class="fechar"
@@ -87,16 +201,13 @@
             <input type="email" id="email" placeholder="seu@email.com" required>
 
             <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Digite sua senha" minlength="6" required>
+            <input type="password" id="senha" placeholder="Digite sua senha"
+                minlength="6" required>
 
             <button class="btn btn-roxo" type="submit">Continuar</button>
             <p id="mensagem" aria-live="polite"></p>
         </form>
     </dialog>
-
-    <footer>
-        <p>© <span id="ano"></span> Trilha de Estudos. Sua jornada começa aqui.</p>
-    </footer>
 
     <script src="assets/js/script.js" defer></script>
 </body>
