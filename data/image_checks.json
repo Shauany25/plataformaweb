@@ -1,0 +1,1458 @@
+{
+  "https://enem.dev/2009/questions/126/b72a01dc-1bf6-4dea-96b7-31e38144d132.jpg": {
+    "status": "available",
+    "local": "/assets/exam/b5f11bd71b2d5acc07f222d2.jpg"
+  },
+  "https://enem.dev/2009/questions/153/0aaaf8f3-e87d-435c-901f-40781e411de9.jpg": {
+    "status": "available",
+    "local": "/assets/exam/5bbb22e50d5f27817c86bc87.jpg"
+  },
+  "https://enem.dev/2009/questions/159/09fc439a-a96c-466c-a8a7-0928313480ae.jpg": {
+    "status": "available",
+    "local": "/assets/exam/f1f55d90ceb0132485a8465d.jpg"
+  },
+  "https://enem.dev/2009/questions/159/c49b9a82-ca97-42ec-89a8-0d08a9c8abd3.jpg": {
+    "status": "available",
+    "local": "/assets/exam/f0b7ce5c2078f0c4bfe60793.jpg"
+  },
+  "https://enem.dev/2009/questions/173/e9b7219c-4c2a-459d-a1ce-d4e7a3ec2c25.jpg": {
+    "status": "available",
+    "local": "/assets/exam/72f059afefc84865626b28c5.jpg"
+  },
+  "https://enem.dev/2009/questions/29/8b64e737-d832-4707-9ffe-9eb28b3f7b1c.jpg": {
+    "status": "available",
+    "local": "/assets/exam/9ca5a055bc461625f99a3529.jpg"
+  },
+  "https://enem.dev/2009/questions/36/14126a76-2d70-4112-bcd2-8f71e7a35eb6.jpg": {
+    "status": "available",
+    "local": "/assets/exam/93084d00be8a99ca54b7d54b.jpg"
+  },
+  "https://enem.dev/2009/questions/36/7a0856d3-7bbb-4c7e-8ca2-fb1ba38e004a.jpg": {
+    "status": "available",
+    "local": "/assets/exam/cf11ff68118d6ae848dfab40.jpg"
+  },
+  "https://enem.dev/2009/questions/36/7eaa6df0-91be-4cc0-aa1d-84d854129628.jpg": {
+    "status": "available",
+    "local": "/assets/exam/6c58cfdcfc6550b32fc9fd83.jpg"
+  },
+  "https://enem.dev/2009/questions/36/a17be85c-ff54-499f-92ff-3a224fe7928d.jpg": {
+    "status": "available",
+    "local": "/assets/exam/483e7cbfdbe3cc0a94af438a.jpg"
+  },
+  "https://enem.dev/2009/questions/36/d5883437-d621-4f4e-8d6d-7f2d7e4bdb42.jpg": {
+    "status": "available",
+    "local": "/assets/exam/b30362b94187f0cffb6848d8.jpg"
+  },
+  "https://enem.dev/2009/questions/77/0148040b-fcc5-4e8c-a19f-4c41b9041a27.jpg": {
+    "status": "available",
+    "local": "/assets/exam/895c911cc7a62f76441b446f.jpg"
+  },
+  "https://enem.dev/2010/questions/105/465a663a-3aad-490d-9ea3-f727ebd02358.jpg": {
+    "status": "available",
+    "local": "/assets/exam/65b69ea382b254905dd16332.jpg"
+  },
+  "https://enem.dev/2010/questions/170/b91052ca-dc24-45b9-b953-9aa426b42f1a.jpg": {
+    "status": "available",
+    "local": "/assets/exam/3fa06dc5724ff77241b549e3.jpg"
+  },
+  "https://enem.dev/2010/questions/178/f167ae80-7a92-4a85-8c25-bd0738dba84d.jpg": {
+    "status": "available",
+    "local": "/assets/exam/fc51529b525b6f92d4e859a9.jpg"
+  },
+  "https://enem.dev/2010/questions/73/77d2c218-f8ec-4aba-83d2-701db70cdd89.jpg": {
+    "status": "available",
+    "local": "/assets/exam/695cee795b8a62f9fa16a39c.jpg"
+  },
+  "https://enem.dev/2010/questions/75/4cf500ff-ecc0-4f24-b1b2-a9055a92d633.jpg": {
+    "status": "available",
+    "local": "/assets/exam/acdcaba799145454332bd32f.jpg"
+  },
+  "https://enem.dev/2010/questions/82/4176d2dd-3976-430c-85f8-68f6380b5dbb.jpg": {
+    "status": "available",
+    "local": "/assets/exam/de2d2ed4db226de2a942b5e2.jpg"
+  },
+  "https://enem.dev/2010/questions/82/8560bd4b-a670-4304-b5a1-8a6003323e93.jpg": {
+    "status": "available",
+    "local": "/assets/exam/f17a7ebaf0ffed801cbf372d.jpg"
+  },
+  "https://enem.dev/2010/questions/83/8b75906e-8371-440b-b712-7c31b6241295.png": {
+    "status": "available",
+    "local": "/assets/exam/40dbd982af3cde17c57d6034.png"
+  },
+  "https://enem.dev/2010/questions/84/3302afe8-7fca-45b0-b1c3-59e696c5865f.png": {
+    "status": "available",
+    "local": "/assets/exam/b6ef6fe7d01deb750f6e61d9.png"
+  },
+  "https://enem.dev/2010/questions/84/6a342700-2e07-4f06-92e9-e96e35418f2b.png": {
+    "status": "available",
+    "local": "/assets/exam/22eb6e1f55aa6564a9e9915b.png"
+  },
+  "https://enem.dev/2010/questions/84/ae9996a3-2b96-48b9-9fb0-63529cfd6059.png": {
+    "status": "available",
+    "local": "/assets/exam/3fc6c8d5de9c7d3a59bc1810.png"
+  },
+  "https://enem.dev/2010/questions/84/c79b38d7-6730-4f9c-9ecd-1afe898f868e.png": {
+    "status": "available",
+    "local": "/assets/exam/04283204bf15e837b8f8d96b.png"
+  },
+  "https://enem.dev/2010/questions/84/e9a2a50f-7259-413d-a68e-748f26f9bd93.png": {
+    "status": "available",
+    "local": "/assets/exam/9cc7baceaa08355f5eb9cfc1.png"
+  },
+  "https://enem.dev/2011/questions/100/c13c970e-9da9-430f-8c86-ed5dba7b2082.png": {
+    "status": "available",
+    "local": "/assets/exam/c83ec197dcfc80e1bde153b1.png"
+  },
+  "https://enem.dev/2011/questions/11/bcc2c6b7-572b-4b88-9071-d9769f02e339.jpg": {
+    "status": "available",
+    "local": "/assets/exam/9bb92bf64b3c0752d794af06.jpg"
+  },
+  "https://enem.dev/2011/questions/114/f1377ead-441b-47bf-a1f3-25e20beac813.png": {
+    "status": "available",
+    "local": "/assets/exam/05f1ab99cc20a85daa32a9ed.png"
+  },
+  "https://enem.dev/2011/questions/123/d8350fd2-dd7d-42b4-8be8-3b2892dcf629.png": {
+    "status": "available",
+    "local": "/assets/exam/1d5271c836800995a1516201.png"
+  },
+  "https://enem.dev/2011/questions/129/5e1eed51-8dca-463c-8587-c0578dda1639.png": {
+    "status": "available",
+    "local": "/assets/exam/f46d04df2d1df4b06b7eea90.png"
+  },
+  "https://enem.dev/2011/questions/134/53cd2eeb-a4e4-4101-aab7-f57834e1d5c1.png": {
+    "status": "available",
+    "local": "/assets/exam/eff27b467a795eb18378adb1.png"
+  },
+  "https://enem.dev/2011/questions/14/0ffc7161-04f7-43a3-a275-99f445ccfcfb.jpg": {
+    "status": "available",
+    "local": "/assets/exam/1dd1ba03dc285947e5520eeb.jpg"
+  },
+  "https://enem.dev/2011/questions/43/51607de2-1ed6-44e3-ad79-cd4c1d6237c6.png": {
+    "status": "available",
+    "local": "/assets/exam/2f219cfa824faee19c0887b1.png"
+  },
+  "https://enem.dev/2011/questions/81/821b4e4b-ae24-40d1-a0fd-149f6b8ce34a.jpg": {
+    "status": "available",
+    "local": "/assets/exam/cb0ab02d840383441f94a21e.jpg"
+  },
+  "https://enem.dev/2011/questions/86/6df25b83-4479-4e34-8d15-a1beb7082020.png": {
+    "status": "available",
+    "local": "/assets/exam/17b7de7229303b0f287e9309.png"
+  },
+  "https://enem.dev/2012/questions/116/13c70287-9094-4ed9-ac83-833d323390a4.png": {
+    "status": "available",
+    "local": "/assets/exam/207e897e8974b19798632a2d.png"
+  },
+  "https://enem.dev/2012/questions/121/0906b53b-6578-4bbf-9544-7d5946fec2ae.png": {
+    "status": "available",
+    "local": "/assets/exam/3f8293dcccd6945249885491.png"
+  },
+  "https://enem.dev/2012/questions/131/b9d98d9e-3a0b-4ec3-88f4-05fc7d517e47.png": {
+    "status": "available",
+    "local": "/assets/exam/01de88c2aa9a065ab0cf8bc6.png"
+  },
+  "https://enem.dev/2012/questions/137/232bcbe6-caaa-44af-a96a-317187b14850.png": {
+    "status": "available",
+    "local": "/assets/exam/e0f4e6463ac49b8a5b387d8d.png"
+  },
+  "https://enem.dev/2012/questions/137/5720ed4d-1330-4139-8e45-4161901d1ed3.png": {
+    "status": "available",
+    "local": "/assets/exam/9c671151625174dd26798936.png"
+  },
+  "https://enem.dev/2012/questions/146/f3712744-381c-4ed8-8f20-86b3e9a52be9.png": {
+    "status": "available",
+    "local": "/assets/exam/d9a59a84168f20a318d247d7.png"
+  },
+  "https://enem.dev/2012/questions/19/183e7c66-05d7-4a2a-b22b-1b27eb79153f.png": {
+    "status": "available",
+    "local": "/assets/exam/048c13d365909efc4465133d.png"
+  },
+  "https://enem.dev/2012/questions/58/2bf52513-1616-418a-ac16-9297567f554c.jpg": {
+    "status": "available",
+    "local": "/assets/exam/89987a2c4131b942d98cdfa7.jpg"
+  },
+  "https://enem.dev/2012/questions/78/19c51806-866c-4272-9984-258e22b08a90.png": {
+    "status": "available",
+    "local": "/assets/exam/1d20c7cc0ccf8a5c8a64b5dd.png"
+  },
+  "https://enem.dev/2012/questions/78/47d7b6a2-f129-4456-9946-966f51f21323.png": {
+    "status": "available",
+    "local": "/assets/exam/f42fbff4d369da144e952138.png"
+  },
+  "https://enem.dev/2012/questions/78/642f46b9-6a48-4788-9c92-c6340a3c832e.png": {
+    "status": "available",
+    "local": "/assets/exam/05d9d990a722b1ba87c8fa6b.png"
+  },
+  "https://enem.dev/2012/questions/78/75781572-77f0-459a-b554-17642fa454d9.png": {
+    "status": "available",
+    "local": "/assets/exam/61d9f376139e1b8506fbebbe.png"
+  },
+  "https://enem.dev/2012/questions/78/8306a37e-6f93-45c8-984a-6190441316d6.png": {
+    "status": "available",
+    "local": "/assets/exam/a582d4c2a744f0245d5aed1f.png"
+  },
+  "https://enem.dev/2013/questions/114/aac80934-559a-4244-bca8-133d8a9b4aa4.png": {
+    "status": "available",
+    "local": "/assets/exam/de1ebe34bec7c9edaf301254.png"
+  },
+  "https://enem.dev/2013/questions/119/01e29074-f21d-4f84-a197-0f5b11f2f053.png": {
+    "status": "available",
+    "local": "/assets/exam/f32e70efb09217086f6bf826.png"
+  },
+  "https://enem.dev/2013/questions/127/6c4ad328-1883-4e39-a89b-cd5369e58862.png": {
+    "status": "available",
+    "local": "/assets/exam/bf512796b70897ec77a05087.png"
+  },
+  "https://enem.dev/2013/questions/20/77cde162-61ef-4993-b7d9-b1f1f97ef523.png": {
+    "status": "available",
+    "local": "/assets/exam/a6e259c83598150b14de93d2.png"
+  },
+  "https://enem.dev/2013/questions/33/90593acb-2106-40e9-8a7a-c4045b333394.jpg": {
+    "status": "available",
+    "local": "/assets/exam/b889c69a642025fe96d59546.jpg"
+  },
+  "https://enem.dev/2013/questions/33/ffa5354f-47ee-4462-b8e4-5cedcb6a0f85.jpg": {
+    "status": "available",
+    "local": "/assets/exam/1908c13aef8f0f909fed8d02.jpg"
+  },
+  "https://enem.dev/2013/questions/49/86572122-3741-461a-b45c-123d565ad9d8.png": {
+    "status": "available",
+    "local": "/assets/exam/d78fb0ca1e60eeb2d9de3883.png"
+  },
+  "https://enem.dev/2013/questions/55/0eb7cde6-4cb0-41e1-be62-f1b89da96fe8.png": {
+    "status": "available",
+    "local": "/assets/exam/133a50b09e331d0e7a4c826a.png"
+  },
+  "https://enem.dev/2013/questions/55/37c4ce43-ffb7-4f90-ab8b-1c60dcdc77c4.png": {
+    "status": "available",
+    "local": "/assets/exam/97854c6ec442425fde865655.png"
+  },
+  "https://enem.dev/2013/questions/55/393900eb-c7a3-4029-81aa-9d239b245aaf.png": {
+    "status": "available",
+    "local": "/assets/exam/1e6ff897e3dc7c8cd6c46641.png"
+  },
+  "https://enem.dev/2013/questions/55/8c70acab-8fef-4ead-b349-d2a1d8b76581.png": {
+    "status": "available",
+    "local": "/assets/exam/d7f76c9f91759731c6fa7269.png"
+  },
+  "https://enem.dev/2013/questions/55/c4987b7b-86b9-4639-b00f-411f9ff2a79b.png": {
+    "status": "available",
+    "local": "/assets/exam/f54023dbedfce22b4eca851d.png"
+  },
+  "https://enem.dev/2013/questions/56/39abafba-13f7-4385-89b6-9d4edaab466e.png": {
+    "status": "available",
+    "local": "/assets/exam/4ff443a9d53d086cf9323501.png"
+  },
+  "https://enem.dev/2013/questions/58/38c0fe1e-7a8d-4885-9063-41293737736e.png": {
+    "status": "available",
+    "local": "/assets/exam/ee7ca4b93c9a99e4fb7f4ec5.png"
+  },
+  "https://enem.dev/2013/questions/58/58f45038-df18-414c-98fb-96d39a9c5375.png": {
+    "status": "available",
+    "local": "/assets/exam/72f7c0222db7ff58cf806235.png"
+  },
+  "https://enem.dev/2013/questions/58/6abc6fe2-a2e1-4b92-8bcb-91c6b7d1dc59.png": {
+    "status": "available",
+    "local": "/assets/exam/ecda20340c8ac014441ab241.png"
+  },
+  "https://enem.dev/2013/questions/58/e50f19c6-138d-4022-8599-425f03da1ad6.png": {
+    "status": "available",
+    "local": "/assets/exam/09635a037ff0890348741996.png"
+  },
+  "https://enem.dev/2013/questions/58/edff774e-e1e7-4535-ae5f-0d6a735ce2ac.png": {
+    "status": "available",
+    "local": "/assets/exam/5237e43635a354bb30ee5312.png"
+  },
+  "https://enem.dev/2013/questions/65/bae12c44-190a-4788-bdaa-922272848928.png": {
+    "status": "available",
+    "local": "/assets/exam/b143748e15d4ad2cae073642.png"
+  },
+  "https://enem.dev/2013/questions/87/30438e52-cbce-4c18-bda0-5aa8ae08f2d9.png": {
+    "status": "available",
+    "local": "/assets/exam/563b9d2d4c4175ffd7591208.png"
+  },
+  "https://enem.dev/2013/questions/87/36abe86d-fe7d-4400-9fee-99de6602a337.png": {
+    "status": "available",
+    "local": "/assets/exam/ada82cd5b3a90878ca8f7c5f.png"
+  },
+  "https://enem.dev/2013/questions/87/4f8b0ada-6d51-47a7-a70e-e34ffcc300a7.png": {
+    "status": "available",
+    "local": "/assets/exam/9c4b0af3cfc10b2e2bee5e7d.png"
+  },
+  "https://enem.dev/2013/questions/87/5a456a8a-c6a9-4a62-b94a-d623937af626.png": {
+    "status": "available",
+    "local": "/assets/exam/ca8bca693dc4e4ba329e4826.png"
+  },
+  "https://enem.dev/2013/questions/87/d3ed2f2f-5c06-4aeb-9f24-5d76bb01a111.png": {
+    "status": "available",
+    "local": "/assets/exam/d01dd191fea1c5a14f2a7707.png"
+  },
+  "https://enem.dev/2014/questions/105/c3c3913e-0f62-4c09-ba7f-702ab87e0c31.png": {
+    "status": "available",
+    "local": "/assets/exam/452a6e33ec9687cb586a9a0d.png"
+  },
+  "https://enem.dev/2014/questions/122/ff1bfb0f-0911-497a-8a39-2bc0a9741a72.png": {
+    "status": "available",
+    "local": "/assets/exam/737337499216f3111bca9ee4.png"
+  },
+  "https://enem.dev/2014/questions/145/764cd798-3b7c-4607-9287-1364cfc323dc.png": {
+    "status": "available",
+    "local": "/assets/exam/18b87486705d3469d4789976.png"
+  },
+  "https://enem.dev/2014/questions/145/b3e30fe0-d8fb-4cca-abc7-8d2723b68bcc.png": {
+    "status": "available",
+    "local": "/assets/exam/7086f67163238555186f99f2.png"
+  },
+  "https://enem.dev/2014/questions/145/e22c424c-ede8-4fc6-9030-a7293c0164df.png": {
+    "status": "available",
+    "local": "/assets/exam/6f918668924661cdc1b74c43.png"
+  },
+  "https://enem.dev/2014/questions/145/f987fd5b-b6b5-44ae-a434-054759e16220.png": {
+    "status": "available",
+    "local": "/assets/exam/e2bc22006e9280902ce17820.png"
+  },
+  "https://enem.dev/2014/questions/145/fb982b59-0d4c-4072-a3f3-0d07ba073215.png": {
+    "status": "available",
+    "local": "/assets/exam/1945a606b2e2835ddedc3bf7.png"
+  },
+  "https://enem.dev/2014/questions/16/12b058f3-7cb7-4696-a970-290a425b3f89.jpg": {
+    "status": "available",
+    "local": "/assets/exam/345396c041451247f64981c1.jpg"
+  },
+  "https://enem.dev/2014/questions/16/5f786541-30d5-4f3e-bd7e-564422ceea49.jpg": {
+    "status": "available",
+    "local": "/assets/exam/ea5d41839518fffb907ae143.jpg"
+  },
+  "https://enem.dev/2014/questions/16/aab0e104-3d86-451f-97c0-57e861429550.jpg": {
+    "status": "available",
+    "local": "/assets/exam/d0f69c0e958b9ad95a4e5338.jpg"
+  },
+  "https://enem.dev/2014/questions/16/bf96d194-f866-48b9-8c3b-1b7291b93185.jpg": {
+    "status": "available",
+    "local": "/assets/exam/4f24d935603571d99bdd6048.jpg"
+  },
+  "https://enem.dev/2014/questions/16/c56d2864-d05d-47e8-8f52-828fb4ee72ec.jpg": {
+    "status": "available",
+    "local": "/assets/exam/53946b5e7a8f909ea12719ec.jpg"
+  },
+  "https://enem.dev/2014/questions/25/1428c6bc-bcd0-452d-8bd6-6600b3f7bd77.png": {
+    "status": "available",
+    "local": "/assets/exam/f2bf4de15c4f2d6a7e9f4b02.png"
+  },
+  "https://enem.dev/2014/questions/90/6f80414f-5fcb-4eac-8dac-2c6c829c91fe.png": {
+    "status": "available",
+    "local": "/assets/exam/2e8175f01491fc3136f3fec1.png"
+  },
+  "https://enem.dev/2015/questions/108/a5767756-3955-4d61-84c0-c1366a95eebf.jpg": {
+    "status": "available",
+    "local": "/assets/exam/44670459e7f5ba7f3a6806bd.jpg"
+  },
+  "https://enem.dev/2015/questions/155/b5b18afc-ec22-42af-9b29-474d822405e7.png": {
+    "status": "available",
+    "local": "/assets/exam/ef3f208abde4369e5ed25e5e.png"
+  },
+  "https://enem.dev/2015/questions/19/a709cdad-853e-4687-bebd-a7bb63752225.jpg": {
+    "status": "available",
+    "local": "/assets/exam/2809b76dd0300ad1352e478a.jpg"
+  },
+  "https://enem.dev/2015/questions/31/7bd21c12-998c-427f-9b47-e7a06c817ac0.jpg": {
+    "status": "available",
+    "local": "/assets/exam/330534e639da61f0cc398a4a.jpg"
+  },
+  "https://enem.dev/2015/questions/36/c58775d8-65ba-4443-90d1-f95cc163488b.jpg": {
+    "status": "available",
+    "local": "/assets/exam/0dd85fdaf71904e57cdf7182.jpg"
+  },
+  "https://enem.dev/2015/questions/46/be0a7ac3-da20-4e80-afe9-52a7f0062bcc.png": {
+    "status": "available",
+    "local": "/assets/exam/6716cbd7f07ad5f3d421691e.png"
+  },
+  "https://enem.dev/2015/questions/71/92259437-a0d4-4aef-89fb-239bfdf8d060.png": {
+    "status": "available",
+    "local": "/assets/exam/854ed58c59b1a7ea3aa1dc31.png"
+  },
+  "https://enem.dev/2015/questions/82/2770dcce-7280-4fcb-8da9-0ef2e43f53b7.png": {
+    "status": "available",
+    "local": "/assets/exam/7c899289e8c1249438c31a85.png"
+  },
+  "https://enem.dev/2015/questions/84/f01c8f0e-3be3-4688-9b93-b14f6e4abd76.png": {
+    "status": "available",
+    "local": "/assets/exam/2b2dab3f5416605f75356f6d.png"
+  },
+  "https://enem.dev/2016/questions/114/d732fa5d-e5ff-49b5-a010-a4e001df8d25.png": {
+    "status": "available",
+    "local": "/assets/exam/2babb694f22ae17a852edbe5.png"
+  },
+  "https://enem.dev/2016/questions/138/484f68f6-18c6-4987-b92e-58c44f18b07b.png": {
+    "status": "available",
+    "local": "/assets/exam/b539d1e58ac3e94338d52d3a.png"
+  },
+  "https://enem.dev/2016/questions/139/c748d750-cec7-42af-8fb1-4690aee8d9a8.png": {
+    "status": "available",
+    "local": "/assets/exam/c0423bbe291ac4a6ab7ee41c.png"
+  },
+  "https://enem.dev/2016/questions/147/3f06a01b-fdec-4bb2-affb-45cf27b74bfd.png": {
+    "status": "available",
+    "local": "/assets/exam/6d074a22aaef03b88b649fd0.png"
+  },
+  "https://enem.dev/2016/questions/147/6eea6a39-3b2d-4b06-8f22-3fb8b3354049.png": {
+    "status": "available",
+    "local": "/assets/exam/62d0f28851a973af9b98790f.png"
+  },
+  "https://enem.dev/2016/questions/147/9ed4324a-682b-4a89-b93b-ce8035218bc6.png": {
+    "status": "available",
+    "local": "/assets/exam/95830ececbb53cce36593d96.png"
+  },
+  "https://enem.dev/2016/questions/147/b312c7db-dd7d-4633-af66-83c020de8340.png": {
+    "status": "available",
+    "local": "/assets/exam/4f588c308eae5be86a7cb32c.png"
+  },
+  "https://enem.dev/2016/questions/147/e5274b9d-58c1-47d8-80c4-9ba8ea7db58f.png": {
+    "status": "available",
+    "local": "/assets/exam/7a1bad42281d4ccf3a59e441.png"
+  },
+  "https://enem.dev/2016/questions/152/b9f02657-5528-4c2c-8687-9a8db0f4a232.png": {
+    "status": "available",
+    "local": "/assets/exam/ca8af572f00e2ffd9713342b.png"
+  },
+  "https://enem.dev/2016/questions/168/2e697e5f-81cd-4458-877d-a18c3082d73e.png": {
+    "status": "available",
+    "local": "/assets/exam/ae10cd4d88c24b871cb04aca.png"
+  },
+  "https://enem.dev/2016/questions/168/4afeb4f7-4f38-4401-b874-8386eef6b19c.png": {
+    "status": "available",
+    "local": "/assets/exam/8b62bb011e7d8f4026d5a46c.png"
+  },
+  "https://enem.dev/2016/questions/168/71faed84-26d8-4498-af67-d92759a194fc.png": {
+    "status": "available",
+    "local": "/assets/exam/8f322ea9031a3d2ee53e775c.png"
+  },
+  "https://enem.dev/2016/questions/168/81a766be-84c7-4074-ac24-ee3ef4a57a20.png": {
+    "status": "available",
+    "local": "/assets/exam/835692976473787d3cfe12f3.png"
+  },
+  "https://enem.dev/2016/questions/168/9c64c46b-2045-4d24-b6fe-4910a0fa92c6.png": {
+    "status": "available",
+    "local": "/assets/exam/dcbbbe50661f78387b4cd9d5.png"
+  },
+  "https://enem.dev/2016/questions/169/2a3b1883-983c-4974-9c15-d43c42742ae4.png": {
+    "status": "available",
+    "local": "/assets/exam/ec25a98b180c4303044eb47e.png"
+  },
+  "https://enem.dev/2016/questions/52/420bf048-0e4c-44bb-919d-ac9b6cba9a0b.png": {
+    "status": "available",
+    "local": "/assets/exam/726f5025a8fa7ece00eafbf1.png"
+  },
+  "https://enem.dev/2016/questions/52/bda784c1-e142-4cdc-84dc-5ebc4a507431.png": {
+    "status": "available",
+    "local": "/assets/exam/cfa3c9c8ff5e493d50cdc1f6.png"
+  },
+  "https://enem.dev/2016/questions/58/99a5812b-100d-4591-a496-2762c9cac26f.png": {
+    "status": "available",
+    "local": "/assets/exam/8c806a97b0054796ae12744d.png"
+  },
+  "https://enem.dev/2016/questions/58/e7997a8a-16ac-40aa-8909-dbbd285ffade.png": {
+    "status": "available",
+    "local": "/assets/exam/6a4c3c47c30d9cf160703e9d.png"
+  },
+  "https://enem.dev/2016/questions/59/87747823-81f1-4892-b49e-862c699ea63b.png": {
+    "status": "available",
+    "local": "/assets/exam/4a407390338c1b90ace34534.png"
+  },
+  "https://enem.dev/2016/questions/59/c3cf30b9-4fc9-45a6-955f-d0f99181dd7c.png": {
+    "status": "available",
+    "local": "/assets/exam/1293fb3d017ef0e8aef308c3.png"
+  },
+  "https://enem.dev/2016/questions/72/99b15188-22b8-4a01-a936-bb8307f50c4c.png": {
+    "status": "available",
+    "local": "/assets/exam/1b68ee051dfef2725f54cc09.png"
+  },
+  "https://enem.dev/2016/questions/76/d04791bb-ac0a-454a-b9c3-d52906fd5345.png": {
+    "status": "available",
+    "local": "/assets/exam/c2d90f6eee424bf96f888412.png"
+  },
+  "https://enem.dev/2016/questions/79/0716200b-a539-4ee2-937d-3ba40b15b4b4.jpg": {
+    "status": "available",
+    "local": "/assets/exam/38f193a030c8d2218e3ff857.jpg"
+  },
+  "https://enem.dev/2017/questions/103/5885e74b-985f-472a-83a9-525ec6b3e918.jpg": {
+    "status": "available",
+    "local": "/assets/exam/9ef6bf4032492432e0eb5abe.jpg"
+  },
+  "https://enem.dev/2017/questions/107/d7140b05-a8ee-4974-a104-7a6097572b07.jpg": {
+    "status": "available",
+    "local": "/assets/exam/84bf8eb9be7128397c6aaca6.jpg"
+  },
+  "https://enem.dev/2017/questions/110/eb184743-fe6a-4dd1-9f70-81a4885f121f.jpg": {
+    "status": "available",
+    "local": "/assets/exam/705b67dc334df811a0d24c1b.jpg"
+  },
+  "https://enem.dev/2017/questions/112/098eea36-23cb-47c4-a57a-e7fddbd056eb.jpg": {
+    "status": "available",
+    "local": "/assets/exam/b62f2f4d26ba9d5b071c6d09.jpg"
+  },
+  "https://enem.dev/2017/questions/113/22e78b2d-34e1-436e-b7d9-0b3f44a11dc7.jpg": {
+    "status": "available",
+    "local": "/assets/exam/e437895dab01e1438e83b969.jpg"
+  },
+  "https://enem.dev/2017/questions/114/edc31bcf-bb5f-438b-8349-9b5eb2945835.jpg": {
+    "status": "available",
+    "local": "/assets/exam/b578f5f7e59446ea21c16eb4.jpg"
+  },
+  "https://enem.dev/2017/questions/116/40eeb203-2784-4815-91a7-0daaa4bee826.jpg": {
+    "status": "available",
+    "local": "/assets/exam/b4b3c7d3a97cba5875d5c20f.jpg"
+  },
+  "https://enem.dev/2017/questions/119/cf7185d3-5e84-42ad-974b-2332feadd919.jpg": {
+    "status": "available",
+    "local": "/assets/exam/8cfc1d2a67987339406b0e46.jpg"
+  },
+  "https://enem.dev/2017/questions/130/5e013833-b780-40ce-ae64-9f1dd61cb6fa.png": {
+    "status": "available",
+    "local": "/assets/exam/54b9d8b83e9787f9d59bb275.png"
+  },
+  "https://enem.dev/2017/questions/134/473049c4-f31e-4efc-b18b-e808378bc090.png": {
+    "status": "available",
+    "local": "/assets/exam/900e5000f372efbfc691d550.png"
+  },
+  "https://enem.dev/2017/questions/134/4ebacf49-d6c6-4b9d-a586-ed1b1cadd538.png": {
+    "status": "available",
+    "local": "/assets/exam/9c97f8d16268c89d08ed4e26.png"
+  },
+  "https://enem.dev/2017/questions/136/0338bf3c-70fc-4cb5-b6d5-28ee0508731e.png": {
+    "status": "available",
+    "local": "/assets/exam/c5936f9d747e670bb30a2141.png"
+  },
+  "https://enem.dev/2017/questions/136/07869d30-eb4d-4450-a76a-ea0654e459f8.png": {
+    "status": "available",
+    "local": "/assets/exam/d9f1247642a2004cdaf0cc05.png"
+  },
+  "https://enem.dev/2017/questions/136/095d9fee-b0a3-4486-a6f7-5905be8a8aee.png": {
+    "status": "available",
+    "local": "/assets/exam/6fb7aa0eb54ed25684c85de4.png"
+  },
+  "https://enem.dev/2017/questions/136/2a676854-c439-49bc-8187-107963dc04ef.png": {
+    "status": "available",
+    "local": "/assets/exam/737b7fd9e41a61dcbde1a8a3.png"
+  },
+  "https://enem.dev/2017/questions/136/9b318931-f44c-47f6-bde1-7629aaf7b6e2.png": {
+    "status": "available",
+    "local": "/assets/exam/0c0bbc5444a5f67b0b47b222.png"
+  },
+  "https://enem.dev/2017/questions/159/1e1958eb-584c-47db-9aff-348f62def6d6.png": {
+    "status": "available",
+    "local": "/assets/exam/4533d96533e0a0da406b6df8.png"
+  },
+  "https://enem.dev/2017/questions/159/71fe199d-31a3-491a-9ed1-4f4266bcec67.png": {
+    "status": "available",
+    "local": "/assets/exam/a11822fc35126ca24923f0a5.png"
+  },
+  "https://enem.dev/2017/questions/159/c66f38e4-cac9-40bd-ab40-dcc28709d1f2.png": {
+    "status": "available",
+    "local": "/assets/exam/4af097d3ad5abe2c2c379bf7.png"
+  },
+  "https://enem.dev/2017/questions/16/8690291a-b2de-43d2-a535-5727ad02d022.jpg": {
+    "status": "available",
+    "local": "/assets/exam/bc12ee830ce8933da42d3115.jpg"
+  },
+  "https://enem.dev/2017/questions/171/3bb8824e-3a19-4855-a081-9cc594573f03.png": {
+    "status": "available",
+    "local": "/assets/exam/45e6f6d65e6b8fd657188a0d.png"
+  },
+  "https://enem.dev/2017/questions/3-ingles/0933a50a-d739-44ba-b540-de42213e3fcf.png": {
+    "status": "available",
+    "local": "/assets/exam/9512b921c33ec29308d5502e.png"
+  },
+  "https://enem.dev/2017/questions/37/4d4a90d7-9743-432c-8710-dacb137ea2d5.png": {
+    "status": "available",
+    "local": "/assets/exam/c188e7b383cb2d15e7580306.png"
+  },
+  "https://enem.dev/2017/questions/71/3b3f7bfa-864f-4176-8792-3363bca336a6.png": {
+    "status": "available",
+    "local": "/assets/exam/d7e31b01c5819e1a33078058.png"
+  },
+  "https://enem.dev/2017/questions/87/a29bc279-ba56-4fe4-aeb0-ff72098524ca.png": {
+    "status": "available",
+    "local": "/assets/exam/cb0edf1774d75000d2de7cad.png"
+  },
+  "https://enem.dev/2017/questions/87/d6ce35bb-244b-48b8-9647-e22f10d2a987.png": {
+    "status": "available",
+    "local": "/assets/exam/e14d2bdd282bc238d1604aad.png"
+  },
+  "https://enem.dev/2017/questions/93/a9180abf-7120-4dab-a63a-7e8bcb09b559.png": {
+    "status": "available",
+    "local": "/assets/exam/a40a7269958bd8ed55297d24.png"
+  },
+  "https://enem.dev/2017/questions/98/a50cb779-35c0-41a2-a622-5e38cb707ac9.png": {
+    "status": "available",
+    "local": "/assets/exam/ff25915f444526e28f806e39.png"
+  },
+  "https://enem.dev/2017/questions/99/04a95fbc-a686-452f-a85a-b5ff100a5b6c.jpg": {
+    "status": "available",
+    "local": "/assets/exam/e25c587274302834809e1268.jpg"
+  },
+  "https://enem.dev/2018/questions/104/8ce5728c-b0b2-4dc8-b70a-e1342e906abc.png": {
+    "status": "available",
+    "local": "/assets/exam/efdc5a3c67e2fb5cce63d25b.png"
+  },
+  "https://enem.dev/2018/questions/106/063ee41c-e579-4b75-b0df-878aa83a732e.png": {
+    "status": "available",
+    "local": "/assets/exam/3d36e6a129a83bd062d97114.png"
+  },
+  "https://enem.dev/2018/questions/109/2c759bdf-637c-482b-9454-e0e5763ddfba.png": {
+    "status": "available",
+    "local": "/assets/exam/ef23051a3b86d6ef073f2d74.png"
+  },
+  "https://enem.dev/2018/questions/109/66c4ffd0-6613-4eeb-814b-bbc1af14dc03.png": {
+    "status": "available",
+    "local": "/assets/exam/04143dc8376be3ef22d7d60c.png"
+  },
+  "https://enem.dev/2018/questions/109/c76a25db-af2f-4985-8997-70ef8cd8ee8c.png": {
+    "status": "available",
+    "local": "/assets/exam/59dae26ea37fa90f4b6b9017.png"
+  },
+  "https://enem.dev/2018/questions/109/d38bf50f-c0b3-47ab-9561-6d571044de07.png": {
+    "status": "available",
+    "local": "/assets/exam/3ea746ef79d0591de4830d33.png"
+  },
+  "https://enem.dev/2018/questions/115/90c1db98-dd8a-4239-bd75-ae54ba9335aa.png": {
+    "status": "available",
+    "local": "/assets/exam/73999e8eac3a787854ac17ae.png"
+  },
+  "https://enem.dev/2018/questions/118/16ce5a8c-32e1-4d14-8099-e826813bad45.png": {
+    "status": "available",
+    "local": "/assets/exam/1fbc8466ae5bf427002a3e8d.png"
+  },
+  "https://enem.dev/2018/questions/118/323c4fa7-5454-4c32-9106-8d1661e599db.png": {
+    "status": "available",
+    "local": "/assets/exam/da09aa84a0e89de4af5106c5.png"
+  },
+  "https://enem.dev/2018/questions/118/49d99020-413d-488e-ac43-e1432472a2d3.png": {
+    "status": "available",
+    "local": "/assets/exam/3eaa00d4c1faf358c7bb7c50.png"
+  },
+  "https://enem.dev/2018/questions/118/c3a08a34-5f0d-4c3b-b059-fd9e900a0058.png": {
+    "status": "available",
+    "local": "/assets/exam/d567b3e373404ba07e3b8754.png"
+  },
+  "https://enem.dev/2018/questions/125/faf4306c-e3a9-448e-9c71-e0e9cf89cf0f.png": {
+    "status": "available",
+    "local": "/assets/exam/fedb3aadf0f467f3249a779f.png"
+  },
+  "https://enem.dev/2018/questions/128/05a5be22-7db9-49d7-bfef-aa2c714bdfad.png": {
+    "status": "available",
+    "local": "/assets/exam/69a5fedb3217e4c270f597f9.png"
+  },
+  "https://enem.dev/2018/questions/128/491fca7f-e493-4082-9fba-5f11c5a99b7d.png": {
+    "status": "available",
+    "local": "/assets/exam/4cf3741641d85741995bc8a2.png"
+  },
+  "https://enem.dev/2018/questions/128/b8ef24ad-f22f-44e5-af5c-18e94e3c8a10.png": {
+    "status": "available",
+    "local": "/assets/exam/d62cd2ac58f4db35c89ca191.png"
+  },
+  "https://enem.dev/2018/questions/128/c7002ed9-1acb-47ef-b652-132264c0402f.png": {
+    "status": "available",
+    "local": "/assets/exam/ab1aa1d7f188361d4ba9c7f1.png"
+  },
+  "https://enem.dev/2018/questions/128/ceda7adf-3ef3-4eba-8a94-29e2860b55c7.png": {
+    "status": "available",
+    "local": "/assets/exam/5b63e6fbd34535eb0d4f0ae0.png"
+  },
+  "https://enem.dev/2018/questions/128/d495fbfc-cf80-4e39-b7c7-6f0535ddac0a.png": {
+    "status": "available",
+    "local": "/assets/exam/c6811bac1597883b388d3cb6.png"
+  },
+  "https://enem.dev/2018/questions/128/db724714-6e79-48e0-b29d-63add6f356cc.png": {
+    "status": "available",
+    "local": "/assets/exam/38fcfff26bacc28f898e00ee.png"
+  },
+  "https://enem.dev/2018/questions/128/ede4adfd-1e77-4e98-bb85-8bffcad6e198.png": {
+    "status": "available",
+    "local": "/assets/exam/540f103e96be219215b35bb8.png"
+  },
+  "https://enem.dev/2018/questions/13/daed3973-7c5a-480b-b87a-a8891cad80aa.png": {
+    "status": "available",
+    "local": "/assets/exam/2c69c174c7114f21ee6624e4.png"
+  },
+  "https://enem.dev/2018/questions/137/2061f394-d117-48f8-a334-f76269a6c036.png": {
+    "status": "available",
+    "local": "/assets/exam/13954bd44bf5d8f0eecf6e26.png"
+  },
+  "https://enem.dev/2018/questions/137/477c2dff-f10a-4655-bf0c-8a3babc99e12.png": {
+    "status": "available",
+    "local": "/assets/exam/688d04c83588311dc6178bfe.png"
+  },
+  "https://enem.dev/2018/questions/139/156b89f8-d720-4f70-a5d9-81bbfe878262.png": {
+    "status": "available",
+    "local": "/assets/exam/c4a5fd56b340b1d5ad04e4a7.png"
+  },
+  "https://enem.dev/2018/questions/139/1d1d2cb9-d3f2-40bd-8788-ceb1aaaf1252.png": {
+    "status": "available",
+    "local": "/assets/exam/311941386d3b3f6dc723680f.png"
+  },
+  "https://enem.dev/2018/questions/139/3d56d354-9153-49b1-bfe6-34dba6a2b043.png": {
+    "status": "available",
+    "local": "/assets/exam/afe62f5f7a98161aee744022.png"
+  },
+  "https://enem.dev/2018/questions/139/6adf9c16-37c7-4686-89e7-dc05a22c1a47.png": {
+    "status": "available",
+    "local": "/assets/exam/7a9fc6feef43ef8a81a8e0f7.png"
+  },
+  "https://enem.dev/2018/questions/139/8161d961-7997-4971-b30d-427924fc0ac8.png": {
+    "status": "available",
+    "local": "/assets/exam/3c39d530f96a6fc8c1bcf411.png"
+  },
+  "https://enem.dev/2018/questions/139/aa89cb88-6296-4a65-8d57-ebe259edc4b0.png": {
+    "status": "available",
+    "local": "/assets/exam/e2a1ee60c649ec2428c9fab3.png"
+  },
+  "https://enem.dev/2018/questions/139/d84b3e68-0894-4239-a9ec-c8e469562e5c.png": {
+    "status": "available",
+    "local": "/assets/exam/f45a255f67cbc076ebc5eed4.png"
+  },
+  "https://enem.dev/2018/questions/146/03f32730-2de7-4b08-a122-d4dc42b8bcce.png": {
+    "status": "available",
+    "local": "/assets/exam/36a38a23e04eac450a413814.png"
+  },
+  "https://enem.dev/2018/questions/146/1fb8607c-0374-442f-a914-d45118679f4f.png": {
+    "status": "available",
+    "local": "/assets/exam/39df1e87412119d4ced6166b.png"
+  },
+  "https://enem.dev/2018/questions/146/94830fa5-25d8-499d-a527-501c1c28c8cb.png": {
+    "status": "available",
+    "local": "/assets/exam/9742c054d12f72134879dce0.png"
+  },
+  "https://enem.dev/2018/questions/146/9652da77-3886-44df-909f-c3a7f1cc66d7.png": {
+    "status": "available",
+    "local": "/assets/exam/e11fa2125f6cbb932ec1b99d.png"
+  },
+  "https://enem.dev/2018/questions/146/f9dece31-c3d4-4018-adce-a72296ef5aaa.png": {
+    "status": "available",
+    "local": "/assets/exam/16c17b5b28b9d425d4142faa.png"
+  },
+  "https://enem.dev/2018/questions/146/fb3e90c2-53bf-4913-98a9-f14b290c135d.png": {
+    "status": "available",
+    "local": "/assets/exam/6fbdb2c91e9574cff7104d55.png"
+  },
+  "https://enem.dev/2018/questions/151/54cbb144-7f20-4ae7-aeb6-f1d179294f74.png": {
+    "status": "available",
+    "local": "/assets/exam/9336bf5747a2e39eb2e5ef42.png"
+  },
+  "https://enem.dev/2018/questions/151/57de2d97-79b3-412f-b898-74d8da95dc5f.png": {
+    "status": "available",
+    "local": "/assets/exam/5189f300f3c57c75952b98cf.png"
+  },
+  "https://enem.dev/2018/questions/151/e405bd59-e5e2-4ca8-885b-52cd9a249d2d.png": {
+    "status": "available",
+    "local": "/assets/exam/f0230061c9fb3d05355034f9.png"
+  },
+  "https://enem.dev/2018/questions/157/4eb455e0-2c2e-46d3-83d6-d589c334a2c3.png": {
+    "status": "available",
+    "local": "/assets/exam/c1d2a378b811f72ddd2a326d.png"
+  },
+  "https://enem.dev/2018/questions/180/6dab86df-3603-49cd-b6a0-b25f4906eb77.png": {
+    "status": "available",
+    "local": "/assets/exam/aa028522eaa6fed562ef1e4c.png"
+  },
+  "https://enem.dev/2018/questions/180/6f7a278d-b55a-499d-a86c-5afdf99a748c.png": {
+    "status": "available",
+    "local": "/assets/exam/83c87d6b56e11507648f4a1e.png"
+  },
+  "https://enem.dev/2018/questions/180/6fc6dddc-7fe1-4dab-85c8-e43fa3eda51c.png": {
+    "status": "available",
+    "local": "/assets/exam/e3b3dc399d8538b005f9e328.png"
+  },
+  "https://enem.dev/2018/questions/180/790c259f-eca9-4bdb-b3ec-55577fcedf9c.png": {
+    "status": "available",
+    "local": "/assets/exam/5a50f6cd63d814a2c007b45e.png"
+  },
+  "https://enem.dev/2018/questions/180/aefa4129-634d-4a56-9c4b-704b4c98c97b.png": {
+    "status": "available",
+    "local": "/assets/exam/622e2a7ba82566b03ee04966.png"
+  },
+  "https://enem.dev/2018/questions/180/da175caf-5e27-4ecf-8caa-f4ac6440c4bb.png": {
+    "status": "available",
+    "local": "/assets/exam/4e6b57206dd43bc61dbcec9c.png"
+  },
+  "https://enem.dev/2018/questions/25/19eb3de3-07ba-4000-89ca-e2e07755b526.png": {
+    "status": "available",
+    "local": "/assets/exam/221f53d420c9b2ec1a46c995.png"
+  },
+  "https://enem.dev/2018/questions/56/4ecfea3f-1d67-4668-9041-ad8b9be69038.png": {
+    "status": "available",
+    "local": "/assets/exam/ef42c446ea95423fa26d52f1.png"
+  },
+  "https://enem.dev/2018/questions/56/5b7d9bd1-6080-4c31-b025-a76d140a508d.png": {
+    "status": "available",
+    "local": "/assets/exam/dfffa9c8cf8c9ef72c503615.png"
+  },
+  "https://enem.dev/2018/questions/56/9ad1e865-74b9-4c33-991e-eab7f66ae7d2.png": {
+    "status": "available",
+    "local": "/assets/exam/4ed3a73a20f7778ae3423470.png"
+  },
+  "https://enem.dev/2018/questions/56/abae7699-1f0c-46f4-8556-55b915d9552f.png": {
+    "status": "available",
+    "local": "/assets/exam/7d9341d64771f2fc5623fe92.png"
+  },
+  "https://enem.dev/2018/questions/56/ea71e02b-2a5b-4f59-a99f-ed2cbe8fa18f.png": {
+    "status": "available",
+    "local": "/assets/exam/a733307c31221e50a56a46c2.png"
+  },
+  "https://enem.dev/2018/questions/7/7bcf9917-4bb9-4438-ba33-4ae59c970478.png": {
+    "status": "available",
+    "local": "/assets/exam/b95f3cf18298db2b681fa838.png"
+  },
+  "https://enem.dev/2018/questions/74/78468bb0-fdfb-4b4f-abf8-fe5a5f7fef15.png": {
+    "status": "available",
+    "local": "/assets/exam/1b0cc15fd85ca1a8f0e48289.png"
+  },
+  "https://enem.dev/2018/questions/82/8f0a6084-2a84-4eaf-8026-cb0ac48d1a65.png": {
+    "status": "available",
+    "local": "/assets/exam/8140ff77956ed20e4c8867b8.png"
+  },
+  "https://enem.dev/2018/questions/91/5fcb47b9-374a-479e-9eee-75f09cad44e0.png": {
+    "status": "available",
+    "local": "/assets/exam/5dc72e3bf7bc9159307855c8.png"
+  },
+  "https://enem.dev/2018/questions/93/14c1be60-1df5-48fa-955e-327fdafaa9d9.png": {
+    "status": "available",
+    "local": "/assets/exam/54c9f5b6ee02998df758cd0f.png"
+  },
+  "https://enem.dev/2018/questions/93/2d6cb023-415e-4783-9191-d152fd1ea94b.png": {
+    "status": "available",
+    "local": "/assets/exam/21adebb5080c50b4b330bd3a.png"
+  },
+  "https://enem.dev/2018/questions/93/a2d465d2-1101-4bc0-96fa-4f94351e7231.png": {
+    "status": "available",
+    "local": "/assets/exam/7d82238604488012415cb5c2.png"
+  },
+  "https://enem.dev/2018/questions/93/b9cacad0-bd0f-4c9c-a539-097198f78992.png": {
+    "status": "available",
+    "local": "/assets/exam/44441463e6b302a272646baa.png"
+  },
+  "https://enem.dev/2019/questions/12/cbc6cd51-59ad-446d-823e-2bd9c979d5a1.png": {
+    "status": "available",
+    "local": "/assets/exam/aca1965ecc067da2ed66c6ce.png"
+  },
+  "https://enem.dev/2019/questions/85/fb718e6d-3e97-4d5a-9d80-0ffecdd14d2c.png": {
+    "status": "available",
+    "local": "/assets/exam/66f3524992890ad81ffd6e3b.png"
+  },
+  "https://enem.dev/2019/questions/95/a5f7a986-8041-4c8b-b522-7d5a67648fbd.png": {
+    "status": "available",
+    "local": "/assets/exam/1329f65c706a4019c4bd6dbb.png"
+  },
+  "https://enem.dev/2020/questions/113/207108f6-f71e-49a2-9d39-dc1d100678d0.png": {
+    "status": "available",
+    "local": "/assets/exam/3a1a02e727529a00e595eb6b.png"
+  },
+  "https://enem.dev/2020/questions/113/93881bb9-4eb6-4d30-bcaf-2254ce3e837c.png": {
+    "status": "available",
+    "local": "/assets/exam/289c7b3bcdce45e22df2c17e.png"
+  },
+  "https://enem.dev/2020/questions/113/ad12af23-b876-49f9-99a1-e6536b5c80a9.png": {
+    "status": "available",
+    "local": "/assets/exam/9e584c5302e97b8382339d85.png"
+  },
+  "https://enem.dev/2020/questions/113/da16bf97-bac6-407f-b7b9-813cfd8c39d0.png": {
+    "status": "available",
+    "local": "/assets/exam/83c2e16bf7ad11465fcf0c94.png"
+  },
+  "https://enem.dev/2020/questions/113/ffe496b7-7c83-4a43-97e2-75287d63305e.png": {
+    "status": "available",
+    "local": "/assets/exam/ea0bc91efd5668a97f0cc36a.png"
+  },
+  "https://enem.dev/2020/questions/121/b5782e2b-1313-47af-9d6d-7cf3d59851a9.png": {
+    "status": "available",
+    "local": "/assets/exam/43017a07f8cf5d6894da70c4.png"
+  },
+  "https://enem.dev/2020/questions/122/6d38b272-e416-4b4c-a0cf-ff0b323bd6ae.png": {
+    "status": "available",
+    "local": "/assets/exam/1ba1ba6d1d54751d9f25ead9.png"
+  },
+  "https://enem.dev/2020/questions/129/084d2bf5-6e94-4744-961a-7ed4b515338f.png": {
+    "status": "available",
+    "local": "/assets/exam/26b409aebf99c01df54bcb3e.png"
+  },
+  "https://enem.dev/2020/questions/130/dd0c4cef-83b4-4f1f-b3ad-61655da87a3a.png": {
+    "status": "available",
+    "local": "/assets/exam/a22988bf9b01ae4cc8001eb9.png"
+  },
+  "https://enem.dev/2020/questions/136/d4125f5f-361b-4d70-b868-340dde832d81.png": {
+    "status": "available",
+    "local": "/assets/exam/90a864a089e529251005f542.png"
+  },
+  "https://enem.dev/2020/questions/137/08971458-249f-4b7b-a76e-58ba41f9b9fa.png": {
+    "status": "available",
+    "local": "/assets/exam/da7807aaf081a7e29bf47407.png"
+  },
+  "https://enem.dev/2020/questions/137/17b0e46c-f67a-4fdb-88d2-c3c62f028274.png": {
+    "status": "available",
+    "local": "/assets/exam/ffcc6d84d14eebc93fa4f6f3.png"
+  },
+  "https://enem.dev/2020/questions/137/1e9528c7-0911-4685-a8c0-657950a04b5f.png": {
+    "status": "available",
+    "local": "/assets/exam/a3b0ac7596a92fcf857a8102.png"
+  },
+  "https://enem.dev/2020/questions/137/231c1dc0-6132-49f1-96e9-6122a7ea609b.png": {
+    "status": "available",
+    "local": "/assets/exam/9f7e3daeffb4332a533bed6c.png"
+  },
+  "https://enem.dev/2020/questions/137/6387c790-e6aa-43b8-96a5-608f7df083cf.png": {
+    "status": "available",
+    "local": "/assets/exam/57dc9d46be8d1640256119da.png"
+  },
+  "https://enem.dev/2020/questions/137/ff9b404e-91ec-42e5-af3a-e9aa62f10112.png": {
+    "status": "available",
+    "local": "/assets/exam/cae641c5148dce3cb8215df5.png"
+  },
+  "https://enem.dev/2020/questions/139/21679558-7757-4d62-8aa4-f22647acf6d6.png": {
+    "status": "available",
+    "local": "/assets/exam/933be28b95d620016c89db8f.png"
+  },
+  "https://enem.dev/2020/questions/139/f2008e36-2cc8-4d8e-8a86-89023b091a80.png": {
+    "status": "available",
+    "local": "/assets/exam/48f4c05740582a17849ba7eb.png"
+  },
+  "https://enem.dev/2020/questions/145/e67a686b-079d-4129-b359-4e99d93e616e.png": {
+    "status": "available",
+    "local": "/assets/exam/cfcb3bb30f58ec699f1b21c2.png"
+  },
+  "https://enem.dev/2020/questions/163/0f57a362-6c02-488c-8816-3ea8662979ba.png": {
+    "status": "available",
+    "local": "/assets/exam/8702d0a4f07a8354413dc27e.png"
+  },
+  "https://enem.dev/2020/questions/163/2b88f67f-6135-45cc-b784-a8d530654d81.png": {
+    "status": "available",
+    "local": "/assets/exam/cdf66d08450eb899fe3655af.png"
+  },
+  "https://enem.dev/2020/questions/163/75af1ea2-c22d-4cdc-954a-2e3405bda3a4.png": {
+    "status": "available",
+    "local": "/assets/exam/2394c9eb9e337c0dd1ac95cb.png"
+  },
+  "https://enem.dev/2020/questions/163/a18fbd88-bdd0-4253-b707-a55e63714394.png": {
+    "status": "available",
+    "local": "/assets/exam/0966d50712e3079ada5d2f86.png"
+  },
+  "https://enem.dev/2020/questions/163/d6537744-f3f3-46a2-b282-65bb82cf3ad4.png": {
+    "status": "available",
+    "local": "/assets/exam/cb5de834ead03fdf272673fc.png"
+  },
+  "https://enem.dev/2020/questions/172/fa2897a7-4d80-4b91-ae62-16dc43487acf.png": {
+    "status": "available",
+    "local": "/assets/exam/a863381b9201f95fbcda1a0f.png"
+  },
+  "https://enem.dev/2020/questions/175/33aa811b-1dc7-4083-a8c0-2aeeb9fd52d6.png": {
+    "status": "available",
+    "local": "/assets/exam/fc6bb084a922de321fa4cb5c.png"
+  },
+  "https://enem.dev/2020/questions/175/5c8b1402-d364-4c5f-beaa-559cb23d0891.png": {
+    "status": "available",
+    "local": "/assets/exam/92eadc1dbab8d6ee6b733c5b.png"
+  },
+  "https://enem.dev/2020/questions/175/8d380a8c-6b10-40a5-bafa-cfe75141c412.png": {
+    "status": "available",
+    "local": "/assets/exam/00ea25c4cad53874eb42b21d.png"
+  },
+  "https://enem.dev/2020/questions/175/b3298ba7-589f-4ca3-a510-3cebdb9903cd.png": {
+    "status": "available",
+    "local": "/assets/exam/df56a15874cb3c78e0a8c661.png"
+  },
+  "https://enem.dev/2020/questions/175/f718a2fc-7a30-4e17-b4b3-28dfb028a6f5.png": {
+    "status": "available",
+    "local": "/assets/exam/9c0c76642b0c7b94ef056e75.png"
+  },
+  "https://enem.dev/2020/questions/175/fdcc74b5-e93d-42c8-9cce-7e018e43eb67.png": {
+    "status": "available",
+    "local": "/assets/exam/4687a9161d7cb75fce595f2d.png"
+  },
+  "https://enem.dev/2020/questions/22/e2bb4218-b673-46d0-8ba4-70eefe576fae.png": {
+    "status": "available",
+    "local": "/assets/exam/536f98feb08ad80ed4cf7bef.png"
+  },
+  "https://enem.dev/2020/questions/65/e01ad380-5dc4-48fd-82c4-9e01c26796e9.png": {
+    "status": "available",
+    "local": "/assets/exam/02557e85c062afb10d573a27.png"
+  },
+  "https://enem.dev/2020/questions/7/8cae3db7-3d36-4e39-a58d-1ae299222289.png": {
+    "status": "available",
+    "local": "/assets/exam/523f34e69f5b73eae00a7410.png"
+  },
+  "https://enem.dev/2020/questions/88/ada0afae-fb30-4b1b-884b-d49633da9513.jpg": {
+    "status": "available",
+    "local": "/assets/exam/65fc24910a7384a1f1e886e8.jpg"
+  },
+  "https://enem.dev/2020/questions/93/12474393-81b2-41ea-8fff-a7eaa7eeff86.png": {
+    "status": "available",
+    "local": "/assets/exam/d33552c73d35e1ce949761f4.png"
+  },
+  "https://enem.dev/2020/questions/93/2ccc28c6-075c-4a46-9cd1-7d5fac78c728.png": {
+    "status": "available",
+    "local": "/assets/exam/6867119701d8f11cae687de1.png"
+  },
+  "https://enem.dev/2020/questions/93/528211e6-f79f-4239-81f5-e13e6548786e.png": {
+    "status": "available",
+    "local": "/assets/exam/aa504797564efb474fb46dee.png"
+  },
+  "https://enem.dev/2020/questions/93/75495fcb-deab-4b98-880c-0b991cedea78.png": {
+    "status": "available",
+    "local": "/assets/exam/80be91b7baad1190d614dfdb.png"
+  },
+  "https://enem.dev/2020/questions/93/c2f5972e-7f32-422d-b9d8-e825dbc2d343.png": {
+    "status": "available",
+    "local": "/assets/exam/a117148c023e3bb0ae99b04f.png"
+  },
+  "https://enem.dev/2020/questions/99/8e10e13c-cd79-41f1-8f07-0952b17a98c8.png": {
+    "status": "available",
+    "local": "/assets/exam/961d4d048c89bb8e23e73913.png"
+  },
+  "https://enem.dev/2021/questions/103/6edd1246-645b-4642-8af9-1a528c701dfc.png": {
+    "status": "available",
+    "local": "/assets/exam/b6a2e0ff775253f2262d0a9c.png"
+  },
+  "https://enem.dev/2021/questions/106/71d07d1a-9ecf-401c-bd00-2dae5366c8f8.png": {
+    "status": "available",
+    "local": "/assets/exam/ed31957eda2660a5192e5ff8.png"
+  },
+  "https://enem.dev/2021/questions/122/17802e92-7e27-4479-b0ba-f8a3b4c951a8.png": {
+    "status": "available",
+    "local": "/assets/exam/ac0f70d35c6f92ca9d8a33c1.png"
+  },
+  "https://enem.dev/2021/questions/134/7c4c3c55-a6c0-4f80-a379-f316fb889544.png": {
+    "status": "available",
+    "local": "/assets/exam/73db7d0e9ca0d1ba02baba6e.png"
+  },
+  "https://enem.dev/2021/questions/137/035954ad-5098-40f0-91bd-d0e2946fc930.png": {
+    "status": "available",
+    "local": "/assets/exam/d42095fbca1630302cc37b12.png"
+  },
+  "https://enem.dev/2021/questions/137/2110fe80-816b-4c42-841b-746be19abc6a.png": {
+    "status": "available",
+    "local": "/assets/exam/c12535b998396eff119d7f76.png"
+  },
+  "https://enem.dev/2021/questions/137/79821b1f-7009-4322-8af7-3ae58951064a.png": {
+    "status": "available",
+    "local": "/assets/exam/df627887338baf5473943a2d.png"
+  },
+  "https://enem.dev/2021/questions/137/92f0272e-9fb9-4787-9fe3-fe0051a11e8e.png": {
+    "status": "available",
+    "local": "/assets/exam/00265721655ec101a2a5289b.png"
+  },
+  "https://enem.dev/2021/questions/137/a5e4c57e-4230-4b52-b3ea-e1b06cb99fa8.png": {
+    "status": "available",
+    "local": "/assets/exam/bb166490bd848fab2e1f9e85.png"
+  },
+  "https://enem.dev/2021/questions/137/adb90310-f1c2-41fa-a3a4-a250c1141a16.png": {
+    "status": "available",
+    "local": "/assets/exam/6b8b238582549018568ab80e.png"
+  },
+  "https://enem.dev/2021/questions/14/f8c80e87-3875-4c67-b82d-85d73404d502.png": {
+    "status": "available",
+    "local": "/assets/exam/87a6042e51a1c69659371870.png"
+  },
+  "https://enem.dev/2021/questions/144/0f754876-c1f5-41b1-bea6-3935cb1a5304.png": {
+    "status": "available",
+    "local": "/assets/exam/797831a1d404bd9688a66900.png"
+  },
+  "https://enem.dev/2021/questions/145/9fa287d2-647c-4f7e-87a9-e58f5130bed7.png": {
+    "status": "available",
+    "local": "/assets/exam/11ac5eef8ab589ef81c10542.png"
+  },
+  "https://enem.dev/2021/questions/148/4e954c86-a11f-49f4-b82b-b9cee8375883.png": {
+    "status": "available",
+    "local": "/assets/exam/5985073db31b76b3a5dc5c89.png"
+  },
+  "https://enem.dev/2021/questions/150/76a52739-74da-4cbd-9cf8-c62522ed889f.png": {
+    "status": "available",
+    "local": "/assets/exam/0cf52e867e778d6f5ab6ab2a.png"
+  },
+  "https://enem.dev/2021/questions/153/6826c1c9-9c1c-401f-b721-af14ad303f2e.jpg": {
+    "status": "available",
+    "local": "/assets/exam/39af9fece8be3a5a211f2673.jpg"
+  },
+  "https://enem.dev/2021/questions/155/0eb41d8c-7cd8-4398-96c2-b160d666be33.png": {
+    "status": "available",
+    "local": "/assets/exam/db3017b0c5b698f9f477de81.png"
+  },
+  "https://enem.dev/2021/questions/163/2770886b-3ccc-4ff7-8e35-59674a921fa9.png": {
+    "status": "available",
+    "local": "/assets/exam/d9bea4871df66628fd1b05a8.png"
+  },
+  "https://enem.dev/2021/questions/163/381b63e2-88a8-405f-ab1e-ae5e1ef6b266.png": {
+    "status": "available",
+    "local": "/assets/exam/769dc8e05235a1dfe64f3e4a.png"
+  },
+  "https://enem.dev/2021/questions/163/b08497a6-4df2-4f61-96f2-f125293d21a4.png": {
+    "status": "available",
+    "local": "/assets/exam/8158704096fc49889fc043e1.png"
+  },
+  "https://enem.dev/2021/questions/163/e8929184-06b7-4b2c-a7bf-8682d4d92231.png": {
+    "status": "available",
+    "local": "/assets/exam/9d0049bf59b71db5bcda15a3.png"
+  },
+  "https://enem.dev/2021/questions/163/ef0b4b69-a758-420e-a3fa-b7b5e0a2b06c.png": {
+    "status": "available",
+    "local": "/assets/exam/a6a20452f761b3f4132a81df.png"
+  },
+  "https://enem.dev/2021/questions/174/a9b99537-f174-43b1-9ee0-90b5bdfe57ad.png": {
+    "status": "available",
+    "local": "/assets/exam/98fc33636b6b2798cada48c7.png"
+  },
+  "https://enem.dev/2021/questions/91/0cd7f916-3dc7-48f8-b5df-b84c91755f2a.png": {
+    "status": "available",
+    "local": "/assets/exam/4eb92ecc0a5587edd6fd9a85.png"
+  },
+  "https://enem.dev/2021/questions/91/1dc57326-df5b-4852-aedc-5839a54129ec.png": {
+    "status": "available",
+    "local": "/assets/exam/4416d36bca2e6b819ae7b89c.png"
+  },
+  "https://enem.dev/2021/questions/91/560b8732-72e1-4c95-8022-67102ebf31ec.png": {
+    "status": "available",
+    "local": "/assets/exam/93a6f2f1e1ac4ec9471474b1.png"
+  },
+  "https://enem.dev/2021/questions/91/6b02a86e-77a0-4ba0-8829-a91c987e4e7b.png": {
+    "status": "available",
+    "local": "/assets/exam/1ac12fa8c48a2fe2e73bbd5b.png"
+  },
+  "https://enem.dev/2021/questions/91/cac9eb61-efc4-42a4-8163-2e4a4c6d2f1e.png": {
+    "status": "available",
+    "local": "/assets/exam/307ab3d3e3249dcc03bd14bb.png"
+  },
+  "https://enem.dev/2021/questions/91/cade51a2-4217-4ca2-960d-be2ee1e8bd2e.png": {
+    "status": "available",
+    "local": "/assets/exam/be5b7fd4cc40caef3723f9be.png"
+  },
+  "https://enem.dev/2021/questions/92/5bb60323-94e3-4bc4-bd57-90725682dd94.png": {
+    "status": "available",
+    "local": "/assets/exam/85fc10e36ff19b303206215c.png"
+  },
+  "https://enem.dev/2021/questions/93/63fd588f-0f17-4c2b-b0cb-ed3acf8b7f70.png": {
+    "status": "available",
+    "local": "/assets/exam/0b13aef0d8fa7e3b045aa635.png"
+  },
+  "https://enem.dev/2021/questions/99/0fa56a37-800a-48a2-9fea-f9447e6455eb.png": {
+    "status": "available",
+    "local": "/assets/exam/e01bcadb129aa0a36800a590.png"
+  },
+  "https://enem.dev/2022/questions/103/04cf32d8-f517-483e-b0d5-189de111bc7a.jpg": {
+    "status": "available",
+    "local": "/assets/exam/e0a899ab9bd9d8972d5031e6.jpg"
+  },
+  "https://enem.dev/2022/questions/103/09db4a77-899d-485e-b0a1-8cbfba70022a.jpg": {
+    "status": "available",
+    "local": "/assets/exam/0273069587e171d4c607656d.jpg"
+  },
+  "https://enem.dev/2022/questions/103/35328d99-51d3-48e1-b68f-77e985df73c4.jpg": {
+    "status": "available",
+    "local": "/assets/exam/adfd2ae79e94879e2030e226.jpg"
+  },
+  "https://enem.dev/2022/questions/103/731a52b0-b8d4-4a15-8a7c-aabc67d6dcde.jpg": {
+    "status": "available",
+    "local": "/assets/exam/22816224d1cc7d21e6b3cc63.jpg"
+  },
+  "https://enem.dev/2022/questions/103/7cfea492-83f7-4ea1-bf6a-a3dc29d4edb9.jpg": {
+    "status": "available",
+    "local": "/assets/exam/9fb5d2d8e484cdbf8f8be769.jpg"
+  },
+  "https://enem.dev/2022/questions/103/87896c19-ad0d-4a19-a31e-c48d5e4e06fc.jpg": {
+    "status": "available",
+    "local": "/assets/exam/832e384387ec4b3e4d9dd8a0.jpg"
+  },
+  "https://enem.dev/2022/questions/103/9027d4f1-c0a1-4b18-ac9f-2639e6b4360b.jpg": {
+    "status": "available",
+    "local": "/assets/exam/3b0408291a0420035f80cedd.jpg"
+  },
+  "https://enem.dev/2022/questions/103/a530523b-e354-44f7-b52b-4424587daa4e.jpg": {
+    "status": "available",
+    "local": "/assets/exam/32e528eb9e4e709ade3a5627.jpg"
+  },
+  "https://enem.dev/2022/questions/103/d65b67dc-a285-43d4-a72b-a9c1b521c3b5.jpg": {
+    "status": "available",
+    "local": "/assets/exam/4d7276e92add46faacee392f.jpg"
+  },
+  "https://enem.dev/2022/questions/103/e11f6a77-dda3-4525-a045-894baf71d307.jpg": {
+    "status": "available",
+    "local": "/assets/exam/746899517633b7cefd8172ba.jpg"
+  },
+  "https://enem.dev/2022/questions/103/fd96af11-5014-46d5-a810-7f61cecce1ee.jpg": {
+    "status": "available",
+    "local": "/assets/exam/247b9b51d5321b8c502984c9.jpg"
+  },
+  "https://enem.dev/2022/questions/106/57b30c7d-c1d7-496e-883a-1a838b3b5db8.png": {
+    "status": "available",
+    "local": "/assets/exam/684a67cb630d0339fb42ac52.png"
+  },
+  "https://enem.dev/2022/questions/106/836c6396-bd57-477b-b379-b509c4b99242.png": {
+    "status": "available",
+    "local": "/assets/exam/6a0136272b6f2b52b606947a.png"
+  },
+  "https://enem.dev/2022/questions/106/b1e5f5bf-e8a9-4400-8029-e3aa6e3ef619.png": {
+    "status": "available",
+    "local": "/assets/exam/c0eb8d61b2940cf97df9cfd6.png"
+  },
+  "https://enem.dev/2022/questions/106/b5c54736-315b-449d-8903-3122dba1753c.png": {
+    "status": "available",
+    "local": "/assets/exam/da22de27de2ddeb31f571275.png"
+  },
+  "https://enem.dev/2022/questions/106/c42c9c08-62b1-4fc3-b0f7-eb1a04bd69a0.png": {
+    "status": "available",
+    "local": "/assets/exam/3ca096fd4ab2db2fa10c5ce1.png"
+  },
+  "https://enem.dev/2022/questions/106/c80fb324-03eb-4796-a763-07123406dddc.png": {
+    "status": "available",
+    "local": "/assets/exam/218729eab010ff1f1c2df5c0.png"
+  },
+  "https://enem.dev/2022/questions/109/354aeb9d-9351-404a-b131-174ac378eaaf.png": {
+    "status": "available",
+    "local": "/assets/exam/060522cb69377079a476073c.png"
+  },
+  "https://enem.dev/2022/questions/115/f65d0159-593c-4da2-84b5-1a0f297f96f9.png": {
+    "status": "available",
+    "local": "/assets/exam/6f23a2b80d1c739bddcc8e75.png"
+  },
+  "https://enem.dev/2022/questions/116/f941cbba-7b0c-4b5d-98db-2616e2001f8c.png": {
+    "status": "available",
+    "local": "/assets/exam/f19fc5d808c3f3faec4fd571.png"
+  },
+  "https://enem.dev/2022/questions/117/d1b41872-c2bd-4e00-8425-9dc4e5436395.png": {
+    "status": "available",
+    "local": "/assets/exam/3cd40cc595581477ddff885e.png"
+  },
+  "https://enem.dev/2022/questions/118/e51b0279-7825-425e-86cf-f1e144cd023e.png": {
+    "status": "available",
+    "local": "/assets/exam/aed3d822fba406bff2a915fa.png"
+  },
+  "https://enem.dev/2022/questions/129/dceda47e-3511-452d-b376-b192e2b975f6.png": {
+    "status": "available",
+    "local": "/assets/exam/a8029a6a9a2b4d079abfe96b.png"
+  },
+  "https://enem.dev/2022/questions/134/01e05752-c516-4e12-a9f8-bcbe4b1e0296.jpg": {
+    "status": "available",
+    "local": "/assets/exam/7c68fb06e4efd36a3034acd8.jpg"
+  },
+  "https://enem.dev/2022/questions/134/6f7c3bcf-80c1-4d07-b043-70cbb639bb8f.jpg": {
+    "status": "available",
+    "local": "/assets/exam/c7b68703117b5191ed87399a.jpg"
+  },
+  "https://enem.dev/2022/questions/135/c20e9e98-446f-4342-bf88-a8069abe0fb9.png": {
+    "status": "available",
+    "local": "/assets/exam/371c0b7994af0bc51b8e99a5.png"
+  },
+  "https://enem.dev/2022/questions/137/091aafba-f2dd-4f19-9655-73e6bd1599b6.png": {
+    "status": "available",
+    "local": "/assets/exam/d8ec6d93f8cce8fe93156ff9.png"
+  },
+  "https://enem.dev/2022/questions/137/1cb4062d-0ed1-45ac-a1f7-ce783f591515.png": {
+    "status": "available",
+    "local": "/assets/exam/1d6c0a00358be6d238067615.png"
+  },
+  "https://enem.dev/2022/questions/137/a62b92ab-65a1-4608-a3ac-3a1e08008845.png": {
+    "status": "available",
+    "local": "/assets/exam/604bfde95f7d4fc6bf0ab86f.png"
+  },
+  "https://enem.dev/2022/questions/137/b783250d-3cdc-48c4-b60a-44d5b2ccc932.png": {
+    "status": "available",
+    "local": "/assets/exam/1864d802cf74c0c606f25b25.png"
+  },
+  "https://enem.dev/2022/questions/137/bcc4e92c-3d8c-40e8-8651-b1829f138eb3.png": {
+    "status": "available",
+    "local": "/assets/exam/74de58c767467fb13cf0a6d5.png"
+  },
+  "https://enem.dev/2022/questions/137/ccd84f4e-31eb-4dfe-85be-202683fe5af7.png": {
+    "status": "available",
+    "local": "/assets/exam/4ea8d4f597be4774bb2a6734.png"
+  },
+  "https://enem.dev/2022/questions/138/d738a15a-a083-4720-af91-80d2b3259c9f.png": {
+    "status": "available",
+    "local": "/assets/exam/e1e2f9fc33f84cd61a156d06.png"
+  },
+  "https://enem.dev/2022/questions/141/182be64f-689b-4ab6-b35b-f0dfae3b5a54.png": {
+    "status": "available",
+    "local": "/assets/exam/e935862c6ea4f9d5e71165e4.png"
+  },
+  "https://enem.dev/2022/questions/141/1e77b1bf-38e6-4145-b78b-91be4088bc11.png": {
+    "status": "available",
+    "local": "/assets/exam/8cb3c8ce2fd28b0becde99aa.png"
+  },
+  "https://enem.dev/2022/questions/141/3098c816-0b2d-4a41-bd93-48a7103007d3.png": {
+    "status": "available",
+    "local": "/assets/exam/2b741368d8624329a95d51f9.png"
+  },
+  "https://enem.dev/2022/questions/141/3d293613-50b5-494a-b8f3-52e16ae9f866.png": {
+    "status": "available",
+    "local": "/assets/exam/07551c3cfcef5a5847dc3975.png"
+  },
+  "https://enem.dev/2022/questions/141/cd5a2722-63ec-4baf-bb68-20df7b0342b6.png": {
+    "status": "available",
+    "local": "/assets/exam/f8daeb91de85e0bbc3f2d892.png"
+  },
+  "https://enem.dev/2022/questions/141/e8e788ea-4e28-4ceb-b928-494d2ca68033.png": {
+    "status": "available",
+    "local": "/assets/exam/e16d16804a21499caa1e3040.png"
+  },
+  "https://enem.dev/2022/questions/141/f1b1ddb0-011b-422f-ad9c-be16c2322ab9.png": {
+    "status": "available",
+    "local": "/assets/exam/de39af6800fa3dbb6e6f6947.png"
+  },
+  "https://enem.dev/2022/questions/149/d92eba46-c91d-43d9-accf-ec06c4506ac1.png": {
+    "status": "available",
+    "local": "/assets/exam/2c60c68a7cf71de1b970d49b.png"
+  },
+  "https://enem.dev/2022/questions/15/8319bd69-f738-464b-bf9b-14f73e03df8f.png": {
+    "status": "available",
+    "local": "/assets/exam/7f13d72a64b6f4941ca787f3.png"
+  },
+  "https://enem.dev/2022/questions/150/0964fd1c-cef0-4132-981d-c148bd70f0aa.png": {
+    "status": "available",
+    "local": "/assets/exam/bd1cda82a6a63c052842da05.png"
+  },
+  "https://enem.dev/2022/questions/150/764fcc6a-f737-404f-867b-7caacf69134e.png": {
+    "status": "available",
+    "local": "/assets/exam/a230a8a341a14f7a28e3d16c.png"
+  },
+  "https://enem.dev/2022/questions/153/f85bbaf3-e20e-48e7-8a5f-143804fa1743.png": {
+    "status": "available",
+    "local": "/assets/exam/01e6488675363afdd68417a9.png"
+  },
+  "https://enem.dev/2022/questions/155/027b58bd-d5b6-4ab1-afb6-a17dd85e31c8.png": {
+    "status": "available",
+    "local": "/assets/exam/e36f8773f027a0a54c3f460a.png"
+  },
+  "https://enem.dev/2022/questions/155/0681d716-28d4-4521-801f-5a20871829e5.png": {
+    "status": "available",
+    "local": "/assets/exam/a8501de36969f21b1c8f476a.png"
+  },
+  "https://enem.dev/2022/questions/155/2b0fcee8-c3b1-4c03-ac2a-342792f7ab28.png": {
+    "status": "available",
+    "local": "/assets/exam/d0dddb3ae0cc6b9a5c8dfb23.png"
+  },
+  "https://enem.dev/2022/questions/155/4e4d5692-b3ea-4434-aaef-74309d2d3b2a.png": {
+    "status": "available",
+    "local": "/assets/exam/9c42fbf5fba01a771c9a4ca2.png"
+  },
+  "https://enem.dev/2022/questions/155/e2dfe176-9a1a-49e7-aee5-62794ac8242b.png": {
+    "status": "available",
+    "local": "/assets/exam/3e9560627cda680371254dbe.png"
+  },
+  "https://enem.dev/2022/questions/156/1665e780-8437-449e-b389-8d9729b2980c.png": {
+    "status": "available",
+    "local": "/assets/exam/6889f4d223ef51f78d71a0f2.png"
+  },
+  "https://enem.dev/2022/questions/156/2a89a0e4-1a8b-4b3f-a678-97fa60066bcc.png": {
+    "status": "available",
+    "local": "/assets/exam/976f9f781a7f14f1013b09e7.png"
+  },
+  "https://enem.dev/2022/questions/156/2b1f4d30-ed72-40af-824d-6d394c9d948d.png": {
+    "status": "available",
+    "local": "/assets/exam/9255db1fe6bffc9a22a2e94d.png"
+  },
+  "https://enem.dev/2022/questions/156/538392d5-583a-4aa5-a47c-61ee0bc6b98d.png": {
+    "status": "available",
+    "local": "/assets/exam/04e2f2493451fee74216334a.png"
+  },
+  "https://enem.dev/2022/questions/156/78436952-5965-4c7f-80c3-ca2eee79bb4e.png": {
+    "status": "available",
+    "local": "/assets/exam/3783f9172d076e88dfa2a57f.png"
+  },
+  "https://enem.dev/2022/questions/156/b09ad37a-893e-4709-8b48-bded413fc77f.png": {
+    "status": "available",
+    "local": "/assets/exam/31c35f0f28aa0e1195e3fe74.png"
+  },
+  "https://enem.dev/2022/questions/156/bf9a172b-bd1e-4e83-9d95-6bc3fd29eadc.png": {
+    "status": "available",
+    "local": "/assets/exam/6f4a33086dc943530267838c.png"
+  },
+  "https://enem.dev/2022/questions/156/c3221442-88b6-455d-bf9f-5097c75188a2.png": {
+    "status": "available",
+    "local": "/assets/exam/916662daed78c8db6a3713af.png"
+  },
+  "https://enem.dev/2022/questions/156/ddf97279-7187-4bc2-be7b-25bd70510a73.png": {
+    "status": "available",
+    "local": "/assets/exam/c9fcd20295365c796b9f68ac.png"
+  },
+  "https://enem.dev/2022/questions/157/62e359c4-eecb-4120-861f-eb5af04c9fec.png": {
+    "status": "available",
+    "local": "/assets/exam/5372188ee0ac2a3817e4139a.png"
+  },
+  "https://enem.dev/2022/questions/157/693a22d0-61e8-4f3b-ad77-5b73fc16bc0f.png": {
+    "status": "available",
+    "local": "/assets/exam/31ed64c9e4caf2d05b993962.png"
+  },
+  "https://enem.dev/2022/questions/157/af3c085b-7eb0-4462-a0b1-f79fd1291f67.png": {
+    "status": "available",
+    "local": "/assets/exam/7319c352ab8de7e25e1019e4.png"
+  },
+  "https://enem.dev/2022/questions/157/e90bf791-5ee8-4ecf-8c11-34988750ed2b.png": {
+    "status": "available",
+    "local": "/assets/exam/b1e24a6ff263a109d104a3b5.png"
+  },
+  "https://enem.dev/2022/questions/157/fc471085-2399-4726-8cde-a72bae7ac9c5.png": {
+    "status": "available",
+    "local": "/assets/exam/83005281e4f6c481ccaa29a6.png"
+  },
+  "https://enem.dev/2022/questions/161/e1e86e81-76dc-4763-a118-273941076831.png": {
+    "status": "available",
+    "local": "/assets/exam/d039871522adbe525e8a1873.png"
+  },
+  "https://enem.dev/2022/questions/170/be397d74-899b-444a-b587-931e9c3505ca.png": {
+    "status": "available",
+    "local": "/assets/exam/034b4b3934e8a07546931488.png"
+  },
+  "https://enem.dev/2022/questions/171/45b098d3-26d2-49c5-a129-40e85febb05b.png": {
+    "status": "available",
+    "local": "/assets/exam/e76d8e818d5c36ab99e58d20.png"
+  },
+  "https://enem.dev/2022/questions/177/fb1d11e4-76d3-4657-b78f-84e7bcd81f6c.png": {
+    "status": "available",
+    "local": "/assets/exam/2a1528e4eb514d3487c5e495.png"
+  },
+  "https://enem.dev/2022/questions/44/510dde52-fd88-4c3a-88bd-cedac5510317.jpg": {
+    "status": "available",
+    "local": "/assets/exam/119ed1f42e3f1b5bb0730989.jpg"
+  },
+  "https://enem.dev/2022/questions/5-espanhol/2a1a630d-3c73-4b12-81e5-219ee4f917b7.jpg": {
+    "status": "available",
+    "local": "/assets/exam/7db2a121fa3661ac9eb31d5b.jpg"
+  },
+  "https://enem.dev/2022/questions/70/1539c835-a8b9-444d-949c-51d59d8d33fe.png": {
+    "status": "available",
+    "local": "/assets/exam/fbfd2a4a82677bb951cbd334.png"
+  },
+  "https://enem.dev/2022/questions/78/1032a7bb-17e5-4711-ad16-aa16988017fa.png": {
+    "status": "available",
+    "local": "/assets/exam/d907e5ba463db72ffdd66ac2.png"
+  },
+  "https://enem.dev/2022/questions/94/a62bc797-e3bd-4754-bc9b-433469b0a49f.png": {
+    "status": "available",
+    "local": "/assets/exam/a577ae44d3ceb03d01c80d77.png"
+  },
+  "https://enem.dev/2022/questions/96/32b31925-79f3-4809-bdb7-93b2e00c87d4.png": {
+    "status": "available",
+    "local": "/assets/exam/ed5c99fbcc14a1fbc4fec103.png"
+  },
+  "https://enem.dev/2022/questions/96/430f5ad8-c181-4e82-8b90-364514a5e80d.png": {
+    "status": "available",
+    "local": "/assets/exam/d7f2de9bc5987d6ddf9f278c.png"
+  },
+  "https://enem.dev/2022/questions/96/5ba7ae4b-c03e-457f-8a35-47bf0db1cef1.png": {
+    "status": "available",
+    "local": "/assets/exam/746d0dce80fc23f89ae29f20.png"
+  },
+  "https://enem.dev/2022/questions/96/970c1d36-8b55-4012-b912-db3efb32fbe4.png": {
+    "status": "available",
+    "local": "/assets/exam/992c357e5256643f7685d630.png"
+  },
+  "https://enem.dev/2022/questions/96/9ccc03d3-49a3-45fa-bd85-aabe825984a6.png": {
+    "status": "available",
+    "local": "/assets/exam/d292f53419c6bd223eff6980.png"
+  },
+  "https://enem.dev/2022/questions/96/ff6f131d-afb1-4c4b-a8d4-f1f201170062.png": {
+    "status": "available",
+    "local": "/assets/exam/9c42c536c8d16635766e6bba.png"
+  },
+  "https://enem.dev/2023/questions/24/78918e1a-00e2-4972-b8f7-9cc17a935ec2.png": {
+    "status": "available",
+    "local": "/assets/exam/bc5a7237984c0d7a5a20cfcd.png"
+  }
+}

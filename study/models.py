@@ -111,5 +111,3 @@ class AttemptAnswer(models.Model):
         ordering = ['position']
         constraints = [models.UniqueConstraint(fields=['attempt', 'question'], name='unique_attempt_question'),
                        models.UniqueConstraint(fields=['attempt', 'position'], name='unique_attempt_position')]
-
-

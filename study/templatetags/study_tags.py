@@ -15,6 +15,8 @@ def exam_text(value):
     # Markdown pode criar URLs javascript mesmo depois de escapar o HTML.
     def clean_url(match):
         attribute, url = match.group(1), html.unescape(match.group(2))
+        if attribute == 'src' and re.fullmatch(r'/assets/exam/[a-f0-9]{24}\.(?:png|jpg|jpeg|webp)', url):
+            return match.group(0)
         parsed = urlsplit(url)
         if parsed.scheme != 'https':
             return f'{attribute}="#"'
@@ -23,6 +25,7 @@ def exam_text(value):
         return match.group(0)
     output = re.sub(r'(href|src)="([^"]*)"', clean_url, output)
     output = output.replace('<img ', '<img loading="lazy" ')
+    output = output.replace('alt=""', 'alt="Figura do enunciado da questão"')
     return mark_safe(output)
 
 @register.filter

@@ -1,0 +1,642 @@
+{
+  "matematica-razao-e-proporcao": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/razao-e-proporcao/",
+    "title": "Razão e Proporção"
+  },
+  "matematica-regra-de-tres": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/regra-de-tres-simples/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "matematica-escalas": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/exercicios-de-escalas/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "matematica-porcentagem": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/porcentagem/",
+    "title": "Porcentagem: o que é e como calcular (com exemplos e exercícios)"
+  },
+  "matematica-juros-simples-e-composto": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/juros-simples-e-compostos/",
+    "title": "Juros Simples e Compostos"
+  },
+  "matematica-funcoes-de-1o-e-2o-grau": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/funcao-afim/",
+    "title": "Função Afim (Função do 1º Grau)"
+  },
+  "matematica-probabilidade": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/probabilidade/",
+    "title": "Conceito e Cálculo da Probabilidade"
+  },
+  "matematica-estatistica-media-mediana-e-moda": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/media-moda-e-mediana/",
+    "title": "Média, Moda e Mediana"
+  },
+  "matematica-geometria-plana": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/geometria-plana/",
+    "title": "Geometria Plana"
+  },
+  "matematica-geometria-espacial": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/geometria-espacial/",
+    "title": "Geometria espacial: quais são as figuras e suas fórmulas"
+  },
+  "matematica-unidades-de-medida-e-conversoes": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/unidades-de-medida/",
+    "title": "Unidades de medida: comprimento, capacidade, massa, volume, tempo"
+  },
+  "matematica-analise-combinatoria": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/analise-combinatoria/",
+    "title": "Análise Combinatória"
+  },
+  "portugues-interpretacao-de-textos": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/interpretacao-de-texto/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "portugues-generos-textuais": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/generos-textuais/",
+    "title": "Gêneros textuais: o que são, tipos e exemplos"
+  },
+  "portugues-funcoes-da-linguagem": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/funcoes-da-linguagem/",
+    "title": "Funções da linguagem: quais são os 6 tipos (com explicação e exemplos)"
+  },
+  "portugues-variacao-linguistica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/variacoes-linguisticas/",
+    "title": "O que é variação linguística (tipos e exemplos)"
+  },
+  "portugues-denotacao-e-conotacao": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/denotacao-e-conotacao/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "portugues-figuras-de-linguagem": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/figuras-de-linguagem/",
+    "title": "Figuras de linguagem: resumo e exemplos"
+  },
+  "portugues-coesao-e-coerencia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/coesao-e-coerencia/",
+    "title": "Coesão e Coerência"
+  },
+  "portugues-semantica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/semantica/",
+    "title": "Semântica: o que é (com exemplos)"
+  },
+  "portugues-morfologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/lingua-portuguesa/morfologia/",
+    "title": "Morfologia - Língua Portuguesa"
+  },
+  "portugues-sintaxe": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/lingua-portuguesa/sintaxe/",
+    "title": "Sintaxe - Língua Portuguesa"
+  },
+  "portugues-concordancia-regencia-pontuacao-e-crase": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/concordancia-verbal-e-nominal/",
+    "title": "Concordância Verbal e Nominal"
+  },
+  "literatura-trovadorismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/trovadorismo/",
+    "title": "Trovadorismo: o que é e suas características (com exemplos de cantigas)"
+  },
+  "literatura-humanismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/humanismo/",
+    "title": "Humanismo na literatura: características, autores e obras"
+  },
+  "literatura-classicismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/classicismo/",
+    "title": "Classicismo: resumo, contexto histórico e em Portugal"
+  },
+  "literatura-quinhentismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/quinhentismo/",
+    "title": "Quinhentismo"
+  },
+  "literatura-barroco": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/barroco/",
+    "title": "Barroco: resumo, contexto histórico e características"
+  },
+  "literatura-arcadismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/arcadismo-no-brasil/",
+    "title": "Arcadismo no Brasil"
+  },
+  "literatura-romantismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/romantismo/",
+    "title": "Romantismo"
+  },
+  "literatura-realismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/realismo/",
+    "title": "Realismo"
+  },
+  "literatura-naturalismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/naturalismo-no-brasil/",
+    "title": "Naturalismo no Brasil"
+  },
+  "literatura-parnasianismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/parnasianismo-no-brasil/",
+    "title": "Parnasianismo no Brasil"
+  },
+  "literatura-simbolismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/simbolismo-no-brasil/",
+    "title": "Simbolismo no Brasil"
+  },
+  "literatura-pre-modernismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/pre-modernismo/",
+    "title": "Pré-Modernismo"
+  },
+  "literatura-modernismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/modernismo-no-brasil/",
+    "title": "Modernismo no Brasil"
+  },
+  "ingles-vocabulario": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/ingles-no-enem/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "ingles-interpretacao-de-textos": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/interpretacao-de-texto-em-ingles/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "espanhol-semantica": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/espanhol-no-enem/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "espanhol-interpretacao-de-textos": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/interpretacao-de-texto-em-espanhol/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "artes-elementos-da-linguagem-visual": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/artes/artes-visuais/",
+    "title": "Artes Visuais"
+  },
+  "artes-arte-medieval-e-renascentista": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/arte-renascentista/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "artes-barroco-e-rococo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/arte-barroca/",
+    "title": "Arte Barroca: resumo, características e no Brasil"
+  },
+  "artes-neoclassicismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/neoclassicismo/",
+    "title": "Neoclassicismo: o que foi e suas características nas artes"
+  },
+  "artes-impressionismo-e-pos-impressionismo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/impressionismo/",
+    "title": "Impressionismo"
+  },
+  "artes-vanguardas-europeias": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/vanguardas-europeias/",
+    "title": "Vanguardas Europeias: resumo e características"
+  },
+  "artes-arte-contemporanea": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/arte-contemporanea/",
+    "title": "Arte Contemporânea"
+  },
+  "educacao-fisica-conceito-de-corpo-e-cultura-corporal": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/cultura-corporal/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "educacao-fisica-esportes-e-suas-classificacoes": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/esportes/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "educacao-fisica-jogos-e-brincadeiras-populares": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/jogos-e-brincadeiras/",
+    "title": "15 jogos e brincadeiras divertidos"
+  },
+  "educacao-fisica-dancas-brasileiras-e-manifestacoes-culturais": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/dancas-brasileiras/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "educacao-fisica-ginastica-e-praticas-corporais": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/ginastica/",
+    "title": "Ginástica: os tipos, a história e o conceito"
+  },
+  "educacao-fisica-saude-e-qualidade-de-vida": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/atividade-fisica/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "historia-idade-media": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/idade-media/",
+    "title": "Idade Média: o que foi, características e acontecimentos"
+  },
+  "historia-idade-moderna": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/idade-moderna/",
+    "title": "Idade Moderna: entenda o que foi e um resumo dos principais acontecimentos"
+  },
+  "historia-revolucao-industrial": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/revolucao-industrial/",
+    "title": "Revolução Industrial: o que foi (resumo)"
+  },
+  "historia-brasil-colonia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/brasil-colonia/",
+    "title": "Brasil Colônia - A Colonização do Brasil"
+  },
+  "historia-brasil-imperio": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/brasil-imperio/",
+    "title": "Brasil Império"
+  },
+  "historia-brasil-republica-velha": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/republica-velha/",
+    "title": "República Velha"
+  },
+  "historia-era-vargas": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/era-vargas/",
+    "title": "Era Vargas: o que foi e todas as fases do governo"
+  },
+  "historia-estado-novo": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/estado-novo/",
+    "title": "Estado Novo"
+  },
+  "historia-guerra-fria": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/guerra-fria/",
+    "title": "Guerra Fria: o que foi, suas causas e consequências (resumo)"
+  },
+  "historia-ditadura-militar": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/ditadura-militar-no-brasil/",
+    "title": "Ditadura Militar no Brasil: resumo, causas e fim"
+  },
+  "historia-ditaduras-na-america-latina": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/ditaduras-na-america-latina/",
+    "title": "Ditaduras na América Latina: regimes, golpes e transições democráticas"
+  },
+  "geografia-cartografia": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/cartografia/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "geografia-geologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/geografia/geologia/",
+    "title": "Geologia"
+  },
+  "geografia-climatologia": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/climatologia/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "geografia-dominios-morfoclimaticos": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/dominios-morfoclimaticos/",
+    "title": "Todos os domínios morfoclimáticos do Brasil explicados"
+  },
+  "geografia-fontes-de-energia-renovaveis-e-nao-renovaveis": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/fontes-de-energia/",
+    "title": "Fontes de energia: o que são e seus tipos (renováveis e não renováveis)"
+  },
+  "geografia-espaco-agrario": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/espaco-agrario/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "geografia-espaco-urbano": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/urbanizacao/",
+    "title": "Urbanização: o que é e características do processo"
+  },
+  "geografia-transportes-do-brasil": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/transportes-no-brasil/",
+    "title": "Meios de transportes no Brasil: quais são"
+  },
+  "geografia-globalizacao": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/globalizacao/",
+    "title": "Globalização: o que é, origem, efeitos, vantagens e desvantagens"
+  },
+  "geografia-geopolitica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/geografia/geopolitica/",
+    "title": "Geopolítica"
+  },
+  "sociologia-cultura-e-sociedade": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/cultura-e-sociedade/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "sociologia-instituicoes-sociais-e-controle-social": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/instituicoes-sociais/",
+    "title": "Instituições Sociais"
+  },
+  "sociologia-karl-marx-emile-durkheim-e-max-weber": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/classicos-da-sociologia/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "sociologia-estado-e-cidadania": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/cidadania/",
+    "title": "Cidadania: o que é, direitos e deveres"
+  },
+  "sociologia-mundo-do-trabalho": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/sociologia-do-trabalho/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "sociologia-desigualdade-social": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/desigualdade-social/",
+    "title": "O que é Desigualdade Social: causas, consequências e exemplos"
+  },
+  "sociologia-movimentos-sociais": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/movimentos-sociais/",
+    "title": "Movimentos sociais: o que são e o que representam (com exemplos)"
+  },
+  "sociologia-sociologia-brasileira": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/sociologia-brasileira/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "sociologia-industria-cultural": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/industria-cultural/",
+    "title": "Indústria Cultural: entenda o que é, suas características e exemplos"
+  },
+  "sociologia-sociologia-contemporanea": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/sociologia-contemporanea/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "filosofia-filosofia-antiga": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/filosofia-antiga/",
+    "title": "Filosofia Antiga"
+  },
+  "filosofia-areas-da-filosofia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/o-que-e-filosofia/",
+    "title": "O que é Filosofia?"
+  },
+  "filosofia-platao-mundo-das-ideias-e-teoria-do-conhecimento": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/platao/",
+    "title": "Platão"
+  },
+  "filosofia-etica-de-aristoteles": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/aristoteles/",
+    "title": "Aristóteles: biografia, ideias e obras do filósofo grego"
+  },
+  "filosofia-epistemologia": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/teoria-do-conhecimento/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "filosofia-filosofia-moderna": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/filosofia-moderna/",
+    "title": "Filosofia Moderna: características, conceitos e filósofos"
+  },
+  "filosofia-kant-etica-e-dever": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/immanuel-kant/",
+    "title": "Immanuel Kant: biografia, obras e principais ideias"
+  },
+  "filosofia-filosofia-politica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/filosofia-politica/",
+    "title": "Filosofia Política"
+  },
+  "filosofia-psicanalise-e-teoria-critica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/escola-de-frankfurt/",
+    "title": "Escola de Frankfurt"
+  },
+  "biologia-citologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/citologia/",
+    "title": "Citologia: resumo, células e organelas"
+  },
+  "biologia-bioenergetica": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/bioenergetica/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "biologia-microbiologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/microbiologia/",
+    "title": "Microbiologia: resumo, o que é e microrganismos"
+  },
+  "biologia-genetica-e-hereditariedade": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/biologia/genetica/",
+    "title": "Genética"
+  },
+  "biologia-evolucao-e-selecao-natural": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/biologia/evolucao/",
+    "title": "Evolução"
+  },
+  "biologia-botanica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/biologia/botanica/",
+    "title": "Botânica"
+  },
+  "biologia-zoologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/biologia/zoologia/",
+    "title": "Zoologia"
+  },
+  "biologia-fisiologia-humana": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/fisiologia-humana-o-que-e-e-estuda/",
+    "title": "Fisiologia humana: o que é e estuda?"
+  },
+  "biologia-imunologia-vacinas-e-soros": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/imunologia/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "biologia-ecologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/biologia/ecologia/",
+    "title": "Ecologia"
+  },
+  "quimica-moleculas-e-propriedades": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/ligacoes-quimicas/",
+    "title": "Ligações Químicas"
+  },
+  "quimica-separacao-de-misturas": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/separacao-de-misturas/",
+    "title": "Separação de Misturas: métodos e processos"
+  },
+  "quimica-funcoes-inorganicas": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/funcoes-inorganicas/",
+    "title": "Funções Inorgânicas: Ácidos, Bases, Sais e Óxidos"
+  },
+  "quimica-solucoes-e-concentracao": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/concentracao-de-solucoes/",
+    "title": "Concentração de soluções: tipos e exercícios"
+  },
+  "quimica-estequiometria": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/estequiometria/",
+    "title": "Estequiometria"
+  },
+  "quimica-termoquimica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/termoquimica/",
+    "title": "Termoquímica: o que é, reações químicas e entalpia"
+  },
+  "quimica-cinetica-quimica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/cinetica-quimica/",
+    "title": "Cinética Química: velocidade, influência de fatores e exercícios"
+  },
+  "quimica-equilibrio-quimico-e-ph": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/equilibrio-quimico/",
+    "title": "Equilíbrio Químico"
+  },
+  "quimica-propriedades-dos-compostos-organicos": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/funcoes-organicas/",
+    "title": "Funções Orgânicas"
+  },
+  "quimica-quimica-organica-reacoes-organicas-e-isomeria": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/reacoes-organicas/",
+    "title": "Reações Orgânicas: Adição, Substituição, Eliminação e Oxidação"
+  },
+  "quimica-eletroquimica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/eletroquimica/",
+    "title": "Eletroquímica: resumo, pilhas, eletrólise e exercícios"
+  },
+  "fisica-cinematica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/cinematica/",
+    "title": "Cinemática: conceito e fórmulas"
+  },
+  "fisica-dinamica": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/dinamica/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "fisica-hidrostatica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/hidrostatica/",
+    "title": "Hidrostática: densidade, pressão, empuxo e fórmulas"
+  },
+  "fisica-termologia": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/fisica/termologia/",
+    "title": "Termologia"
+  },
+  "fisica-ondulatoria": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/fisica/ondulatoria/",
+    "title": "Ondas e Óptica"
+  },
+  "fisica-optica": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/optica/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "fisica-eletrodinamica": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/eletrodinamica/",
+    "title": "Eletrodinâmica: o que é, aplicações e exercícios"
+  },
+  "fisica-radioatividade": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/radioatividade/",
+    "title": "Radioatividade: o que é, tipos, leis e exercícios"
+  },
+  "redacao-gramatica-crase-colocacao-da-virgula-e-pontuacao": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/crase/",
+    "title": "Crase: quando usar (com exemplos)"
+  },
+  "redacao-estrutura-da-redacao": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/texto-dissertativo-argumentativo/",
+    "title": "Texto dissertativo-argumentativo: estrutura, como fazer e exemplos"
+  },
+  "redacao-competencias-do-enem": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/redacao-enem/",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "redacao-repertorio-sociocultural": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/repertorio-sociocultural/",
+    "title": "Repertório sociocultural: o que é e como usar na redação (com exemplos)"
+  },
+  "redacao-conectivos": {
+    "status": "available",
+    "url": "https://www.todamateria.com.br/conectivos/",
+    "title": "Conectivos para redação: lista e tipos"
+  },
+  "redacao-proposta-de-intervencao": {
+    "status": "unverified",
+    "url": "https://www.todamateria.com.br/proposta-de-intervencao/",
+    "error": "HTTP Error 404: Not Found"
+  }
+}

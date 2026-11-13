@@ -1,0 +1,17 @@
+{% extends 'base.html' %}{% load static %}
+{% block content %}
+<section class="hero">
+  <div class="hero-copy"><p class="eyebrow">PLANEJE <span>•</span> ESTUDE <span>•</span> CONQUISTE</p>
+    <h1>Seu futuro começa<br>com um <em>bom plano.</em></h1>
+    <p class="lead">Criada por discentes para alunos, a Trilha de Estudos ajuda você a organizar a rotina acadêmica, aprender com métodos de estudo e se preparar para o ENEM.</p>
+    <a href="{% url 'enem' %}" class="btn rounded">Comece agora <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="hero-image"><img src="{% static 'images/inicio.jpg' %}" alt="Mesa com livros, notebook e materiais da Trilha de Estudos" width="650" height="420"></div>
+</section>
+<section class="feature-strip" aria-label="Recursos da Trilha">
+  <a href="{% url 'techniques' %}#organizacao"><span class="feature-icon" aria-hidden="true">▦</span><h2>Organização</h2><p>Monte seu cronograma, defina metas e acompanhe tarefas e lembretes.</p><span class="text-link">Organize sua rotina →</span></a>
+  <a href="{% url 'techniques' %}"><span class="feature-icon" aria-hidden="true">◷</span><h2>Métodos de estudo</h2><p>Conheça o Pomodoro, os mapas mentais e o planejamento de estudos.</p><span class="text-link">Encontre seu método →</span></a>
+  <a href="{% url 'enem' %}"><span class="feature-icon" aria-hidden="true">▤</span><h2>Conteúdo para o ENEM</h2><p>Explore matérias, materiais de apoio e videoaulas por conteúdo.</p><span class="text-link">Explore os conteúdos →</span></a>
+  <a href="{% url 'exercises' %}"><span class="feature-icon" aria-hidden="true">▥</span><h2>Mais do que uma prova</h2><p>Pratique com questões oficiais e acompanhe seus acertos e erros.</p><span class="text-link">Pratique o que aprendeu →</span></a>
+</section>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block title %}Exercícios | Trilha de Estudos{% endblock %}
+{% block content %}
+<section class="page-heading"><p class="eyebrow">APRENDA TAMBÉM NA PRÁTICA</p><h1>Cada questão,<br><em>um passo à frente.</em></h1><p class="lead">Escolha uma matéria e depois o conteúdo que deseja praticar. Você encontrará listas com até dez questões oficiais do ENEM.</p></section>
+<div class="section-heading"><h2>Qual matéria vamos estudar?</h2><span class="caption">Matéria → conteúdo → questões</span></div>
+<div class="card-grid three">{% for subject in subjects %}<a class="card subject-card" href="{% url 'subject' subject.slug %}?origem=exercicios"><span class="tag">{{ subject.area.name }}</span><h2>{{ subject.name }}</h2><p>{{ subject.topic_count }} conteúdos selecionados</p><span class="text-link">Escolher conteúdo →</span></a>{% endfor %}</div>
+<aside class="source-note"><strong>Questões reais, quantidade transparente.</strong><p>As listas utilizam questões oficiais disponíveis no acervo consultado. Quando há menos de dez correspondentes ao tópico, apresentamos a quantidade encontrada.</p></aside>
+{% endblock %}

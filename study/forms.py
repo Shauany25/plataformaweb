@@ -1,7 +1,6 @@
 import uuid
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
-from django.utils import timezone
 from .models import PlanItem, User
 
 
@@ -61,4 +60,6 @@ class PlanForm(forms.ModelForm):
             data['day'], data['time'] = None, None
         if data.get('kind') == 'reminder' and not data.get('due'):
             self.add_error('due', 'Informe quando o lembrete deve aparecer.')
+        if data.get('kind') in {'schedule', 'task'}:
+            data['due'] = None
         return data
