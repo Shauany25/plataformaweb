@@ -15,7 +15,7 @@ São objetivos específicos da plataforma:
 
 ## Tecnologias utilizadas
 
-O sistema utiliza **Python e Django 5.2** no servidor, **SQLite** para persistência dos dados e **HTML, CSS e JavaScript** na interface. A aplicação é organizada em modelos de dados, formulários, visualizações, rotas e templates.
+O sistema utiliza **Python e Django 5.2** no servidor, **PostgreSQL no Supabase** para persistência dos dados (ou SQLite para desenvolvimento local) e **HTML, CSS e JavaScript** na interface. A aplicação é organizada em modelos de dados, formulários, visualizações, rotas e templates.
 
 ## Executar no Windows (PowerShell)
 
@@ -33,6 +33,24 @@ Após iniciar o servidor, abra http://127.0.0.1:8000/ no navegador. Em execuçõ
 
 As páginas precisam ser servidas pelo Django. Abrir `index.html` diretamente ou servir o projeto com Live Server não executa contas, pesquisa, exercícios ou armazenamento.
 
+
+## Banco de dados no Supabase
+
+O Django acessa o PostgreSQL do Supabase diretamente; as contas continuam sendo administradas pelo Django, sem usar Supabase Auth. No painel do Supabase, abra **Connect** e copie a URI do **Session pooler** (ou use a conexão direta se sua rede suportar IPv6). Substitua o marcador pela senha do banco. Codifique caracteres especiais da senha no formato URL (percent-encoding). Não compartilhe a URI completa nem a inclua no repositório: ela contém credenciais.
+
+No PowerShell, configure a URI no ambiente do processo e instale as dependências:
+
+```powershell
+$env:DATABASE_URL = 'postgresql://USUARIO:SENHA@HOST:5432/postgres'
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe manage.py migrate
+.\.venv\Scripts\python.exe manage.py seed_catalog
+.\.venv\Scripts\python.exe manage.py runserver 127.0.0.1:8000
+```
+
+A variável precisa ser definida novamente ao abrir outro terminal, ou configurada de forma segura no ambiente da hospedagem. Sem DATABASE_URL, o modo de desenvolvimento usa SQLite; em produção, a variável é obrigatória. A conexão exige SSL. Use o pooler em modo de sessão, não em modo de transação. A chave de API pública do Supabase não substitui a URI de conexão do banco.
+
+As migrações criam as tabelas no banco configurado, e seed_catalog carrega o catálogo. Elas não transferem automaticamente contas, senhas, planos ou progresso que já estejam no SQLite. Se esses dados precisarem ser preservados, faça backup e planeje uma migração antes de iniciar o uso do banco novo. Revise as permissões da Data API do Supabase e mantenha as tabelas internas do Django inacessíveis aos clientes públicos; a aplicação acessa o banco pelo servidor.
 ## Funcionalidades implementadas
 
 - Cadastro e entrada por e-mail e senha; senhas protegidas pelo mecanismo de hash do Django, sessões e proteção CSRF.
@@ -100,6 +118,6 @@ O teste de interface usa o Microsoft Edge instalado, cria uma conta temporária 
 
 ## Hospedagem
 
-O projeto foi implementado e validado em ambiente local. A publicação na internet requer hospedagem com suporte a Python/WSGI e armazenamento persistente para o banco SQLite. A aplicação não pode ser executada apenas como um conjunto de arquivos estáticos. A versão atual não está hospedada em um serviço externo.
+O projeto foi implementado e validado em ambiente local. A publicação na internet requer hospedagem com suporte a Python/WSGI e conexão com o banco PostgreSQL do Supabase. A aplicação não pode ser executada apenas como um conjunto de arquivos estáticos. A versão atual não está hospedada em um serviço externo.
 
-Para configurar produção, defina `DJANGO_DEBUG=0`, `DJANGO_SECRET_KEY` e `DJANGO_ALLOWED_HOSTS` no ambiente; execute migrações e `collectstatic`, configure o servidor WSGI, HTTPS e o serviço dos arquivos estáticos. O projeto exige uma chave de ambiente em produção e habilita cookies seguros e redirecionamento para HTTPS. O arquivo `.django-secret`, o banco, as sessões e credenciais locais são ignorados pelo Git. O banco SQLite deve ter backup no ambiente de hospedagem escolhido.
+Para configurar produção, defina `DJANGO_DEBUG=0`, `DJANGO_SECRET_KEY` e `DJANGO_ALLOWED_HOSTS` no ambiente; execute migrações e `collectstatic`, configure o servidor WSGI, HTTPS e o serviço dos arquivos estáticos. O projeto exige uma chave de ambiente em produção e habilita cookies seguros e redirecionamento para HTTPS. O arquivo `.django-secret`, o banco, as sessões e credenciais locais são ignorados pelo Git. Configure backups adequados para o banco Supabase.

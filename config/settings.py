@@ -24,7 +24,26 @@ TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates', 'DIR
               'APP_DIRS': True, 'OPTIONS': {'context_processors': [
                   'django.template.context_processors.request', 'django.contrib.auth.context_processors.auth',
                   'django.contrib.messages.context_processors.messages']}}]
-DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': BASE_DIR / 'db.sqlite3', 'OPTIONS': {'timeout': 20}}}
+database_url = os.environ.get('DATABASE_URL')
+if database_url:
+    from urllib.parse import unquote, urlsplit
+
+    url = urlsplit(database_url)
+    if url.scheme not in ('postgres', 'postgresql') or not url.hostname or not url.path.strip('/'):
+        raise ValueError('DATABASE_URL deve ser uma URL PostgreSQL válida.')
+    DATABASES = {'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': unquote(url.path.lstrip('/')),
+        'USER': unquote(url.username or ''),
+        'PASSWORD': unquote(url.password or ''),
+        'HOST': url.hostname,
+        'PORT': url.port or 5432,
+        'OPTIONS': {'sslmode': 'require'},
+    }}
+elif not DEBUG:
+    raise RuntimeError('Defina DATABASE_URL para o banco PostgreSQL em produção.')
+else:
+    DATABASES = {'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': BASE_DIR / 'db.sqlite3', 'OPTIONS': {'timeout': 20}}}
 AUTH_USER_MODEL = 'study.User'
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
