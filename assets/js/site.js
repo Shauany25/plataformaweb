@@ -1,49 +1,16 @@
 import {db,result} from './backend.js';
-import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js?v=7';
-import {quiz} from './quiz.js?v=7';
-import {guide} from './guia.js?v=7';
+import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js';
+import {quiz} from './quiz.js';
+import {guide} from './guia.js';
 
 const page = location.pathname.split('/').pop() || 'index.html';
 const home = new URL('index.html', location.href).href;
 const menu = document.querySelector('#menu-toggle');
-const navigation = document.querySelector('#menu');
-function setMenu(open) {
-  navigation.classList.toggle('open', open);
+menu.onclick = () => {
+  const open = document.querySelector('#menu').classList.toggle('open');
   menu.setAttribute('aria-expanded',String(open));
   menu.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');
-  menu.textContent = open ? 'Fechar' : 'Menu';
-}
-menu.onclick = () => setMenu(!navigation.classList.contains('open'));
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && navigation.classList.contains('open')) {
-    setMenu(false);
-    menu.focus();
-  }
-});
-
-function areaFilter() {
-  const index = main.querySelector('.exercise-index');
-  if (!index) return;
-  const groups = [...index.querySelectorAll('.subject-group')];
-  const filter = document.createElement('div');
-  filter.className = 'area-filter';
-  filter.setAttribute('role', 'group');
-  filter.setAttribute('aria-label', 'Filtrar matérias por área');
-  const choices = [['', 'Todas as áreas'], ['humanas', 'Humanas'], ['natureza', 'Natureza'], ['matematica', 'Matemática'], ['linguagens', 'Linguagens']];
-  for (const [slug, label] of choices) {
-    const control = document.createElement('button');
-    control.type = 'button';
-    control.textContent = label;
-    if (slug) control.className = 'area-color-' + slug;
-    control.setAttribute('aria-pressed', String(!slug));
-    control.onclick = () => {
-      for (const other of filter.children) other.setAttribute('aria-pressed', String(other === control));
-      for (const group of groups) group.hidden = Boolean(slug) && !group.classList.contains('area-color-' + slug);
-    };
-    filter.append(control);
-  }
-  index.before(filter);
-}
+};
 window.addEventListener('unhandledrejection',event=>notice(event.reason?.message || 'Falha ao salvar. Tente novamente.'));
 function account(user) {
   const box = document.querySelector('.account-actions');
@@ -123,7 +90,6 @@ async function start() {
     else {
       const topic=await catalogPage(page==='exercicio.html');
       if(topic)await studyState(user,topic);
-      if(page==='exercicio.html') areaFilter();
     }
   }
   account(user);
