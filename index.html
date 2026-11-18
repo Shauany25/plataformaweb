@@ -5,10 +5,10 @@
   <meta name="description" content="Organize seus estudos e prepare-se para o ENEM com materiais, questões oficiais e técnicas de estudo.">
   <title>Trilha de Estudos</title>
   <link rel="stylesheet" href="assets/css/app.css">
-  <link rel="stylesheet" href="assets/css/site-refresh.css?v=6">
+  <link rel="stylesheet" href="assets/css/site-refresh.css?v=7">
 
   <script src="assets/vendor/supabase.js"></script>
-  <script type="module" src="assets/js/site.js?v=6"></script>
+  <script type="module" src="assets/js/site.js?v=7"></script>
 </head>
 <body data-user="visitante">
 <a href="#principal" class="skip-link">Ir para o conteúdo</a>
@@ -24,7 +24,7 @@
   <div class="account-actions"><a class="btn btn-light" href="conta.html">Entrar</a><a class="btn" href="conta.html?cadastro=1">Cadastrar</a></div>
 </header>
 <div class="search-bar"><form role="search" action="pesquisa.html" method="get">
-  <label for="global-search">Buscar no catálogo</label><div class="search-input"><input id="global-search" name="q" type="search" placeholder="Matéria, conteúdo ou questão" value="" maxlength="200" required><button type="submit" aria-label="Pesquisar">Pesquisar</button></div>
+  <label for="global-search">Buscar no catálogo</label><div class="search-input"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="global-search" name="q" type="search" placeholder="Matéria, conteúdo ou questão" value="" maxlength="200" required><button type="submit" aria-label="Pesquisar">Pesquisar</button></div>
 </form></div>
 <div class="notice-wrap" aria-live="polite"><p class="notice error" id="feedback" hidden></p>
 
@@ -33,7 +33,7 @@
 <main id="principal" tabindex="-1">
 <section class="hero">
   <div class="hero-copy">
-    <h1>Prepare-se para o ENEM</h1>
+    <h1>Prepare-se<br> para o <em>ENEM</em></h1>
     <p class="lead">Revise conteúdos do ensino médio, pratique com questões de edições anteriores e organize seu tempo de estudo.</p>
     <div class="actions">
       <a href="ENEM.html" class="btn">Explorar matérias</a>
@@ -43,15 +43,15 @@
   <nav class="home-areas" aria-label="Áreas de conhecimento">
     <h2>Estude por área</h2>
     <ul>
-      <li><a class="area-color-humanas" href="ENEM.html?area=humanas">Ciências Humanas</a></li>
-      <li><a class="area-color-natureza" href="ENEM.html?area=natureza">Ciências da Natureza</a></li>
-      <li><a class="area-color-matematica" href="ENEM.html?area=matematica">Matemática</a></li>
-      <li><a class="area-color-linguagens" href="ENEM.html?area=linguagens">Linguagens</a></li>
+      <li><a class="area-color-humanas" href="ENEM.html?area=humanas"><svg class="line-icon" aria-hidden="true"><use href="assets/images/areas.svg#humanas"/></svg>Ciências Humanas</a></li>
+      <li><a class="area-color-natureza" href="ENEM.html?area=natureza"><svg class="line-icon" aria-hidden="true"><use href="assets/images/areas.svg#natureza"/></svg>Ciências da Natureza</a></li>
+      <li><a class="area-color-matematica" href="ENEM.html?area=matematica"><svg class="line-icon" aria-hidden="true"><use href="assets/images/areas.svg#matematica"/></svg>Matemática</a></li>
+      <li><a class="area-color-linguagens" href="ENEM.html?area=linguagens"><svg class="line-icon" aria-hidden="true"><use href="assets/images/areas.svg#linguagens"/></svg>Linguagens</a></li>
     </ul>
   </nav>
 </section>
 <section class="home-resources" aria-labelledby="recursos">
-  <h2 id="recursos">O que você encontra aqui</h2>
+  <h2 id="recursos">Ferramentas de estudo</h2>
   <ul class="home-links">
     <li><a href="ENEM.html#areas"><strong>Conteúdos do ENEM</strong><span>Roteiros, materiais de leitura e videoaulas por matéria.</span></a></li>
     <li><a href="exercicio.html"><strong>Questões de provas anteriores</strong><span>Listas por assunto, com correção após cada resposta.</span></a></li>

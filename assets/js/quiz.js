@@ -1,5 +1,5 @@
 import {db,result} from './backend.js';
-import {main, topics, questions, params, escape, topicLink, button} from './catalogo.js?v=6';
+import {main, topics, questions, params, escape, topicLink, button} from './catalogo.js?v=7';
 
 export async function quiz(user) {
   const topic = topics.find(t=>t.slug===params.get('lista'));
@@ -24,11 +24,11 @@ export async function quiz(user) {
     main.innerHTML = `<p class="quiz-back">${button('← Voltar ao conteúdo',topicLink(topic,true),true)}</p>
       <div class="quiz-layout exercise-area area-color-${topic.subject.area.slug}"><section class="card quiz-card">
       <div class="quiz-top"><span class="tag">${escape(topic.subject.name)}</span>Questão ${index+1} de ${total}</div>
-      <div class="progress-track"><span style="width:${count/total*100}%"></span></div>
+      <div class="progress-track" role="progressbar" aria-label="Questões respondidas" aria-valuemin="0" aria-valuemax="${total}" aria-valuenow="${count}"><span style="width:${count/total*100}%"></span></div>
       <h1 class="quiz-title">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
       <form class="quiz-form"><fieldset ${selected?'disabled':''}><legend>Escolha uma alternativa</legend>
       ${item.options.map(o=>`<label class="alternative ${selected?(o.letter===item.answer?'correct':o.letter===selected?'incorrect':''):''}"><input type="radio" required name="answer" value="${o.letter}" ${o.letter===selected?'checked':''}><strong>${o.letter}</strong><span>${o.html}${o.file?'<img src="'+escape(o.file)+'" alt="Imagem da alternativa '+o.letter+'">':''}</span></label>`).join('')}</fieldset>
-      ${selected?'<p class="answer-feedback '+(selected===item.answer?'success':'error')+'">'+(selected===item.answer?'Resposta correta!':'Resposta correta: '+item.answer)+'</p>':'<button class="btn">Confirmar resposta</button>'}</form>
+      ${selected?'<p tabindex="-1" class="answer-feedback '+(selected===item.answer?'success':'error')+'">'+(selected===item.answer?'Resposta correta!':'Você marcou '+escape(selected)+'. A resposta correta é '+escape(item.answer)+'.')+'</p>':'<button class="btn">Confirmar resposta</button>'}</form>
       <div class="actions quiz-navigation">${index?button('← Anterior',go(index-1),true):''}${index+1<total?button('Próxima questão →',go(index+1),true):''}</div>
       <p class="caption"><a href="${escape(item.source)}">Fonte da questão</a> · <a href="${escape(item.pdf)}">Prova e gabarito no Inep</a></p></section>
       <aside class="sidebar"><section class="card"><h2>${count} de ${total} respondidas</h2><nav class="question-dots">${topic.questions.map((k,i)=>`<a class="${answers[k]?'answered':''}" href="${go(i)}" ${i===index?'aria-current="step"':''}>${i+1}</a>`).join('')}</nav>
@@ -49,6 +49,7 @@ export async function quiz(user) {
         answers[questionId]=value;
         if (!user) sessionStorage.setItem(key,JSON.stringify(answers));
         draw();
+        main.querySelector('.answer-feedback').focus({preventScroll:true});
       } finally { submit.disabled = false; }
     };
   }

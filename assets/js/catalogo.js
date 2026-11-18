@@ -48,17 +48,20 @@ export async function catalogPage(practice) {
   if (params.has('area')) {
     const area = areas.find(a => a.slug === params.get('area'));
     if (!area) throw new Error('Área não encontrada.');
+    main.classList.add('area-color-' + area.slug);
     main.innerHTML = crumbs(trail) + heading(area.name, area.description) + grid(area.subjects.map(s =>
       card(s.name, area.name, subjectLink(s, practice), area.slug, 'Ver conteúdos', s.topics.length + ' conteúdos')));
   } else if (params.has('materia')) {
     const subject = subjects.find(s => s.slug === params.get('materia'));
     if (!subject) throw new Error('Matéria não encontrada.');
+    main.classList.add('area-color-' + subject.area.slug);
     trail.push([subject.area.name, base + '?area=' + subject.area.slug]);
     main.innerHTML = crumbs(trail) + heading(subject.name, 'Escolha um conteúdo para estudar.') + grid(subject.topics.map(t =>
       card(t.name, subject.name, topicLink(t, practice), subject.area.slug, practice ? 'Ver exercícios' : 'Estudar conteúdo', t.summary)));
   } else if (params.has('conteudo')) {
     const t = topics.find(t => t.slug === params.get('conteudo'));
     if (!t) throw new Error('Conteúdo não encontrado.');
+    main.classList.add('area-color-' + t.subject.area.slug);
     trail.push([t.subject.name, subjectLink(t.subject, practice)]);
     if (practice) {
       const bank = await questions();
