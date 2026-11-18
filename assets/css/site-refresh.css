@@ -1,0 +1,88 @@
+:root{--purple:#6036bb;--deep:#201a30;--muted:#6e687a;--lilac:#a966cc;--line:#e9e4f1;--wash:#f5f0fc;--shadow:0 10px 30px #31205a0c}
+body{background:#faf8fd;color:var(--deep)}
+h1,.hero h1,.page-heading h1{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:-1.8px}
+h1 em{color:#693ec1}
+.cabecalho{background:#fff;border-color:#eee9f4}
+#menu a{font-weight:700;color:#635b70}
+#menu a:hover,#menu a[aria-current]{color:#6036bb;border-color:#6036bb}
+.account-link{font-weight:700;color:#6036bb;max-width:170px;overflow-wrap:anywhere}
+.btn{border-color:#653bc0;background:#653bc0;box-shadow:0 6px 18px #6840b91c}
+.btn:hover{background:#4f299f}.btn-light{background:#fff;color:#6036bb;box-shadow:none}.btn-light:hover{background:#f5f0fc}
+.search-bar{background:#f5f0fc;border-color:#ebe5f3}.search-input{border-color:#e5dcef;border-radius:11px}.search-input button{color:#6036bb}
+.eyebrow{color:#6939bd;font-size:11px;letter-spacing:1.1px}
+.page-heading{padding-top:58px}.page-heading .lead{color:#6e687a}
+.card{border-color:#ece7f2;border-radius:15px;box-shadow:0 8px 25px #31205a0b}
+a.card:hover{border-color:#bba8e0;box-shadow:0 16px 35px #31205a17;transform:translateY(-3px)}
+.text-link{color:#6036bb}.tag{color:#7043bd}.section-heading h2{letter-spacing:-.9px}
+.hero{min-height:480px;gap:45px}.hero-image{border-radius:20px;background:#f0eafa;box-shadow:0 16px 35px #31205a14}.hero-copy .eyebrow{display:inline-block;padding:7px 12px;border:1px solid #e2d8f4;border-radius:30px;background:#eee7fa;letter-spacing:1px}
+.feature-strip{gap:16px;background:transparent;padding:0;margin:20px 0 15px}
+.feature-strip>a,.feature-strip>a+a{position:relative;padding:22px;background:#fff;border:1px solid #eee9f3;border-top:4px solid #a966cc;border-radius:15px;box-shadow:0 10px 28px #31205a0d;transition:transform .2s,box-shadow .2s}
+.feature-strip>a:nth-child(1){border-top-color:#66b6dd}.feature-strip>a:nth-child(2){border-top-color:#60b99a}.feature-strip>a:nth-child(3){border-top-color:#a966cc}.feature-strip>a:nth-child(4){border-top-color:#e8a75c}
+.feature-strip>a:hover{transform:translateY(-4px);box-shadow:0 16px 35px #31205a17}.feature-icon{border-radius:12px;background:#f1eafb;color:#7043bd}
+.feature-strip>a:nth-child(1) .feature-icon{background:#e9f5fb;color:#398bb5}.feature-strip>a:nth-child(2) .feature-icon{background:#e9f7f0;color:#429c7b}.feature-strip>a:nth-child(4) .feature-icon{background:#fff3e5;color:#ca8844}
+.feature-strip h2{color:#201a30}.area-card{background:#fff}.area-symbol,.resource-icon{background:#f1eafb;color:#7043bd}.subject-card h2,.topic-card h2{color:#5934a5}
+.technique-card{border-top:4px solid #a966cc}.technique-card:nth-child(1){border-top-color:#66b6dd}.technique-card:nth-child(2){border-top-color:#60b99a}.technique-card:nth-child(3){border-top-color:#e8a75c}.technique-card .tech-art{background:#f1eafb;color:#7043bd;height:100px;line-height:100px;font-size:55px}.technique-card:nth-child(1) .tech-art{background:#e9f5fb;color:#398bb5}.technique-card:nth-child(2) .tech-art{background:#e9f7f0;color:#429c7b}.technique-card:nth-child(3) .tech-art{background:#fff3e5;color:#ca8844}
+.guide-progress{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:32px;margin:0 0 48px;border:1px solid #e4d9f4;border-radius:18px;background:linear-gradient(120deg,#f1ebfb,#fff);box-shadow:0 10px 30px #31205a0c}
+.guide-progress .eyebrow{margin-bottom:9px}.guide-progress h2{margin:0 0 8px;letter-spacing:-.8px}.guide-progress p:not(.eyebrow){color:#6e687a;margin:0;font-size:14px}.guide-progress>.btn{justify-self:start}
+.guide-progress-meter{padding:22px;background:#fff;border:1px solid #ebe5f2;border-radius:13px}.guide-progress-label{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#60586d;font-size:13px;font-weight:700}.guide-progress-label strong{color:#6036bb;font-size:25px}.guide-progress-track{height:12px;background:#ece5f5;border-radius:20px;overflow:hidden;margin:10px 0}.guide-progress-track span{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,#6036bb,#aa69cc)}.guide-progress-meter small{color:#70697a;font-size:11px}
+.guide-name{padding:20px 24px;margin:-25px 0 40px;border-radius:14px;background:#fff;border:1px solid #ebe5f2}.guide-name form{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.guide-name label{font-size:14px;font-weight:700}.guide-name input{border:1px solid #dcd1e9;border-radius:8px;padding:10px;min-height:44px;min-width:0}
+.stat{background:#fff;border-color:#e9e3f0}.stat strong{font-family:Arial,Helvetica,sans-serif;color:#6036bb;font-weight:800}.progress-track span{background:#7043bd}
+.auth-card h2,.quiz-title,footer>a{font-family:Arial,Helvetica,sans-serif}.auth-decoration{color:#c8b4ea}.signin-panel,.empty-state,.source-note{background:#f2ecfa}
+footer{background:#f5f0fc;border-color:#eae3f2}footer>a{color:#6036bb}
+@media(max-width:780px){.feature-strip{gap:12px}.feature-strip>a,.feature-strip>a+a{padding:18px}.guide-progress{grid-template-columns:1fr;gap:18px;padding:24px}.hero{gap:22px}.account-link{max-width:110px}}
+@media(max-width:500px){.page-heading{padding-top:35px}.feature-strip{grid-template-columns:1fr 1fr;gap:10px}.feature-strip>a,.feature-strip>a+a{padding:15px}.guide-progress{padding:20px;margin-bottom:36px}.guide-progress-meter{padding:16px}.guide-name input{flex:1 1 150px}.guide-name .btn{width:100%}}
+/* Uma cor identifica a área em toda a navegação de exercícios. */
+.exercise-area{--area-color:#6036bb;--area-bg:#f1eafb}
+.area-color-humanas{--area-color:#b06b26;--area-bg:#fff3e5}
+.area-color-natureza{--area-color:#287859;--area-bg:#e9f7f0}
+.area-color-matematica{--area-color:#27729a;--area-bg:#e9f5fb}
+.area-color-linguagens{--area-color:#7043bd;--area-bg:#f1eafb}
+a.exercise-area{border-top:4px solid var(--area-color)}
+a.exercise-area .tag{display:inline-block;align-self:flex-start;padding:5px 9px;border-radius:20px;color:var(--area-color);background:var(--area-bg);letter-spacing:.35px}
+a.exercise-area h2,a.exercise-area .text-link,.exercise-heading .eyebrow,.exercise-area .question-index,.quiz-layout.exercise-area .tag{color:var(--area-color)}
+.exercise-heading{border-left:4px solid var(--area-color);padding-left:20px;margin-top:24px;background:linear-gradient(90deg,var(--area-bg),transparent);border-radius:0 15px 15px 0}
+.question-preview.exercise-area{border-left:4px solid var(--area-color);background:#fff}
+.quiz-back{margin:24px 0 0}.quiz-layout.exercise-area .quiz-card{border-top:4px solid var(--area-color)}.quiz-layout.exercise-area .progress-track span{background:var(--area-color)}
+/* Destaque para a ação principal da página de exercícios. */
+.start-exercises{min-height:60px;padding:15px 27px;font-size:17px;gap:28px;box-shadow:0 8px 24px #6036bb38}
+.start-exercises span{font-size:22px;line-height:1}
+@media(max-width:500px){.exercise-heading .actions form,.exercise-heading .start-exercises{width:100%}.start-exercises{min-height:60px}}
+/* Fundo colorido para identificar rapidamente cada área. */
+a.card.exercise-area{background:var(--area-bg);border-color:var(--area-color);border-width:1px;border-top-width:5px}
+a.card.exercise-area:hover{border-color:var(--area-color);filter:brightness(.98)}
+a.card.exercise-area .tag{background:#ffffffb8}
+/* Caixas de exercícios seguem os cartões da página inicial. */
+a.card.exercise-area{background:#fff;border:1px solid #eee9f3;border-top:4px solid var(--area-color);box-shadow:0 10px 28px #31205a0d;padding:22px}
+a.card.exercise-area:hover{border-color:#eee9f3;border-top-color:var(--area-color);filter:none;transform:translateY(-4px);box-shadow:0 16px 35px #31205a17}
+a.card.exercise-area::before{display:grid;place-items:center;content:'✦';width:52px;height:52px;margin-bottom:16px;border-radius:12px;background:var(--area-bg);color:var(--area-color);font-size:26px;font-weight:700}
+a.card.area-color-humanas::before{content:'◎'}
+a.card.area-color-natureza::before{content:'✳'}
+a.card.area-color-matematica::before{content:'∑'}
+a.card.area-color-linguagens::before{content:'Aa';font-size:21px}
+a.card.exercise-area .tag{display:block;padding:0;background:transparent;color:var(--area-color);font-size:10px}
+a.card.exercise-area h2{color:#201a30}
+/* Página do conteúdo e resolução: a cor da área aparece em detalhes suaves. */
+.exercise-heading{border:0;border-left:0;border-radius:18px;background:#fff;padding:28px 30px;margin-top:28px;box-shadow:0 8px 25px #31205a0b;position:relative;overflow:hidden}
+.exercise-heading::before{content:'';position:absolute;inset:0 auto 0 0;width:5px;background:var(--area-color)}
+.exercise-heading .eyebrow{display:inline-block;letter-spacing:.7px;border-radius:30px;padding:6px 11px;margin-bottom:16px;background:var(--area-bg);color:var(--area-color)}
+.exercise-heading h1{font-size:clamp(30px,3.2vw,43px);margin-bottom:12px}
+.exercise-heading .lead{font-size:15px}
+.question-preview.exercise-area{border:1px solid #eee9f3;border-left:1px solid #eee9f3;border-radius:15px;background:#fff;box-shadow:0 8px 25px #31205a0b;padding:18px 22px}
+.question-preview.exercise-area summary{font-weight:700;color:#201a30}
+.question-preview.exercise-area .question-index{display:grid;place-items:center;flex:none;width:44px;height:44px;border-radius:12px;background:var(--area-bg);color:var(--area-color);font:700 16px Arial,sans-serif}
+.question-preview.exercise-area .text-link{color:var(--area-color)}
+.question-preview.exercise-area[open]{border-color:var(--area-color)}
+.quiz-back{margin:24px 0 4px}.quiz-back .btn{background:#fff}
+.quiz-layout.exercise-area .quiz-card{border:1px solid #eee9f3;border-top:4px solid var(--area-color);border-radius:16px;box-shadow:0 10px 30px #31205a0d}
+.quiz-layout.exercise-area .quiz-top .tag{display:inline-block;background:var(--area-bg);padding:6px 10px;border-radius:30px;color:var(--area-color);letter-spacing:.5px}
+.quiz-layout.exercise-area .quiz-title{font-family:Arial,Helvetica,sans-serif;font-size:clamp(26px,3vw,34px);font-weight:800;color:#201a30}
+.quiz-layout.exercise-area .alternative{background:#fff;border-color:#eae5ef;border-radius:11px;padding:16px}
+.quiz-layout.exercise-area .alternative:hover{background:var(--area-bg);border-color:var(--area-color)}
+.quiz-layout.exercise-area .alternative:has(input:checked){background:var(--area-bg);border-color:var(--area-color)}
+.quiz-layout.exercise-area .alternative.correct,.quiz-layout.exercise-area .alternative.correct:has(input:checked){background:#edf8f1;border-color:#8fc8a4}
+.quiz-layout.exercise-area .alternative.incorrect,.quiz-layout.exercise-area .alternative.incorrect:has(input:checked){background:#fff0f2;border-color:#dfa0ae}
+.quiz-layout.exercise-area .sidebar .card{border-radius:15px}
+@media(max-width:500px){.exercise-heading{padding:22px 20px}.question-preview.exercise-area{padding:15px}.question-preview.exercise-area .question-index{width:38px;height:38px}.quiz-layout.exercise-area .alternative{padding:12px 10px}}
+/* Mantém o conteúdo afastado da faixa lateral no cartão de exercícios. */
+.page-heading.compact.exercise-heading{padding:28px 30px 28px 35px}
+@media(max-width:500px){.page-heading.compact.exercise-heading{padding:22px 20px 22px 25px}}
