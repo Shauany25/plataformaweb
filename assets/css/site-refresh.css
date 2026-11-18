@@ -8,7 +8,18 @@ h1 em{color:#693ec1}
 .account-link{font-weight:700;color:#6036bb;max-width:170px;overflow-wrap:anywhere}
 .btn{border-color:#653bc0;background:#653bc0;box-shadow:0 6px 18px #6840b91c}
 .btn:hover{background:#4f299f}.btn-light{background:#fff;color:#6036bb;box-shadow:none}.btn-light:hover{background:#f5f0fc}
-.search-bar{background:#f5f0fc;border-color:#ebe5f3}.search-input{border-color:#e5dcef;border-radius:11px}.search-input button{color:#6036bb}
+.search-bar{background:#f5f0fc;border-color:#ebe5f3}
+.search-bar form {
+  display: grid;
+  gap: 6px;
+  width: min(730px, 100%);
+  margin-inline: auto;
+}
+.search-bar label {
+  margin: 0;
+  text-align: center;
+}
+.search-input{border-color:#e5dcef;border-radius:11px}.search-input button{color:#6036bb}
 .eyebrow{color:#6939bd;font-size:11px;letter-spacing:1.1px}
 .page-heading{padding-top:58px}.page-heading .lead{color:#6e687a}
 .card{border-color:#ece7f2;border-radius:15px;box-shadow:0 8px 25px #31205a0b}
