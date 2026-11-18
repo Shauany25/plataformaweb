@@ -1,5 +1,5 @@
 import {db,result} from './backend.js';
-import {main, topics, questions, params, escape, topicLink, button} from './catalogo.js';
+import {main, topics, questions, params, escape, topicLink, button} from './catalogo.js?v=icones';
 
 export async function quiz(user) {
   const topic = topics.find(t=>t.slug===params.get('lista'));

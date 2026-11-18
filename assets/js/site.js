@@ -1,7 +1,7 @@
 import {db,result} from './backend.js';
-import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js';
-import {quiz} from './quiz.js';
-import {guide} from './guia.js';
+import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js?v=icones';
+import {quiz} from './quiz.js?v=icones';
+import {guide} from './guia.js?v=icones';
 
 const page = location.pathname.split('/').pop() || 'index.html';
 const home = new URL('index.html', location.href).href;
