@@ -1,5 +1,5 @@
 import {db,result,myRows} from './backend.js';
-import {escape, topics, subjects, questions, questionIds, topicLink} from './catalogo.js';
+import {escape, topics, subjects, questions, questionIds, topicLink} from './catalogo.js?v=6';
 
 const kinds={schedule:'Cronograma semanal',goal:'Metas',task:'Tarefas',reminder:'Lembretes'};
 const days=['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'];
