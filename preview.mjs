@@ -7,7 +7,7 @@ import path from 'node:path';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const base = '/plataformaweb/';
 const pages = new Set(['index.html','ENEM.html','exercicio.html','tecnicas.html','conta.html','pesquisa.html']);
-const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.pdf':'application/pdf'};
+const types = {'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.svg':'image/svg+xml','.pdf':'application/pdf'};
 http.createServer(async (req,res) => {
   try {
     const pathname = new URL(req.url,'http://localhost').pathname;

@@ -1,27 +1,41 @@
 # Trilha de Estudos
 
-Plataforma de preparação para o ENEM em HTML, CSS e JavaScript. O GitHub Pages serve as páginas. O Supabase Auth gerencia as contas por e-mail e senha e o PostgreSQL guarda o planejamento e o histórico de estudos.
+A Trilha de Estudos é um site criado por estudantes para ajudar na preparação para o ENEM. Reúne conteúdos do ensino médio, questões de provas anteriores e ferramentas para organizar a rotina de estudos.
 
-**Site:** https://shauany25.github.io/plataformaweb/
+**[Acesse o site](https://shauany25.github.io/plataformaweb/)**
 
-## Conectar a conta do projeto Supabase
+## O que dá para fazer
 
-1. No projeto `hjbrhrolzeadbtywfyzp`, abra **SQL Editor → New query**, cole [configurar.sql](supabase/configurar.sql) e clique em **Run**. O script pode ser executado novamente. Ele habilita RLS e restringe cada aluno aos próprios registros.
-2. Em **Integrations → Data API**, habilite a API com o esquema `public` exposto. As permissões definidas no SQL protegem as três tabelas pessoais.
-3. Em **Authentication → Sign In / Providers**, habilite **Email** e permita novos cadastros. Em **URL Configuration**, use `https://shauany25.github.io/plataformaweb/` como **Site URL** e inclua `https://shauany25.github.io/plataformaweb/index.html` em **Redirect URLs** para a confirmação do e-mail.
-4. A URL do projeto e a **publishable key** já estão em [backend.js](assets/js/backend.js). Somente a chave pública deve estar no navegador.
-5. Cadastre uma conta de teste no site, confirme o e-mail se solicitado, entre e responda a uma questão. No Guia de Estudos, recarregue a página e confira a porcentagem e as tarefas. Os usuários aparecem em **Authentication → Users**. O nome fica nos metadados da conta. Os registros pessoais ficam em **Table Editor** nas tabelas `trilha_respostas`, `trilha_plano` e `trilha_estudados`.
+- **Estudar por matéria.** Consulte roteiros, materiais de leitura e videoaulas em Ciências Humanas, Ciências da Natureza, Matemática e Linguagens. A seção de Redação inclui um [repertório sociocultural em PDF](assets/materials/repertorio-sociocultural.pdf).
+- **Praticar com questões do ENEM.** Escolha um assunto e resolva uma lista de até dez questões, com correção após cada resposta. O catálogo reúne 15 matérias, 128 conteúdos e 616 questões distintas.
+- **Encontrar um assunto.** A busca encontra áreas, matérias, conteúdos e termos dos enunciados.
+- **Planejar os estudos.** O Guia de Estudos explica técnicas como Pomodoro e mapas mentais. Com uma conta, você pode montar um cronograma e registrar metas, tarefas e lembretes.
+- **Acompanhar o progresso.** Ao entrar na conta, você pode salvar suas respostas, conferir os acertos por matéria e marcar conteúdos estudados. O progresso considera cada questão uma vez. Também é possível estudar e resolver exercícios como visitante.
 
-## Publicação e visualização
+## Como funciona
 
-Em **Settings → Pages**, selecione **Deploy from a branch**, branch **main**, pasta **/(root)**. Os arquivos HTML na raiz são as páginas de entrada. Os links internos são relativos e funcionam no subdiretório do repositório. A publicação não exige compilação ou instalação de dependências.
+O site usa HTML, CSS e JavaScript. O GitHub Pages publica as páginas e o catálogo em JSON. O Supabase Auth cuida do cadastro e da entrada por e-mail. O banco PostgreSQL do Supabase armazena o histórico e o planejamento, com regras que limitam o acesso aos dados da própria conta.
 
-Para visualizar localmente, abra a pasta com um servidor HTTP estático, como o Live Server. Quem usa Node pode executar `node preview.mjs` e abrir http://127.0.0.1:8080/plataformaweb/. Se for testar a confirmação por e-mail localmente, inclua o endereço local terminado em `/index.html` na lista **Redirect URLs** do Supabase.
+| Caminho | Conteúdo |
+| --- | --- |
+| `*.html` | Páginas do site |
+| `assets/css/` e `assets/js/` | Estilos e comportamento da interface |
+| `assets/catalogo/` | Matérias, conteúdos e questões |
+| `assets/exam/` e `assets/materials/` | Imagens dos exercícios e material de redação |
+| `supabase/configurar.sql` | Tabelas e regras de acesso dos alunos |
 
-## Conteúdo e dados
+## Executar e publicar
 
-O catálogo público inclui 15 matérias, 128 conteúdos e 616 questões. As páginas carregam os arquivos de [catálogo](assets/catalogo/), as imagens e o material de redação pelo GitHub Pages. O histórico de respostas, os conteúdos estudados, o cronograma, as metas, as tarefas e os lembretes das contas ficam no Supabase. Visitantes podem praticar e retomar uma lista na mesma aba. A porcentagem de progresso considera cada questão respondida uma vez.
+Para visualizar localmente, sirva esta pasta com um servidor HTTP estático. Se tiver Node.js, execute `node preview.mjs` e abra [a página local](http://127.0.0.1:8080/plataformaweb/).
 
-A conversão preserva o banco SQLite anterior no computador. A transferência de contas e histórico da versão anterior exige uma migração separada para os identificadores de usuário do Supabase Auth.
+Para publicar, configure **Settings → Pages → Deploy from a branch** e selecione **main** e **/(root)**. O site é servido diretamente a partir dos arquivos versionados.
 
-Consulte as [fontes e o escopo editorial](docs/fontes-e-escopo.md) e o [repertório sociocultural](assets/materials/repertorio-sociocultural.pdf).
+Se estiver configurando uma cópia com um novo projeto Supabase:
+
+1. Execute [configurar.sql](supabase/configurar.sql) no SQL Editor e habilite a **Data API** com o esquema `public`.
+2. Habilite o cadastro por e-mail em **Authentication**. Defina a **Site URL** e adicione a URL completa de `index.html` a **Redirect URLs**, para que o link de confirmação leve ao site.
+3. Configure a URL e a chave pública (**publishable**) em [backend.js](assets/js/backend.js). Mantenha as credenciais privadas fora do código do site.
+
+## Fontes
+
+Os enunciados vêm do acervo comunitário [API ENEM](https://enem.dev/), e cada questão indica a origem e a referência às provas do Inep. Consulte a [seleção de questões e materiais](docs/fontes-e-escopo.md) e as [fontes do repertório sociocultural](docs/repertorio-sociocultural.md).

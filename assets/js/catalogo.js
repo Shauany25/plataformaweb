@@ -33,10 +33,10 @@ export function heading(title, lead = '') {
   return '<section class="page-heading compact"><h1>' + escape(title) + '</h1><p class="lead">' + escape(lead) + '</p></section>';
 }
 function card(name, tag, url, area, link, detail = '') {
-  return `<a class="card topic-card exercise-area area-color-${area}" href="${url}"><span class="tag">${escape(tag)}</span><h2>${escape(name)}</h2><p>${escape(detail)}</p><span class="text-link">${link} →</span></a>`;
+  return `<a class="catalog-item area-color-${area}" href="${url}"><span class="tag">${escape(tag)}</span><h2>${escape(name)}</h2><p>${escape(detail)}</p><span class="text-link">${link} →</span></a>`;
 }
 function grid(cards) {
-  return '<div class="card-grid three">' + cards.join('') + '</div>';
+  return '<div class="catalog-list">' + cards.join('') + '</div>';
 }
 function crumbs(items) {
   return '<nav class="breadcrumbs" aria-label="Caminho">' + items.map(([label, url]) =>
@@ -63,14 +63,14 @@ export async function catalogPage(practice) {
     if (practice) {
       const bank = await questions();
       const start = 'exercicio.html?lista=' + t.slug + '&tentativa=' + crypto.randomUUID();
-      main.innerHTML = crumbs(trail) + `<section class="page-heading compact exercise-heading exercise-area area-color-${t.subject.area.slug}"><p class="eyebrow">${escape(t.subject.name)}</p><h1>${escape(t.name)}</h1><p>${t.questions.length} questões disponíveis.</p><div class="actions">${t.questions.length ? '<a class="btn start-exercises" href="'+start+'">Iniciar exercícios →</a>' : ''}${button('Revisar materiais e videoaulas',topicLink(t),true)}</div></section><h2 class="section-space">Questões da lista</h2>` +
+      main.innerHTML = crumbs(trail) + `<section class="page-heading compact exercise-heading exercise-area area-color-${t.subject.area.slug}"><p class="subject-label">${escape(t.subject.name)}</p><h1>${escape(t.name)}</h1><p>${t.questions.length} questões disponíveis.</p><div class="actions">${t.questions.length ? '<a class="btn start-exercises" href="'+start+'">Iniciar exercícios →</a>' : ''}${button('Revisar materiais e videoaulas',topicLink(t),true)}</div></section><h2 class="section-space">Questões da lista</h2>` +
         t.questions.map((key,i) => `<details id="q-${key}" class="question-preview exercise-area area-color-${t.subject.area.slug}"><summary><span class="question-index">${i+1}</span>${escape(bank[key].title)}</summary><div class="exam-content prose">${bank[key].html}</div></details>`).join('');
       const target = document.getElementById(location.hash.slice(1));
       if (target) { target.open = true; target.scrollIntoView(); }
     } else {
       const resources = [...t.resources];
       if (t.slug === 'redacao-repertorio-sociocultural') resources.push({kind:'reading',title:'Repertório sociocultural (PDF)',url:'assets/materials/repertorio-sociocultural.pdf',publisher:'Trilha de Estudos'});
-      main.innerHTML = crumbs(trail) + heading(t.name,t.summary) + `<div class="content-layout"><div><article class="card reading"><h2>Seu roteiro de estudo</h2><p class="prose">${escape(t.guide)}</p></article><h2 class="section-space">Materiais de apoio e videoaulas</h2>${resources.map(r=>`<a class="resource-row" href="${escape(r.url)}" target="_blank" rel="noopener noreferrer"><span class="resource-icon">${r.kind==='video'?'▷':'▤'}</span><div><h3>${escape(r.title)}</h3><p>${escape(r.publisher)}</p></div>↗</a>`).join('')}</div><aside class="sidebar"><section class="card"><h2>Praticar este conteúdo</h2>${t.questions.length ? button('Ir para os exercícios →',topicLink(t,true)) : 'Este conteúdo tem materiais de estudo.'}</section><section class="card" id="study-state"><h2>Seu progresso</h2>${button('Entrar para registrar', 'conta.html',true)}</section></aside></div>`;
+      main.innerHTML = crumbs(trail) + heading(t.name,t.summary) + `<div class="content-layout"><div><article class="card reading"><h2>Seu roteiro de estudo</h2><p class="prose">${escape(t.guide)}</p></article><h2 class="section-space">Materiais de apoio e videoaulas</h2>${resources.map(r=>`<a class="resource-row" href="${escape(r.url)}" target="_blank" rel="noopener noreferrer"><svg class="line-icon" aria-hidden="true" focusable="false"><use href="assets/images/areas.svg#${r.kind==='video'?'video':'material'}"></use></svg><div><h3>${escape(r.title)}</h3><p>${escape(r.publisher)}</p></div>↗</a>`).join('')}</div><aside class="sidebar"><section class="card"><h2>Praticar este conteúdo</h2>${t.questions.length ? button('Ir para os exercícios →',topicLink(t,true)) : 'Este conteúdo tem materiais de estudo.'}</section><section class="card" id="study-state"><h2>Seu progresso</h2>${button('Entrar para registrar', 'conta.html',true)}</section></aside></div>`;
     }
     return t;
   }
