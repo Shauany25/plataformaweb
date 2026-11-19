@@ -95,3 +95,57 @@ a.card.exercise-area h2{color:#201a30}
 /* Mantém o conteúdo afastado da faixa lateral no cartão de exercícios. */
 .page-heading.compact.exercise-heading{padding:28px 30px 28px 35px}
 @media(max-width:500px){.page-heading.compact.exercise-heading{padding:22px 20px 22px 25px}}
+
+.quiz-completion {
+  width: min(540px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 36px 28px 28px;
+  overflow-y: auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--deep);
+  box-shadow: 0 20px 60px #201a3033;
+}
+.quiz-completion::backdrop { background: #201a3099; }
+.quiz-completion h2 { padding-right: 28px; margin-bottom: 10px; }
+.quiz-completion > p { color: var(--muted); }
+.completion-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--purple);
+  font-size: 30px;
+}
+.completion-close:hover { background: var(--wash); }
+.completion-score {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  padding: 20px 12px;
+  margin: 24px 0;
+  background: var(--wash);
+  border-radius: 12px;
+  text-align: center;
+}
+.completion-score dt { font-size: 13px; }
+.completion-score dd {
+  margin: 8px 0 0;
+  color: var(--purple);
+  font-size: 28px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+.completion-account { display: grid; gap: 12px; margin-block: 20px; }
+.completion-actions { border-top: 1px solid var(--line); padding-top: 20px; }
+@media (max-width: 500px) {
+  .quiz-completion { padding: 32px 18px 20px; }
+  .completion-score { gap: 6px; padding-inline: 8px; }
+  .completion-score dd { font-size: 24px; }
+  .completion-actions .btn { width: 100%; }
+}
