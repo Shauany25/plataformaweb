@@ -41,7 +41,7 @@ a.card:hover{border-color:#bba8e0;box-shadow:0 16px 35px #31205a17;transform:tra
   height: auto;
   border-radius: 0;
   background: none;
-  mask-image: linear-gradient(to right, transparent, #000 34%);
+  mask-image: linear-gradient(to right, transparent, #000 44%);
 }
 .hero-image img {
   position: absolute;
@@ -76,7 +76,7 @@ footer{background:#f5f0fc;border-color:#eae3f2}footer>a{color:#6036bb}
     justify-self: end;
     width: min(100%, 600px);
     min-height: clamp(174px, 50vw, 280px);
-    mask-image: linear-gradient(to right, transparent, #000 28%);
+    mask-image: linear-gradient(to right, transparent, #000 36%);
   }
 }
 @media(max-width:500px){.page-heading{padding-top:35px}.feature-strip{grid-template-columns:1fr 1fr;gap:10px}.feature-strip>a,.feature-strip>a+a{padding:15px}.guide-progress{padding:20px;margin-bottom:36px}.guide-progress-meter{padding:16px}.guide-name input{flex:1 1 150px}.guide-name .btn{width:100%}}
