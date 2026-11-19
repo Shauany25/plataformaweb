@@ -32,8 +32,11 @@ export function heading(title, lead = '') {
   document.title = title + ' | Trilha de Estudos';
   return '<section class="page-heading compact"><h1>' + escape(title) + '</h1><p class="lead">' + escape(lead) + '</p></section>';
 }
+export function areaIcon(area) {
+  return `<span class="enem-area-icon" aria-hidden="true"><svg width="30" height="30" focusable="false"><use href="assets/images/icones.svg#${escape(area)}"></use></svg></span>`;
+}
 function card(name, tag, url, area, link, detail = '') {
-  return `<a class="card topic-card exercise-area area-color-${area}" href="${url}"><span class="tag">${escape(tag)}</span><h2>${escape(name)}</h2><p>${escape(detail)}</p><span class="text-link">${link} →</span></a>`;
+  return `<a class="card topic-card exercise-area area-color-${area}" href="${url}">${areaIcon(area)}<span class="tag">${escape(tag)}</span><h2>${escape(name)}</h2><p>${escape(detail)}</p><span class="text-link">${link} →</span></a>`;
 }
 function grid(cards) {
   return '<div class="card-grid three">' + cards.join('') + '</div>';
@@ -63,8 +66,8 @@ export async function catalogPage(practice) {
     if (practice) {
       const bank = await questions();
       const start = 'exercicio.html?lista=' + t.slug + '&tentativa=' + crypto.randomUUID();
-      main.innerHTML = crumbs(trail) + `<section class="page-heading compact exercise-heading exercise-area area-color-${t.subject.area.slug}"><p class="eyebrow">${escape(t.subject.name)}</p><h1>${escape(t.name)}</h1><p>${t.questions.length} questões disponíveis.</p><div class="actions">${t.questions.length ? '<a class="btn start-exercises" href="'+start+'">Iniciar exercícios →</a>' : ''}${button('Revisar materiais e videoaulas',topicLink(t),true)}</div></section><h2 class="section-space">Questões da lista</h2>` +
-        t.questions.map((key,i) => `<details id="q-${key}" class="question-preview exercise-area area-color-${t.subject.area.slug}"><summary><span class="question-index">${i+1}</span>${escape(bank[key].title)}</summary><div class="exam-content prose">${bank[key].html}</div></details>`).join('');
+      main.innerHTML = crumbs(trail) + `<section class="page-heading compact exercise-heading exercise-area area-color-${t.subject.area.slug}">${areaIcon(t.subject.area.slug)}<p class="eyebrow">${escape(t.subject.name)}</p><h1>${escape(t.name)}</h1><p>${t.questions.length} questões disponíveis.</p><div class="actions">${t.questions.length ? '<a class="btn start-exercises" href="'+start+'">Iniciar exercícios →</a>' : ''}${button('Revisar materiais e videoaulas',topicLink(t),true)}</div></section><h2 class="section-space">Questões da lista</h2>` +
+        t.questions.map((key,i) => `<details id="q-${key}" class="question-preview exercise-area area-color-${t.subject.area.slug}"><summary>${areaIcon(t.subject.area.slug)}<span class="question-index">${i+1}</span>${escape(bank[key].title)}</summary><div class="exam-content prose">${bank[key].html}</div></details>`).join('');
       const target = document.getElementById(location.hash.slice(1));
       if (target) { target.open = true; target.scrollIntoView(); }
     } else {
@@ -81,20 +84,20 @@ export async function searchPage() {
   const fold = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
   const words = fold(query).trim().split(/\s+/).filter(Boolean);
   const rows = [];
-  function add(kind,name,detail,url) {
+  function add(kind,name,detail,url,area) {
     const text = fold(name+' '+detail);
-    if (words.length && words.every(word=>text.includes(word))) rows.push(`<a class="card search-result" href="${url}"><span class="tag">${kind}</span><h2>${escape(name)}</h2><p>${escape(detail.slice(0,200))}</p></a>`);
+    if (words.length && words.every(word=>text.includes(word))) rows.push(`<a class="card search-result area-color-${area}" href="${url}">${areaIcon(area)}<span class="tag">${kind}</span><h2>${escape(name)}</h2><p>${escape(detail.slice(0,200))}</p></a>`);
   }
-  for (const a of areas) add('Área',a.name,a.description,'ENEM.html?area='+a.slug);
-  for (const s of subjects) add('Matéria',s.name,s.area.name,subjectLink(s));
-  for (const t of topics) add('Conteúdo',t.name,t.subject.name+' · '+t.summary,topicLink(t));
+  for (const a of areas) add('Área',a.name,a.description,'ENEM.html?area='+a.slug,a.slug);
+  for (const s of subjects) add('Matéria',s.name,s.area.name,subjectLink(s),s.area.slug);
+  for (const t of topics) add('Conteúdo',t.name,t.subject.name+' · '+t.summary,topicLink(t),t.subject.area.slug);
   if (words.length) {
     const bank = await questions(), seen = new Set();
     for (const t of topics) for (const id of t.questions) {
       if (seen.has(id)) continue;
       seen.add(id);
       const q = bank[id];
-      add('Questão',q.title,(q.html+' '+q.options.map(o=>o.html).join(' ')).replace(/<[^>]+>/g,' '),topicLink(t,true)+'#q-'+id);
+      add('Questão',q.title,(q.html+' '+q.options.map(o=>o.html).join(' ')).replace(/<[^>]+>/g,' '),topicLink(t,true)+'#q-'+id,t.subject.area.slug);
     }
   }
   main.innerHTML = heading('Resultados da pesquisa',rows.length+' resultados para “'+query+'”') + '<div class="search-results">'+rows.join('')+'</div>';

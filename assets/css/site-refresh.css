@@ -66,11 +66,8 @@ a.card.exercise-area .tag{background:#ffffffb8}
 /* Caixas de exercícios seguem os cartões da página inicial. */
 a.card.exercise-area{background:#fff;border:1px solid #eee9f3;border-top:4px solid var(--area-color);box-shadow:0 10px 28px #31205a0d;padding:22px}
 a.card.exercise-area:hover{border-color:#eee9f3;border-top-color:var(--area-color);filter:none;transform:translateY(-4px);box-shadow:0 16px 35px #31205a17}
-a.card.exercise-area::before{display:grid;place-items:center;content:'✦';width:52px;height:52px;margin-bottom:16px;border-radius:12px;background:var(--area-bg);color:var(--area-color);font-size:26px;font-weight:700}
-a.card.area-color-humanas::before{content:'◎'}
-a.card.area-color-natureza::before{content:'✳'}
-a.card.area-color-matematica::before{content:'∑'}
-a.card.area-color-linguagens::before{content:'Aa';font-size:21px}
+.enem-area-icon{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:13px;background:var(--area-bg);color:var(--area-color)}
+a.card > .enem-area-icon,.quiz-card > .enem-area-icon,.exercise-heading > .enem-area-icon{margin-bottom:16px}
 a.card.exercise-area .tag{display:block;padding:0;background:transparent;color:var(--area-color);font-size:10px}
 a.card.exercise-area h2{color:#201a30}
 /* Página do conteúdo e resolução: a cor da área aparece em detalhes suaves. */

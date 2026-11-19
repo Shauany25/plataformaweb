@@ -1,5 +1,5 @@
 import {db,result} from './backend.js';
-import {main, topics, questions, params, escape, topicLink, button} from './catalogo.js?v=icones';
+import {main, topics, questions, params, escape, topicLink, button, areaIcon} from './catalogo.js?v=icones';
 
 export async function quiz(user) {
   const topic = topics.find(t=>t.slug===params.get('lista'));
@@ -23,6 +23,7 @@ export async function quiz(user) {
     document.title = item.title + ' | Trilha de Estudos';
     main.innerHTML = `<p class="quiz-back">${button('← Voltar ao conteúdo',topicLink(topic,true),true)}</p>
       <div class="quiz-layout exercise-area area-color-${topic.subject.area.slug}"><section class="card quiz-card">
+      ${areaIcon(topic.subject.area.slug)}
       <div class="quiz-top"><span class="tag">${escape(topic.subject.name)}</span>Questão ${index+1} de ${total}</div>
       <div class="progress-track"><span style="width:${count/total*100}%"></span></div>
       <h1 class="quiz-title">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
