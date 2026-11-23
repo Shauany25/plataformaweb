@@ -1,6 +1,6 @@
 import {db,result} from './backend.js';
 import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js?v=icones';
-import {quiz} from './quiz.js?v=conclusao';
+import {quiz} from './quiz.js?v=revisao';
 import {guide} from './guia.js?v=icones';
 
 const page = location.pathname.split('/').pop() || 'index.html';
@@ -63,14 +63,17 @@ function authPage(user) {
 async function studyState(user,topic) {
   const box=document.querySelector('#study-state');
   if(!box || !user)return;
-  const find=()=>db.from('trilha_estudados').select('topic').eq('topic',topic.slug).eq('user_id',user.id).maybeSingle();
-  const marked=Boolean(result(await find()));
-  box.innerHTML='<h2>Seu progresso</h2><button class="btn btn-light">'+(marked?'Desmarcar estudado':'Marcar como estudado')+'</button>';
+  const marked=result(await db.from('trilha_estudados')
+    .select('topic').eq('topic',topic.slug).eq('user_id',user.id).maybeSingle());
+  if (marked) {
+    box.innerHTML='<h2>Seu progresso</h2><p role="status"><strong>Estudado</strong></p>';
+    return;
+  }
+  box.innerHTML='<h2>Seu progresso</h2><button type="button" class="btn btn-light">Marcar como estudado</button>';
   box.querySelector('button').onclick=async e=>{
     const b=e.currentTarget;b.disabled=true;
     try {
-      const table=db.from('trilha_estudados');
-      const response=marked?await table.delete().eq('user_id',user.id).eq('topic',topic.slug):await table.insert({topic:topic.slug,user_id:user.id});
+      const response=await db.from('trilha_estudados').insert({topic:topic.slug,user_id:user.id});
       if(response.error?.code!=='23505')result(response);
       await studyState(user,topic);
     } finally {b.disabled=false;}

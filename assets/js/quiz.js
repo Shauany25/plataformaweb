@@ -50,6 +50,28 @@ export async function quiz(user) {
     };
     dialog.showModal();
   }
+  function showReview() {
+    const back = topicLink(topic, true);
+    document.title = 'Revisar questão | Trilha de Estudos';
+    main.innerHTML = `<dialog id="quiz-review" class="quiz-completion" aria-labelledby="review-heading" aria-describedby="review-description">
+      <h2 id="review-heading">Você já respondeu a esta questão. Deseja revisar?</h2>
+      <p id="review-description">Responder de novo não aumenta o total de questões concluídas no seu progresso.</p>
+      <div class="completion-actions actions">
+        <button type="button" class="btn" id="start-review" autofocus>Revisar questão</button>
+        ${button('Voltar ao conteúdo', back, true)}
+      </div></dialog>`;
+    const dialog = main.querySelector('#quiz-review');
+    dialog.oncancel = event => {
+      event.preventDefault();
+      location.replace(back);
+    };
+    dialog.querySelector('#start-review').onclick = () => {
+      dialog.close();
+      draw();
+      main.querySelector('.quiz-title').focus();
+    };
+    dialog.showModal();
+  }
   function draw() {
     const selected = answers[questionId];
     const total = topic.questions.length;
@@ -61,7 +83,7 @@ export async function quiz(user) {
       ${areaIcon(topic.subject.area.slug)}
       <div class="quiz-top"><span class="tag">${escape(topic.subject.name)}</span>Questão ${index+1} de ${total}</div>
       <div class="progress-track"><span style="width:${count/total*100}%"></span></div>
-      <h1 class="quiz-title">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
+      <h1 class="quiz-title" tabindex="-1">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
       <form class="quiz-form"><fieldset ${selected?'disabled':''}><legend>Escolha uma alternativa</legend>
       ${item.options.map(o=>`<label class="alternative ${selected?(o.letter===item.answer?'correct':o.letter===selected?'incorrect':''):''}"><input type="radio" required name="answer" value="${o.letter}" ${o.letter===selected?'checked':''}><strong>${o.letter}</strong><span>${o.html}${o.file?'<img src="'+escape(o.file)+'" alt="Imagem da alternativa '+o.letter+'">':''}</span></label>`).join('')}</fieldset>
       ${selected?'<p class="answer-feedback '+(selected===item.answer?'success':'error')+'">'+(selected===item.answer?'Resposta correta!':'Resposta correta: '+item.answer)+'</p>':'<button class="btn">Confirmar resposta</button>'}</form>
@@ -94,6 +116,14 @@ export async function quiz(user) {
         draw();
       } finally { submit.disabled = false; }
     };
+  }
+  if (user && !answers[questionId]) {
+    const past = result(await db.from('trilha_respostas')
+      .select('question').eq('user_id',user.id).eq('question',questionId).neq('attempt',id).limit(1));
+    if (past.length) {
+      showReview();
+      return;
+    }
   }
   draw();
 }
