@@ -22,6 +22,11 @@ create table if not exists public.trilha_respostas (
   selected text not null check (selected in ('A','B','C','D','E')),
   primary key(user_id, attempt, question)
 );
+create sequence if not exists public.trilha_respostas_answer_order_seq;
+alter table public.trilha_respostas add column if not exists answer_order bigint;
+alter sequence public.trilha_respostas_answer_order_seq owned by public.trilha_respostas.answer_order;
+alter table public.trilha_respostas alter column answer_order
+  set default nextval('public.trilha_respostas_answer_order_seq'::regclass);
 
 do $$
 declare tablename text;
@@ -36,7 +41,9 @@ end $$;
 grant select, insert, delete on public.trilha_plano to authenticated;
 grant update(done) on public.trilha_plano to authenticated;
 grant select, insert, delete on public.trilha_estudados to authenticated;
-grant select, insert on public.trilha_respostas to authenticated;
+grant select on public.trilha_respostas to authenticated;
+grant insert (user_id, attempt, topic, question, selected) on public.trilha_respostas to authenticated;
+grant usage on sequence public.trilha_respostas_answer_order_seq to authenticated;
 create or replace function public.trilha_marcar_conteudo()
 returns trigger language plpgsql security invoker set search_path = '' as $$
 begin

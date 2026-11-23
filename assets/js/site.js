@@ -1,7 +1,7 @@
 import {db,result} from './backend.js';
 import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js?v=icones';
 import {quiz} from './quiz.js?v=revisao-inicio';
-import {guide} from './guia.js?v=icones';
+import {guide} from './guia.js?v=primeiras-respostas';
 
 const page = location.pathname.split('/').pop() || 'index.html';
 const home = new URL('index.html', location.href).href;

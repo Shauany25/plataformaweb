@@ -7,7 +7,20 @@ const options=(list)=>list.map(([v,text])=>`<option value="${escape(v)}">${escap
 export async function guide(user) {
   if (!user) return;
   const [items,answers,studied,bank] = await Promise.all([myRows('trilha_plano',['created_at','id']),myRows('trilha_respostas',['attempt','question']),myRows('trilha_estudados',['topic']),questions()]);
-  const unique = new Set(answers.map(a=>a.question).filter(q=>questionIds.has(q))).size;
+  const correct = answer => bank[answer.question]?.answer === answer.selected;
+  const uniqueAnswers = new Map();
+  for (const answer of answers) {
+    if (!questionIds.has(answer.question)) continue;
+    const first = uniqueAnswers.get(answer.question);
+    const order = answer.answer_order ?? null;
+    // Respostas sem ordem foram gravadas antes de a sequência ser adicionada.
+    if (!first || (first.order !== null && (order === null || order < first.order))) {
+      uniqueAnswers.set(answer.question, {answer, order, ambiguous:false});
+    } else if (first.order === null && order === null && correct(first.answer) !== correct(answer)) {
+      first.ambiguous = true;
+    }
+  }
+  const unique = uniqueAnswers.size;
   const percent = (100*unique/(questionIds.size||1)).toLocaleString('pt-BR',{maximumFractionDigits:1});
   document.querySelector('.guide-progress').innerHTML=`<div><h2>Sua jornada em números</h2><p>Você respondeu ${unique} de ${questionIds.size} questões disponíveis.</p></div><div class="guide-progress-meter"><label for="coverage">Questões respondidas · ${percent}%</label><progress id="coverage" style="width:100%" max="${questionIds.size||1}" value="${unique}"></progress><small>Cada questão conta uma vez.</small></div>`;
   document.querySelector('#organizacao').innerHTML=`<h2>Minha organização</h2><div class="organizer-layout"><aside class="card"><h3>Adicionar ao planejamento</h3><form id="planner">
@@ -55,13 +68,34 @@ export async function guide(user) {
       await guide(user);
     } finally {b.disabled=false;}
   };
-  const correct=a=>bank[a.question]?.answer===a.selected;
-  const hits=answers.filter(correct).length;
+  let hits=0;
+  let scored=0;
   const byTopic=new Map(topics.map(t=>[t.slug,t]));
   const groups=new Map();
-  for(const a of answers) {
-    const name=byTopic.get(a.topic)?.subject.name;
-    if(name) {const score=groups.get(name)||[0,0];score[0]+=Number(correct(a));score[1]++;groups.set(name,score);}
+  for (const {answer, ambiguous} of uniqueAnswers.values()) {
+    if (ambiguous) continue;
+    const hit = Number(correct(answer));
+    hits += hit;
+    scored++;
+    const name = byTopic.get(answer.topic)?.subject.name;
+    if (name) {
+      const score = groups.get(name) || [0,0];
+      score[0] += hit;
+      score[1]++;
+      groups.set(name,score);
+    }
   }
-  document.querySelector('#progresso').innerHTML=`<h2>Meu progresso</h2><div class="stats-grid">${[['Respostas',answers.length],['Acertos',hits],['Erros',answers.length-hits],['Aproveitamento',Math.round(100*hits/(answers.length||1))+'%']].map(([label,v])=>'<div class="stat"><span>'+label+'</span><strong>'+v+'</strong></div>').join('')}</div><div class="card-grid two section-top"><section class="card"><h3>Resultados por matéria</h3>${[...groups].map(([name,[n,total]])=>'<p>'+escape(name)+' · '+n+' acertos em '+total+' respostas</p>').join('')||'Responda uma questão para ver seus resultados.'}</section><section class="card"><h3>Conteúdos estudados</h3>${studied.map(s=>byTopic.get(s.topic)).filter(Boolean).map(t=>'<a class="studied-row" href="'+topicLink(t)+'">'+escape(t.name)+'</a>').join('')||'Nenhum conteúdo marcado.'}</section></div>`;
+  const unscored = unique - scored;
+  const rate = scored ? Math.round(100*hits/scored)+'%' : unscored ? '—' : '0%';
+  const stats = [['Questões respondidas',unique],['Acertos',hits],['Erros',scored-hits],['Aproveitamento',rate]];
+  document.querySelector('#progresso').innerHTML = `<h2>Meu progresso</h2>
+    <div class="stats-grid">${stats.map(([label,value])=>`<div class="stat"><span>${label}</span><strong>${value}</strong></div>`).join('')}</div>
+    ${unscored ? `<p class="caption">Questões antigas fora do aproveitamento por falta de ordem registrada (${unscored}).</p>` : ''}
+    <div class="card-grid two section-top">
+      <section class="card"><h3>Resultados por matéria</h3>
+        ${[...groups].map(([name,[n,total]])=>`<p>${escape(name)} · ${n} de ${total} questões corretas</p>`).join('')||'Nenhum resultado por matéria disponível.'}
+      </section><section class="card"><h3>Conteúdos estudados</h3>
+        ${studied.map(s=>byTopic.get(s.topic)).filter(Boolean).map(t=>`<a class="studied-row" href="${topicLink(t)}">${escape(t.name)}</a>`).join('')||'Nenhum conteúdo marcado.'}
+      </section>
+    </div>`;
 }
