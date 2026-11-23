@@ -28,6 +28,7 @@ export async function quiz(user) {
   if (!item) throw new Error('Questão indisponível.');
   const go = i => 'exercicio.html?lista='+topic.slug+'&tentativa='+id+'&questao='+(i+1);
   const dismissedKey = key + ':conclusao:' + (user?.id || 'visitante');
+  const reviewKey = key + ':revisao:' + user?.id;
   function showCompletion(correct, total) {
     const dialog = document.querySelector('#quiz-completion');
     const returnTo = encodeURIComponent(location.pathname + location.search);
@@ -66,9 +67,10 @@ export async function quiz(user) {
       location.replace(back);
     };
     dialog.querySelector('#start-review').onclick = () => {
+      sessionStorage.setItem(reviewKey, '1');
       dialog.close();
       draw();
-      main.querySelector('.quiz-title').focus();
+      main.focus({preventScroll:true});
     };
     dialog.showModal();
   }
@@ -83,7 +85,7 @@ export async function quiz(user) {
       ${areaIcon(topic.subject.area.slug)}
       <div class="quiz-top"><span class="tag">${escape(topic.subject.name)}</span>Questão ${index+1} de ${total}</div>
       <div class="progress-track"><span style="width:${count/total*100}%"></span></div>
-      <h1 class="quiz-title" tabindex="-1">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
+      <h1 class="quiz-title">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
       <form class="quiz-form"><fieldset ${selected?'disabled':''}><legend>Escolha uma alternativa</legend>
       ${item.options.map(o=>`<label class="alternative ${selected?(o.letter===item.answer?'correct':o.letter===selected?'incorrect':''):''}"><input type="radio" required name="answer" value="${o.letter}" ${o.letter===selected?'checked':''}><strong>${o.letter}</strong><span>${o.html}${o.file?'<img src="'+escape(o.file)+'" alt="Imagem da alternativa '+o.letter+'">':''}</span></label>`).join('')}</fieldset>
       ${selected?'<p class="answer-feedback '+(selected===item.answer?'success':'error')+'">'+(selected===item.answer?'Resposta correta!':'Resposta correta: '+item.answer)+'</p>':'<button class="btn">Confirmar resposta</button>'}</form>
@@ -117,7 +119,7 @@ export async function quiz(user) {
       } finally { submit.disabled = false; }
     };
   }
-  if (user && !answers[questionId]) {
+  if (user && index === 0 && !answers[questionId] && sessionStorage.getItem(reviewKey) !== '1') {
     const past = result(await db.from('trilha_respostas')
       .select('question').eq('user_id',user.id).eq('question',questionId).neq('attempt',id).limit(1));
     if (past.length) {
