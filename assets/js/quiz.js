@@ -1,6 +1,37 @@
 import {db,result} from './backend.js';
 import {main, topics, questions, params, escape, topicLink, subjectLink, button, areaIcon} from './catalogo.js?v=icones';
 
+const recommendedSeconds = {linguagens:180, humanas:180, matematica:200, natureza:200};
+
+function formatTime(seconds) {
+  return Math.floor(seconds / 60) + ':' + String(seconds % 60).padStart(2, '0');
+}
+
+function startQuestionTimer(timer, recommended) {
+  const value = timer.querySelector('[role="timer"]');
+  const notice = timer.querySelector('small');
+  let started = performance.now();
+  function update() {
+    const elapsed = Math.floor((performance.now() - started) / 1000);
+    const remaining = recommended - elapsed;
+    value.textContent = (remaining < 0 ? '+' : '') + formatTime(Math.abs(remaining));
+    notice.hidden = remaining > 0;
+  }
+  function onPageShow(event) {
+    if (event.persisted) {
+      started = performance.now();
+      update();
+    }
+  }
+  update();
+  const interval = window.setInterval(update, 1000);
+  window.addEventListener('pageshow', onPageShow);
+  return () => {
+    window.clearInterval(interval);
+    window.removeEventListener('pageshow', onPageShow);
+  };
+}
+
 export async function quiz(user) {
   const topic = topics.find(t=>t.slug===params.get('lista'));
   if (!topic?.questions.length) throw new Error('Lista indisponível.');
@@ -76,13 +107,18 @@ export async function quiz(user) {
   }
   function draw() {
     const selected = answers[questionId];
+    const recommended = recommendedSeconds[topic.subject.area.slug];
     const total = topic.questions.length;
     const count = topic.questions.filter(k=>answers[k]).length;
     const correct = topic.questions.filter(k=>answers[k]===bank[k].answer).length;
     document.title = item.title + ' | Trilha de Estudos';
     main.innerHTML = `<p class="quiz-back">${button('← Voltar ao conteúdo',topicLink(topic,true),true)}</p>
       <div class="quiz-layout exercise-area area-color-${topic.subject.area.slug}"><section class="card quiz-card">
-      ${areaIcon(topic.subject.area.slug)}
+      <div class="quiz-heading-tools">${areaIcon(topic.subject.area.slug)}
+        ${selected ? '' : `<div class="question-timer"><span>Tempo recomendado · ${formatTime(recommended)}</span>
+          <strong role="timer" aria-label="Tempo da questão"></strong>
+          <small hidden>Você ultrapassou o tempo indicado.</small></div>`}
+      </div>
       <div class="quiz-top"><span class="tag">${escape(topic.subject.name)}</span>Questão ${index+1} de ${total}</div>
       <div class="progress-track"><span style="width:${count/total*100}%"></span></div>
       <h1 class="quiz-title">${escape(topic.name)}</h1><p>${escape(item.title)}</p><div class="prose exam-content">${item.html}</div>
@@ -96,6 +132,7 @@ export async function quiz(user) {
       ${count===total?'<button type="button" class="btn btn-light" id="show-completion">Ver conclusão da lista</button>':''}
       ${user?'<p><a class="text-link" href="tecnicas.html#progresso">Ver meu progresso →</a></p>':''}</section></aside></div>
       <dialog id="quiz-completion" class="quiz-completion" aria-labelledby="completion-heading" aria-describedby="completion-description"></dialog>`;
+    const stopTimer = selected ? null : startQuestionTimer(main.querySelector('.question-timer'), recommended);
     if (count === total) {
       main.querySelector('#show-completion').onclick = () => showCompletion(correct, total);
       if (sessionStorage.getItem(dismissedKey) !== '1') showCompletion(correct, total);
@@ -115,6 +152,7 @@ export async function quiz(user) {
         }
         answers[questionId]=value;
         if (!user) sessionStorage.setItem(key,JSON.stringify(answers));
+        stopTimer?.();
         draw();
       } finally { submit.disabled = false; }
     };

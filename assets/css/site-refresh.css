@@ -133,6 +133,17 @@ a.card.exercise-area h2{color:#201a30}
 .page-heading.compact.exercise-heading{padding:28px 30px 28px 35px}
 @media(max-width:500px){.page-heading.compact.exercise-heading{padding:22px 20px 22px 25px}}
 
+.quiz-heading-tools {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.question-timer { margin-left: auto; text-align: right; color: var(--muted); font-size: 12px; }
+.question-timer [role="timer"] { display: block; font-size: 20px; font-weight: 700; color: var(--area-color); font-variant-numeric: tabular-nums; }
+.question-timer small { font-size: 12px; }
+
 .quiz-completion {
   width: min(540px, calc(100% - 32px));
   max-height: calc(100dvh - 32px);

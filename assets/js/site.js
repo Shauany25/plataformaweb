@@ -1,6 +1,6 @@
 import {db,result} from './backend.js';
 import {catalogPage,searchPage,notice,main,params,button,escape,heading} from './catalogo.js?v=icones';
-import {quiz} from './quiz.js?v=revisao-inicio';
+import {quiz} from './quiz.js?v=ritmo';
 import {guide} from './guia.js?v=primeiras-respostas';
 
 const page = location.pathname.split('/').pop() || 'index.html';
